@@ -1,0 +1,141 @@
+@media (max-width: 850px) {
+    .above-header {
+        display: none;
+        height: 0px;
+    }
+    .above-header-container {
+        height: 0px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #responsabilitatile_pacientului {
+        hyphens: manual;
+        word-break: normal;
+        text-align: center;
+    }    
+}
+
+.block {
+    max-width: 1165px;
+    border: 1px solid rgba(176, 190, 197, 0.5);
+    color: #2E3E5C;
+    padding: 3em;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    box-shadow: 2px 2px 40px -15px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 500px) {
+    .block {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
+
+.section-text .block-title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.list {
+    line-height: 1.5;
+}
+
+/* */
+.servicii-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#servicii-pill-container .pill-container {
+    margin-bottom: 4.5em;
+    
+}
+
+#servicii-pill-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+/* "Tarife" section */
+.tarife {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    margin: 4em auto;
+    padding: 0 1.5em;
+}
+
+.tarife-title-text {
+    font-size: 3em;
+    color: #2E3E5C;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.download-button-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4em;
+
+    justify-content: center;
+
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.download-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+    max-width: fit-content;
+
+    color: white;
+    background-color: #FF6B6B;
+    padding: 0.25em 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+
+    text-decoration: none;
+}
+
+.download-button p, .fa-cloud-arrow-down {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background-color: #E65555;
+    cursor: pointer;
+}
+
+.tarife .pill-container {
+    margin: 0;
+}
+
+.simple-link {
+    color: #2E3E5C;
+}
+
+.pill-container-wrapper {
+    padding: 0;
+    padding-top: 0;
+}
+/* End of "Tarife" section */

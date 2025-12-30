@@ -1,0 +1,197 @@
+﻿import { Link } from 'react-router-dom'
+import useDocumentTitle from '../hooks/useDocumentTitle'
+
+const Home = () => {
+  useDocumentTitle('Acasă - CMF Bălți')
+
+  return (
+    <>
+      <div className="main-section-1-wrapper">
+        <div className="main-section-1">
+          <div className="left-side">
+            <p>
+              Programare
+              <br />
+              online
+            </p>
+            <p>
+              Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și
+              planificați-vă vizita din confortul casei.
+            </p>
+            <a href="https://sia.amp.md/" target="_blank" rel="noreferrer">
+              Apasă aici!
+            </a>
+          </div>
+          <div className="right-side">
+            <img src="/images/main-page/programare_online_screen_1.png" alt="Programare online" />
+          </div>
+        </div>
+      </div>
+
+      <div className="info-utile">
+        <p>Informații utile</p>
+        <div className="info-utile-containers">
+          <div>
+            <i className="fa-solid fa-clock icon"></i>
+            <p>Orele de lucru</p>
+            <p>
+              Luni - Vineri: 8:00 - 19:00
+              <br />
+              Sâmbătă: 8:00 - 13:00
+            </p>
+          </div>
+          <div>
+            <i className="fa-solid fa-heart-circle-bolt icon"></i>
+            <p>Centrele de sănătate</p>
+            <p>Total 10 în orașul Bălți, cât și satele Elizaveta și Sadovoie</p>
+          </div>
+          <div>
+            <i className="fa-solid fa-phone icon"></i>
+            <p>Contact</p>
+            <p>La numărul de telefon: 0231-99-77 sau la secțiunea Contacte</p>
+          </div>
+        </div>
+
+        <div className="pill-container-wrapper">
+          <div className="pill-container">
+            <p>Pentru mai multe detalii, vă rugăm să vizitați secțiunea</p>
+            <Link to="/contacte.html">Contacte</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-wrapper" id="despre-cmf">
+        <div className="content">
+          <div className="image-side">
+            <img src="/images/main-page/despre-cmf-main-page.jpg" alt="Whatever" />
+          </div>
+          <div className="content-side">
+            <p>Despre CMF</p>
+            <p>
+              IMSP „Centrul Medicilor de Familie Municipal Bălți” are ca obiectiv principal furnizarea
+              asistenței medicale primare pentru întreaga populație, indiferent de statutul de
+              asigurare.
+              <br />
+              Medicina de familie este esențială în prevenție, diagnostic și tratament. Medicii de
+              familie, împreună cu echipele lor, contribuie la îmbunătățirea sănătății individuale și
+              comunitare.
+            </p>
+            <Link to="/despre-cmf.html">Află mai multe</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-wrapper" id="esti-beneficiar">
+        <div className="content">
+          <div className="content-side">
+            <p>Ești beneficiar?</p>
+            <p>
+              Dacă ești beneficiar al serviciilor medicale oferite de Centrul Medicilor de Familie din
+              Bălți, medicul tău de familie va fi primul punct de contact pentru îngrijirea sănătății.
+              <br />
+              Înregistrarea la un medic de familie este esențială pentru a beneficia de consultații
+              medicale, tratamente și acces la alte tipuri de servicii specializate. Aceste servicii
+              sunt disponibile pentru toți, indiferent de statutul de asigurat sau neasigurat.
+            </p>
+            <Link to="/info-pentru-beneficiari.html">Află mai multe</Link>
+          </div>
+          <div className="image-side">
+            <img src="/images/main-page/esti-beneficiar-main-page.jpeg" alt="Whatever" />
+          </div>
+        </div>
+      </div>
+
+      <div className="transparenta-section-wrapper">
+        <div className="transparenta-section">
+          <p>Transpa&shy;rență</p>
+          <p>
+            Pentru noi, transparența este esențială în activitatea noastră zilnică. Ne angajăm să
+            oferim acces la informații detaliate privind achizițiile publice, rapoartele de activitate
+            și contractele, pentru a asigura încrederea și responsabilitatea față de toți beneficiarii
+            noștri.
+            <br />
+            Această abordare deschisă ne ajută să gestionăm eficient resursele și să fim mereu la
+            dispoziția comunității.
+          </p>
+
+          <div className="pills">
+            <Link to="/transparenta.html#achizitii_publice">Achiziții publice</Link>
+            <Link to="/transparenta.html#rapoarte_de_activitate">Rapoarte de activitate</Link>
+            <Link to="/transparenta.html#contracte_cnam">Contracte CNAM</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="parteneri-oficiali-wrapper">
+        <p id="parteneri-oficiali-title">Parteneri oficiali</p>
+        <div className="parteneri-oficiali">
+          <div>
+            <div className="left-side">
+              <img src="/images/main-page/ms gov md.png" alt="Whatever" />
+            </div>
+            <div className="right-side">
+              <p>
+                Ministerul Sănătății
+                <br />
+                al Republicii Moldova
+              </p>
+              <a href="https://ms.gov.md/" target="_blank" rel="noreferrer">
+                ms.gov.md
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div className="left-side">
+              <img src="/images/main-page/cnam.jpg" alt="Whatever" />
+            </div>
+            <div className="right-side">
+              <p>
+                Compania Națională de
+                <br />
+                Asigurări în Medicină
+              </p>
+              <a href="http://cnam.md/" target="_blank" rel="noreferrer">
+                cnam.md
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div className="left-side">
+              <img src="/images/main-page/primaria balti.jpg" alt="Whatever" />
+            </div>
+            <div className="right-side">
+              <p>
+                Primăria
+                <br />
+                municipiului Bălți
+              </p>
+              <a href="https://balti.md/" target="_blank" rel="noreferrer">
+                balti.md
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div className="left-side">
+              <img src="/images/main-page/cnas.png" alt="Whatever" />
+            </div>
+            <div className="right-side">
+              <p>
+                Compania Națională
+                <br />
+                de Asigurări Medicale
+              </p>
+              <a href="https://cnas.gov.md/" target="_blank" rel="noreferrer">
+                cnas.gov.md
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Home
