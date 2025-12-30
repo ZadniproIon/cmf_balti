@@ -1,8 +1,15 @@
 ﻿import { Link } from 'react-router-dom'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import usePageStyles from '../hooks/usePageStyles'
+import componentsStyles from '../styles/components.css?raw'
+import homeStyles from '../styles/index.css?raw'
+import pillStyles from '../styles/pill-container.css?raw'
+
+const pageStyles = [homeStyles, pillStyles, componentsStyles]
 
 const Home = () => {
   useDocumentTitle('Acasă - CMF Bălți')
+  usePageStyles(pageStyles, 'home')
 
   return (
     <>
@@ -195,3 +202,4 @@ const Home = () => {
 }
 
 export default Home
+

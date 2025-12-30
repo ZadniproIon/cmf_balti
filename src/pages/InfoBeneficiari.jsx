@@ -1,8 +1,17 @@
 ﻿import { Link } from 'react-router-dom'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import usePageStyles from '../hooks/usePageStyles'
+import componentsStyles from '../styles/components.css?raw'
+import infoStyles from '../styles/info-pentru-beneficiari.css?raw'
+import pillStyles from '../styles/pill-container.css?raw'
+import quickSelectStyles from '../styles/quick-select.css?raw'
+import titleStyles from '../styles/title-and-section-text.css?raw'
+
+const pageStyles = [quickSelectStyles, titleStyles, pillStyles, infoStyles, componentsStyles]
 
 const InfoBeneficiari = () => {
   useDocumentTitle('Informații pentru beneficiari - CMF Bălți')
+  usePageStyles(pageStyles, 'info-beneficiari')
 
   return (
     <>
@@ -433,3 +442,4 @@ const InfoBeneficiari = () => {
 }
 
 export default InfoBeneficiari
+

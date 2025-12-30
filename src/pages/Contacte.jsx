@@ -1,6 +1,12 @@
 ﻿import { useState } from 'react'
 import Dropdown from '../components/Dropdown'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import usePageStyles from '../hooks/usePageStyles'
+import componentsStyles from '../styles/components.css?raw'
+import contactStyles from '../styles/contacte.css?raw'
+import titleStyles from '../styles/title-and-section-text.css?raw'
+
+const pageStyles = [titleStyles, contactStyles, componentsStyles]
 
 const entries = [
   {
@@ -119,6 +125,7 @@ const entries = [
 
 const Contacte = () => {
   useDocumentTitle('Contacte - CMF Bălți')
+  usePageStyles(pageStyles, 'contacte')
 
   const [openKey, setOpenKey] = useState(null)
 
@@ -159,3 +166,4 @@ const Contacte = () => {
 }
 
 export default Contacte
+

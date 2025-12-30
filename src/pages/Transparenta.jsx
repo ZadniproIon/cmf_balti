@@ -1,9 +1,17 @@
 ﻿import { useState } from 'react'
 import Dropdown from '../components/Dropdown'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import usePageStyles from '../hooks/usePageStyles'
+import componentsStyles from '../styles/components.css?raw'
+import quickSelectStyles from '../styles/quick-select.css?raw'
+import titleStyles from '../styles/title-and-section-text.css?raw'
+import transparentaStyles from '../styles/transparenta.css?raw'
+
+const pageStyles = [quickSelectStyles, titleStyles, transparentaStyles, componentsStyles]
 
 const Transparenta = () => {
   useDocumentTitle('Transparență - CMF Bălți')
+  usePageStyles(pageStyles, 'transparenta')
 
   const [openItems, setOpenItems] = useState({})
 
@@ -763,3 +771,4 @@ const Transparenta = () => {
 }
 
 export default Transparenta
+

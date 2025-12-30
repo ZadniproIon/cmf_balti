@@ -1,8 +1,16 @@
 ﻿import { Link } from 'react-router-dom'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import usePageStyles from '../hooks/usePageStyles'
+import componentsStyles from '../styles/components.css?raw'
+import despreStyles from '../styles/despre-cmf.css?raw'
+import pillStyles from '../styles/pill-container.css?raw'
+import titleStyles from '../styles/title-and-section-text.css?raw'
+
+const pageStyles = [despreStyles, titleStyles, componentsStyles, pillStyles]
 
 const DespreCmf = () => {
   useDocumentTitle('Despre CMF - CMF Bălți')
+  usePageStyles(pageStyles, 'despre-cmf')
 
   return (
     <>
@@ -209,3 +217,4 @@ const DespreCmf = () => {
 }
 
 export default DespreCmf
+

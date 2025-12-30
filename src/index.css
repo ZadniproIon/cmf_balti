@@ -1,9 +1,1 @@
-﻿@import './styles/components.css';
-@import './styles/pill-container.css';
-@import './styles/title-and-section-text.css';
-@import './styles/quick-select.css';
-@import './styles/index.css';
-@import './styles/despre-cmf.css';
-@import './styles/contacte.css';
-@import './styles/info-pentru-beneficiari.css';
-@import './styles/transparenta.css';
+﻿/* Styles are injected per page to preserve legacy ordering. */
