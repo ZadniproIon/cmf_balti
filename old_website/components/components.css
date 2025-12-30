@@ -1,0 +1,298 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Above header */
+.above-header-wrapper {
+    background-color: #283B6A;
+}
+
+.above-header {
+    
+    color: #FFFFFF;
+    font-size: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+
+    height: 80px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.above-header .left-side, .above-header .right-side {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.above-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.above-header p {
+    margin: 0;
+}
+
+.above-header .icon {
+    font-size: 2em;
+    margin: 15px;
+    color: white;
+}
+
+
+@media (max-width: 850px) {
+    .above-header {
+        display: none;
+        height: 0px !important;
+    }
+    #above-header-container {
+        height: 0px !important;
+    }
+}
+/* End of Above header */
+
+/* Nav bar */
+.navbar-wrapper {
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 1em;
+    
+
+    height: 80px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+.navbar .left-side, .navbar .right-side {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-side {
+    text-decoration: none;
+    color: #2E3E5C;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    color: #2E3E5C;
+    margin: 5.6px;
+    text-transform: uppercase;
+    font-size: 1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    height: 70%;
+}
+
+.navbar img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar .left-side p {
+    font-weight: bold;
+}
+
+.navbar .active {
+    background-color: #FF5C5C;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    background-color: #283B6A;
+    color: white;   
+}
+
+@media (max-width: 1100px) {
+    .navbar .right-side {
+        display: none;
+    }
+}
+
+/* Mobile menu */
+/* Made using ChatGPT */
+
+/* Hamburger icon */
+.hamburger {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1100;
+    
+    position: relative;
+    top: 0;
+    right: 5px;
+    /*border: 1px solid red;*/
+}
+
+/* Remove focus/active state styles */
+.hamburger {
+    outline: none; /* Remove focus outline */
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    user-select: none; /* Prevent text selection */
+}
+
+/* Optional: Remove background color during press */
+.hamburger:focus,
+.hamburger:active {
+    background-color: transparent; /* Override default background */
+}
+
+
+/* Hamburger Bars */
+/* Consists of 3 lines */
+.hamburger span {
+    width: 100%;
+    height: 6px;
+    background: #2E3E5C;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    
+    /* Ensure lines rotate from their center */
+    transform-origin: center;
+}
+
+/* Line Transitions in Open State */
+.hamburger.open .line-1 {
+    transform: rotate(45deg) translate(10px, 9px);
+}
+
+.hamburger.open .line-2 {
+    width: 0;
+    opacity: 0;
+}
+
+.hamburger.open .line-3 {
+    transform: rotate(-45deg) translate(8px, -7px);
+}
+
+
+
+/* Mobile Menu (Hidden by Default) */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen on the right */
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    backdrop-filter: blur(10px);
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Active Class (Menu Slides In) */
+.mobile-menu.menu-open {
+    right: 0;
+}
+
+/* Mobile Menu Links */
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #2E3E5C;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: #FF5C5C;
+}
+
+
+/* Disable scrolling when menu is open */
+body.menu-lock {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow-y: scroll; /* Keep scrollbar visible */
+}
+
+/* Hide hamburger icon when the screen is not narrow enough */
+@media (min-width: 1100px) {
+    .hamburger {
+        display: none;
+    }
+}
+/* End of Mobile menu */
+
+/* End of Nav bar */
+
+/* Footer */
+footer {
+    background-color: #283B6A;
+}
+
+footer p {
+    color: white;
+    font-size: 1.5em;
+    padding: 0.75em;
+    text-align: center;
+    margin: 0;
+}
+
+footer a {
+    all: unset;
+    cursor: pointer;
+}
+/* End of Footer */

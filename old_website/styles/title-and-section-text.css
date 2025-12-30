@@ -1,0 +1,28 @@
+.title-text {
+    font-size: 3em;
+    color: #FFDD33;
+    text-align: center;
+    background-color: #283B6A;
+    padding: 0.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-text {
+    max-width: 1165px;
+    margin: 3em auto;
+    padding: 1.5em;
+}
+
+.section-text p, .section-text ul, .section-text ol {
+    text-align: justify;
+    color: #2E3E5C;
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section-text ul {
+    padding-left: 1em;
+}
