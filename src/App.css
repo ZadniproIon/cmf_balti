@@ -1,3 +1,16 @@
+:root {
+  --background-blue: #283b6a;
+  --background-white: #ffffff;
+  --border: rgba(176, 190, 197, 0.5);
+  --text-blue: #2e3e5c;
+  --text-white: #fcfcfc;
+  --text-yellow: #ffdd33;
+  --red-dark: #ff4d4d;
+  --red-normal: #ff6b6b;
+  --red-light: #ff8585;
+  --shadow-drop: 0 4px 16px 0 rgba(128, 128, 128, 0.12);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
