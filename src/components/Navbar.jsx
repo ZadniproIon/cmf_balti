@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const navItems = [
@@ -8,17 +8,11 @@ const navItems = [
   },
   {
     to: '/despre-cmf.html',
-    label: 'Despre CMF',
+    label: 'Despre noi',
   },
   {
     to: '/info-pentru-beneficiari.html',
-    label: (
-      <>
-        Informații pentru
-        <br />
-        beneficiari
-      </>
-    ),
+    label: 'Generale',
   },
   {
     to: '/transparenta.html',
@@ -63,14 +57,13 @@ const Navbar = () => {
   const navLinkClassName = ({ isActive }) => (isActive ? 'active' : undefined)
 
   return (
-    <div className="navbar-wrapper">
-      <div className="navbar">
+    <div className="navbar">
         <Link className="left-side" to="/index.html">
           <img src="/images/logo-cmf.png" alt="Logo-ul CMF Balti" />
           <p>
             Centrul Medicilor de
             <br />
-            Familie mun. Bălți
+            Familie mun. Balți
           </p>
         </Link>
 
@@ -108,9 +101,9 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </div>
     </div>
   )
 }
 
 export default Navbar
+
