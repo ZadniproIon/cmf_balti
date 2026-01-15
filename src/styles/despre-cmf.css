@@ -1,14 +1,13 @@
 .title-of-page {
-    max-width: 1050px;
     margin: 0 auto;
 }
 
 .title-of-page p {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     font-weight: bold;
     color: #2E3E5C;
-    margin: 1.75em 0 1.75em 0;
+    margin: 2em 0;
     padding: 0 24px;
 }
 
