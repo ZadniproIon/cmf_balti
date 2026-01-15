@@ -11,6 +11,7 @@
     --red-normal: #ff6b6b;
     --red-light: #ff8585;
     --shadow-drop: 0 4px 16px 0 rgba(128, 128, 128, 0.12);
+    --navbar-height: 80px;
 }
 
 * {
@@ -22,6 +23,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: var(--navbar-height);
 }
 
 
@@ -86,8 +88,20 @@ body {
     padding: 16px;
     background-color: var(--background-white);
     box-shadow: var(--shadow-drop);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-height);
+    z-index: 1001;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    will-change: transform;
 }
 
+.navbar-hidden {
+    transform: translateY(-100%);
+}
 
 .navbar .left-side, .navbar .right-side {
     display: flex;
