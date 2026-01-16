@@ -106,110 +106,173 @@ const DespreCmf = () => {
       <p className="title-text">Subdiviziunile IMSP „CMF mun. Bălți”</p>
       <div className="card-container">
         <div className="card">
-          <img src="/images/despre-cmf/cmf-nr1.png" />
-          <p className="card-title">Centrul de Sănătate Nr. 1</p>
-          <div className="card-info">
-            <p>str. Decebal, 101V</p>
-            <p className="line">&#124;</p>
-            <p>0(231)7-43-34</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-nr1.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Nr. 1</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Decebal, 101V</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)7-43-34</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-nr2.png" />
-          <p className="card-title">Centrul de Sănătate Nr. 2</p>
-          <div className="card-info">
-            <p>str. Șt. cel Mare, 52</p>
-            <p className="line">&#124;</p>
-            <p>0(231)2-12-32</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-nr2.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Nr. 2</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Șt. cel Mare, 52</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)2-12-32</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-nr3.png" />
-          <p className="card-title">Centrul de Sănătate Nr. 3</p>
-          <div className="card-info">
-            <p>str. G. Goșbuc, 13</p>
-            <p className="line">&#124;</p>
-            <p>0(231)2-42-74</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-nr3.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Nr. 3</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. G. Goșbuc, 13</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)2-42-74</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-nr4.png" />
-          <p className="card-title">Centrul de Sănătate Nr. 4</p>
-          <div className="card-info">
-            <p>str. Strîii, 9</p>
-            <p className="line">&#124;</p>
-            <p>0(231)6-78-77</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-nr4.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Nr. 4</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Strîii, 9</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)6-78-77</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-nr5.png" />
-          <p className="card-title">Centrul de Sănătate Nr. 5</p>
-          <div className="card-info">
-            <p>str. B. Glavan, 21</p>
-            <p className="line">&#124;</p>
-            <p>0(231)3-81-79</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-nr5.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Nr. 5</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. B. Glavan, 21</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)3-81-79</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-nr6.png" />
-          <p className="card-title">Centrul de Sănătate Nr. 6</p>
-          <div className="card-info">
-            <p>str. Kiev, 30</p>
-            <p className="line">&#124;</p>
-            <p>0(231)4-45-77</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-nr6.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Nr. 6</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Kiev, 30</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)4-45-77</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-atis.png" />
-          <p className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</p>
-          <div className="card-info">
-            <p>str. Kiev, 30</p>
-            <p className="line">&#124;</p>
-            <p>0(231)4-64-62</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-atis.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Kiev, 30</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)4-64-62</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-ccsm.jpg" />
-          <p className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</p>
-          <div className="card-info">
-            <p>str. Decebal, 101V</p>
-            <p className="line">&#124;</p>
-            <p>0(231)7-10-11</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-ccsm.jpg" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Decebal, 101V</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)7-10-11</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-elizaveta.png" />
-          <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
-          <div className="card-info">
-            <p>str. Șt. cel Mare, 21</p>
-            <p className="line">&#124;</p>
-            <p>0(231)6-82-82</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-elizaveta.png" />
+          </div>
+          <div className="card-body">
+            <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Șt. cel Mare, 21</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)6-82-82</p>
+            </div>
           </div>
         </div>
 
         <div className="card">
-          <img src="/images/despre-cmf/cmf-sadovoe.png" />
-          <p className="card-title">Oficiul Medicului de Familie s. Sadovoe</p>
-          <div className="card-info">
-            <p>str. Parcovaia, 31</p>
-            <p className="line">&#124;</p>
-            <p>0(231)5-52-19</p>
+          <div className="card-image">
+            <img src="/images/despre-cmf/cmf-sadovoe.png" />
           </div>
-        </div>
-      </div>
-
-      <div className="contact-container">
-        <div className="pill-container">
-          <p>Pentru mai multe detalii, vă rugăm să vizitați secțiunea</p>
-          <Link to="/contacte.html">Contacte</Link>
+          <div className="card-body">
+            <p className="card-title">Oficiul Medicului de Familie s. Sadovoe</p>
+            <div className="card-row">
+              <i className="fa-solid fa-location-dot"></i>
+              <p>str. Parcovaia, 31</p>
+            </div>
+            <div className="card-row">
+              <i className="fa-solid fa-phone"></i>
+              <p>0(231)5-52-19</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
