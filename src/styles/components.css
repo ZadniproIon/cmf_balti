@@ -94,13 +94,12 @@ body {
     right: 0;
     height: var(--navbar-height);
     z-index: 1001;
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-    will-change: transform;
+    transition: top 0.3s ease;
+    will-change: top;
 }
 
 .navbar-hidden {
-    transform: translateY(-100%);
+    top: calc(-1 * var(--navbar-height));
 }
 
 .navbar .left-side, .navbar .right-side {
