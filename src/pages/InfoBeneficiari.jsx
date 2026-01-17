@@ -31,7 +31,6 @@ const InfoBeneficiari = () => {
       </p>
       <div className="section-text">
         <p>Pacientul are dreptul la:</p>
-        <br />
         <ul>
           <li>
             informații complete asupra stării de sănătate, metodelor de profilaxie, diagnostic,
@@ -78,7 +77,6 @@ const InfoBeneficiari = () => {
       </p>
       <div className="section-text">
         <p>Pacientul are următoarele responsabilități:</p>
-        <br />
         <ul>
           <li>să fie înregistrat pe lista unui medic de familie;</li>
           <li>
@@ -124,217 +122,220 @@ const InfoBeneficiari = () => {
         <div className="servicii-block">
           <div className="block">
             <p className="block-title">Medicina de familie</p>
-            <p>
+            <div className='block-content'>
+              <p>
               Medicina de familie este o specialitate medicală care asigură asistența medicală primară
               și reprezintă un set de servicii medicale ce include activități de profilaxie,
               consultanță în scop curativ și suport. Activitatea medicului de familie și a echipei
               sale asigură, prin acțiuni preventive, educaționale, terapeutice și de recuperare,
               promovarea stării de sănătate a individului, familiei și colectivității.
-            </p>
-            <p>
-              Asistența medicală primară este garantată pentru întreaga populație a Republicii
-              Moldova, indiferent de statutul de asigurat sau neasigurat. Pentru a beneficia de
-              asistență medicală primară, este obligatorie înregistrarea pe lista medicului de familie,
-              respectându-se principiul deservirii teritoriale. Medicul de familie este specialistul
-              de prim contact și cel care, după caz, organizează accesul la celelalte tipuri de
-              asistență și servicii medicale prevăzute de{' '}
-              <u>
-                <a
-                  href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="simple-link"
-                >
-                  Programul unic
-                </a>
-              </u>
-              .
-            </p>
-            <div className="list">
-              <p>
-                <b>Pașii de acces la serviciile de asistență medicală primară:</b>
               </p>
-              <ol>
-                <li>Aveți dreptul și obligația de a vă alege și înregistra la instituția medico-sanitară primară.</li>
-                <li>
-                  Pentru a beneficia de consultația medicului de familie, este necesară programarea
-                  prin telefon, internet sau direct la ghișeele de înregistrare ale instituției.
-                </li>
-                <li>
-                  Medicul de familie vă eliberează biletul de trimitere/extras pentru consultația
-                  medicului specialist sau pentru spitalizare.
-                </li>
-                <li>
-                  Medicul de familie sau, după caz, pediatrul, endocrinologul, psihiatrul, neurologul
-                  vă poate prescrie rețete pentru medicamente compensate.
-                </li>
-                <li>
-                  Medicul de familie este obligat să vă supravegheze starea pe toată durata tratamentului
-                  ambulatoriu.
-                </li>
-              </ol>
+              <p>
+                Asistența medicală primară este garantată pentru întreaga populație a Republicii
+                Moldova, indiferent de statutul de asigurat sau neasigurat. Pentru a beneficia de
+                asistență medicală primară, este obligatorie înregistrarea pe lista medicului de familie,
+                respectându-se principiul deservirii teritoriale. Medicul de familie este specialistul
+                de prim contact și cel care, după caz, organizează accesul la celelalte tipuri de
+                asistență și servicii medicale prevăzute de{' '}
+                <u>
+                  <a
+                    href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="simple-link"
+                  >
+                    Programul unic
+                  </a>
+                </u>
+                .
+              </p>
+              <div className="list">
+                <p>
+                  <b>Pașii de acces la serviciile de asistență medicală primară:</b>
+                </p>
+                <ol>
+                  <li>Aveți dreptul și obligația de a vă alege și înregistra la instituția medico-sanitară primară.</li>
+                  <li>
+                    Pentru a beneficia de consultația medicului de familie, este necesară programarea
+                    prin telefon, internet sau direct la ghișeele de înregistrare ale instituției.
+                  </li>
+                  <li>
+                    Medicul de familie vă eliberează biletul de trimitere/extras pentru consultația
+                    medicului specialist sau pentru spitalizare.
+                  </li>
+                  <li>
+                    Medicul de familie sau, după caz, pediatrul, endocrinologul, psihiatrul, neurologul
+                    vă poate prescrie rețete pentru medicamente compensate.
+                  </li>
+                  <li>
+                    Medicul de familie este obligat să vă supravegheze starea pe toată durata tratamentului
+                    ambulatoriu.
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
 
           <div className="block">
             <p className="block-title">Serviciul de laborator</p>
-            <p>
+            <div className='block-content'>
+              <p>
               Serviciul de laborator este o subdiviziune structurală a IMSP „CMF mun. Bălți”, organizată
               în anul 2003, odată cu deschiderea IMSP „Centrul Medicilor de Familie Municipal Bălți”.
-            </p>
-            <div className="list">
-              <p>
-                Serviciul își desfășoară activitatea prin intermediul a 6 laboratoare, amplasate în
-                cadrul celor 6 centre de sănătate – subdiviziuni ale IMSP „CMF mun. Bălți” – și a unui
-                laborator situat în incinta OMF Elizaveta:
               </p>
-              <ol>
-                <li>Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V</li>
-                <li>Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52</li>
-                <li>Centrul de Sănătate nr. 3, mun. Bălți, str. George Coșbuc, 13</li>
-                <li>Centrul de Sănătate nr. 4, mun. Bălți, bd. Larisa, 9</li>
-                <li>Centrul de Sănătate nr. 5, mun. Bălți, str. Boris Glăvan, 21</li>
-                <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30</li>
-                <li>OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21</li>
-              </ol>
+              <div className="list">
+                <p>
+                  Serviciul își desfășoară activitatea prin intermediul a 6 laboratoare, amplasate în
+                  cadrul celor 6 centre de sănătate – subdiviziuni ale IMSP „CMF mun. Bălți” – și a unui
+                  laborator situat în incinta OMF Elizaveta:
+                </p>
+                <ol>
+                  <li>Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V</li>
+                  <li>Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52</li>
+                  <li>Centrul de Sănătate nr. 3, mun. Bălți, str. George Coșbuc, 13</li>
+                  <li>Centrul de Sănătate nr. 4, mun. Bălți, bd. Larisa, 9</li>
+                  <li>Centrul de Sănătate nr. 5, mun. Bălți, str. Boris Glăvan, 21</li>
+                  <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30</li>
+                  <li>OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21</li>
+                </ol>
+              </div>
             </div>
           </div>
 
           <div className="block">
             <p className="block-title">Serviciul de imagistică</p>
-            <div className="list">
+            <div className='block-content'>
+              <div className="list">
+                <p>
+                  Serviciul își desfășoară activitatea prin intermediul cabinetelor amplasate în diferite
+                  centre de sănătate ale orașului:
+                </p>
+                <ul>
+                  <li>Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V;</li>
+                  <li>Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52;</li>
+                  <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30.</li>
+                </ul>
+              </div>
               <p>
-                Serviciul își desfășoară activitatea prin intermediul cabinetelor amplasate în diferite
-                centre de sănătate ale orașului:
+                Serviciul de imagistică reprezintă o subdiviziune de diagnostic destinată identificării
+                patologiilor prin metode radiologice, inclusiv ale sistemului pulmonar, osteoarticular,
+                ecografie abdominală, ecografie de sarcină, FGDS (Fibro-Gastro-Duodenoscopie) și
+                colonoscopie.
               </p>
-              <ul>
-                <li>Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V;</li>
-                <li>Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52;</li>
-                <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30.</li>
-              </ul>
+              <p>
+                Serviciul este dotat cu echipamente moderne, performante: 2 instalații de diagnostic
+                radiologic digital, 1 instalație pentru videogastroscopie și colonoscopie, 3 ecografe
+                noi, testate metrologic, care permit efectuarea anuală a următorului volum de
+                investigații: 4000–5000 ecografii, 12.000–14.000 investigații radiologice (radiografii
+                pulmonare preventive și ale sistemului osteoarticular), 1500 investigații endoscopice.
+              </p>
+              <div className="list">
+                <p>
+                  <b>Serviciul de imagistică efectuează:</b>
+                </p>
+                <p>
+                  <b>Investigații radiologice:</b>
+                </p>
+                <ul>
+                  <li>radiografie pulmonară diagnostică;</li>
+                  <li>radiografie pulmonară preventivă;</li>
+                  <li>radiografie a coloanei vertebrale (nu se eliberează peliculă, ci DVD);</li>
+                  <li>radiografie a craniului;</li>
+                  <li>radiografie a sistemului osteoarticular.</li>
+                </ul>
+              </div>
+              <div className="list">
+                <p>
+                  <b>Investigații ecografice ale organelor interne:</b>
+                </p>
+                <ul>
+                  <li>abdominale (ficat, splină, vezica biliară, pancreas);</li>
+                  <li>ale sistemului urinar (rinichi, glande suprarenale, vezica urinară);</li>
+                  <li>ale bazinului mic, transabdominal (vezica urinară, prostata);</li>
+                  <li>ale glandei tiroide;</li>
+                  <li>ale glandei mamare;</li>
+                  <li>ecografie obstetrică (EUS) pentru monitorizarea sarcinii.</li>
+                </ul>
+              </div>
+              <div className="list">
+                <p>
+                  <b>Endoscopie de diagnostic:</b>
+                </p>
+                <ul>
+                  <li>FGDS (Fibro-Gastro-Duodenoscopie);</li>
+                  <li>Colonoscopie.</li>
+                </ul>
+              </div>
+
             </div>
-            <p>
-              Serviciul de imagistică reprezintă o subdiviziune de diagnostic destinată identificării
-              patologiilor prin metode radiologice, inclusiv ale sistemului pulmonar, osteoarticular,
-              ecografie abdominală, ecografie de sarcină, FGDS (Fibro-Gastro-Duodenoscopie) și
-              colonoscopie.
-            </p>
-            <p>
-              Serviciul este dotat cu echipamente moderne, performante: 2 instalații de diagnostic
-              radiologic digital, 1 instalație pentru videogastroscopie și colonoscopie, 3 ecografe
-              noi, testate metrologic, care permit efectuarea anuală a următorului volum de
-              investigații: 4000–5000 ecografii, 12.000–14.000 investigații radiologice (radiografii
-              pulmonare preventive și ale sistemului osteoarticular), 1500 investigații endoscopice.
-            </p>
-            <div className="list">
-              <p>
-                <b>Serviciul de imagistică efectuează:</b>
-              </p>
-              <p>
-                <b>Investigații radiologice:</b>
-              </p>
-              <ul>
-                <li>radiografie pulmonară diagnostică;</li>
-                <li>radiografie pulmonară preventivă;</li>
-                <li>radiografie a coloanei vertebrale (nu se eliberează peliculă, ci DVD);</li>
-                <li>radiografie a craniului;</li>
-                <li>radiografie a sistemului osteoarticular.</li>
-              </ul>
-            </div>
-            <div className="list">
-              <p>
-                <b>Investigații ecografice ale organelor interne:</b>
-              </p>
-              <ul>
-                <li>abdominale (ficat, splină, vezica biliară, pancreas);</li>
-                <li>ale sistemului urinar (rinichi, glande suprarenale, vezica urinară);</li>
-                <li>ale bazinului mic, transabdominal (vezica urinară, prostata);</li>
-                <li>ale glandei tiroide;</li>
-                <li>ale glandei mamare;</li>
-                <li>ecografie obstetrică (EUS) pentru monitorizarea sarcinii.</li>
-              </ul>
-            </div>
-            <div className="list">
-              <p>
-                <b>Endoscopie de diagnostic:</b>
-              </p>
-              <ul>
-                <li>FGDS (Fibro-Gastro-Duodenoscopie);</li>
-                <li>Colonoscopie.</li>
-              </ul>
-            </div>
+            
           </div>
 
           <div className="block">
             <p className="block-title">Serviciul de reabilitare medicală și medicină fizică</p>
-            <p>
+            <div className='block-content'>
+              <p>
               Serviciul de reabilitare medicală și medicină fizică al IMSP „CMF mun. Bălți” a fost
               organizat în anul 2012, prin comasarea tuturor cabinetelor de fizioterapie, kinetoterapie
               și masaj din cadrul Centrelor de Sănătate, OMF Sadovoe și OMF Elizaveta.
-            </p>
-            <div className="list">
-              <p>
-                <b>Program de lucru:</b>
               </p>
-              <ul>
-                <li>Cabinetele de fizioterapie: Luni–Vineri, 08:00–18:00 (pauză: 12:00–12:30)</li>
-                <li>Cabinetele de masaj: Luni–Vineri, 08:00–15:30 (pauză: 12:00–12:30)</li>
-                <li>Cabinetul de kinetoterapie: Luni–Vineri, 08:30–18:00 (pauză: 13:00–13:30)</li>
-              </ul>
-            </div>
-            <div className="list">
-              <p>
-                <b>Serviciul corespunde normativelor sanitare și dispune de următoarele cabinete:</b>
-              </p>
-              <ul>
-                <li>Fizioterapie</li>
-                <li>Kinetoterapie</li>
-                <li>Masaj</li>
-                <li>Aerosoloterapie</li>
-                <li>Termoterapie</li>
-                <li>Cabinete de lucru pentru medici</li>
-                <li>Cabinete de lucru pentru asistenți medicali</li>
-              </ul>
-            </div>
-            <div className="list">
-              <p>
-                <b>Serviciul de reabilitare medicală și medicină fizică furnizează următoarele metode fizice:</b>
-              </p>
-              <ul>
-                <li>Aerosoloterapie</li>
-                <li>Aplicații cu parafină și ozocherită</li>
-                <li>Curenți pulsativi</li>
-                <li>Darsonvalizare</li>
-                <li>Electroforeză</li>
-                <li>Fototerapie (tubus)</li>
-                <li>Fonoforeză</li>
-                <li>Galvanizare</li>
-                <li>Lazero-terapie</li>
-                <li>Magnetoterapie</li>
-                <li>Rusterapie</li>
-                <li>Raze ultraviolete (generale)</li>
-                <li>Somn electrogen</li>
-                <li>Ultrasonoterapie</li>
-              </ul>
-            </div>
-            <div className="list">
-              <p>
-                <b>Procedurile de reabilitare prestate de Serviciul de reabilitare medicală și medicină fizică sunt:</b>
-              </p>
-              <ul>
-                <li>Masaj curativ</li>
-                <li>Kinetoterapie curativă</li>
-                <li>Kinetoterapie activă în grup</li>
-              </ul>
+              <div className="list">
+                <p>
+                  <b>Program de lucru:</b>
+                </p>
+                <ul>
+                  <li>Cabinetele de fizioterapie: Luni–Vineri, 08:00–18:00 (pauză: 12:00–12:30)</li>
+                  <li>Cabinetele de masaj: Luni–Vineri, 08:00–15:30 (pauză: 12:00–12:30)</li>
+                  <li>Cabinetul de kinetoterapie: Luni–Vineri, 08:30–18:00 (pauză: 13:00–13:30)</li>
+                </ul>
+              </div>
+              <div className="list">
+                <p>
+                  <b>Serviciul corespunde normativelor sanitare și dispune de următoarele cabinete:</b>
+                </p>
+                <ul>
+                  <li>Fizioterapie</li>
+                  <li>Kinetoterapie</li>
+                  <li>Masaj</li>
+                  <li>Aerosoloterapie</li>
+                  <li>Termoterapie</li>
+                  <li>Cabinete de lucru pentru medici</li>
+                  <li>Cabinete de lucru pentru asistenți medicali</li>
+                </ul>
+              </div>
+              <div className="list">
+                <p>
+                  <b>Serviciul de reabilitare medicală și medicină fizică furnizează următoarele metode fizice:</b>
+                </p>
+                <ul>
+                  <li>Aerosoloterapie</li>
+                  <li>Aplicații cu parafină și ozocherită</li>
+                  <li>Curenți pulsativi</li>
+                  <li>Darsonvalizare</li>
+                  <li>Electroforeză</li>
+                  <li>Fototerapie (tubus)</li>
+                  <li>Fonoforeză</li>
+                  <li>Galvanizare</li>
+                  <li>Lazero-terapie</li>
+                  <li>Magnetoterapie</li>
+                  <li>Rusterapie</li>
+                  <li>Raze ultraviolete (generale)</li>
+                  <li>Somn electrogen</li>
+                  <li>Ultrasonoterapie</li>
+                </ul>
+              </div>
+              <div className="list">
+                <p>
+                  <b>Procedurile de reabilitare prestate de Serviciul de reabilitare medicală și medicină fizică sunt:</b>
+                </p>
+                <ul>
+                  <li>Masaj curativ</li>
+                  <li>Kinetoterapie curativă</li>
+                  <li>Kinetoterapie activă în grup</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="pill-container-wrapper" id="servicii-pill-container">
-        <div className="pill-container">
-          <p>Pentru mai multe detalii, vă rugăm să vizitați secțiunea</p>
-          <Link to="/contacte.html">Contacte</Link>
         </div>
       </div>
 
@@ -351,7 +352,6 @@ const InfoBeneficiari = () => {
           de asistență medicală oferă cetățenilor posibilități egale în obținerea asistenței medicale
           oportune și calitative.
         </p>
-        <br />
         <p>
           În Republica Moldova, sistemul asigurării obligatorii de asistență medicală este gestionat
           de către&nbsp;<b>Compania Națională de Asigurări în Medicină</b>&nbsp;(CNAM -&nbsp;
@@ -361,7 +361,6 @@ const InfoBeneficiari = () => {
           ), iar sarcina de bază a acestuia este de a acoperi cheltuielile sistemului de sănătate,
           pentru tratamentul și profilaxia maladiilor persoanelor asigurate.&nbsp;
         </p>
-        <br />
         <p>
           De remarcat este faptul că cele mai multe servicii medicale sunt consumate de către copii și
           bătrâni, grupuri sociale care nu achită personal primele de asigurare. Plătitorii de prime
@@ -371,7 +370,6 @@ const InfoBeneficiari = () => {
           folosește un volum de servicii medicale, costul cărora este cel puțin la nivelul
           contribuțiilor sale în perioada activ a vieții sociale.
         </p>
-        <br />
         <p>
           Respectiv, cu cât vom fi mai mulți în SAOAM, cu atât mai multe servicii și medicamente
           asigurate vom avea, instituții medicale mai performante și lucrători medicali mai bine
@@ -392,8 +390,8 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
+            <i class="fa-solid fa-download"></i>
             <p>Anul 2021</p>
-            <i className="fa-solid fa-cloud-arrow-down"></i>
           </a>
 
           <a
@@ -402,8 +400,8 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
+            <i class="fa-solid fa-download"></i>
             <p>Anul 2022</p>
-            <i className="fa-solid fa-cloud-arrow-down"></i>
           </a>
 
           <a
@@ -412,8 +410,8 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
+            <i class="fa-solid fa-download"></i>
             <p>Anul 2023</p>
-            <i className="fa-solid fa-cloud-arrow-down"></i>
           </a>
 
           <a
@@ -422,19 +420,29 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
+            <i class="fa-solid fa-download"></i>
             <p>Anul 2024</p>
-            <i className="fa-solid fa-cloud-arrow-down"></i>
           </a>
 
-          <a className="download-button" target="_blank" rel="noreferrer">
+          <a
+            className="download-button"
+            href='https://server.cmf-balti.md/static/pdf/article-pdf-617-0.31922044473368605.pdf'
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-solid fa-download"></i>
             <p>Anul 2025</p>
-            <i className="fa-solid fa-cloud-arrow-down"></i>
           </a>
-        </div>
 
-        <div className="pill-container">
-          <p>Pentru mai multe detalii, vă rugăm să vizitați secțiunea</p>
-          <Link to="/contacte.html">Contacte</Link>
+          <a
+            className="download-button"
+            href='https://server.cmf-balti.md/static/pdf/article-pdf-698-0.6186151516443106.pdf'
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fa-solid fa-download"></i>
+            <p>Anul 2026</p>
+          </a>
         </div>
       </div>
     </>

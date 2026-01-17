@@ -19,15 +19,15 @@
 
 .block {
     max-width: 1165px;
-    border: 1px solid rgba(176, 190, 197, 0.5);
+    border: 1px solid var(--border);
     color: #2E3E5C;
-    padding: 3em;
-    border-radius: 10px;
+    padding: 2em;
+    border-radius: 1.5em;
 
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    box-shadow: 2px 2px 40px -15px rgba(0, 0, 0, 0.25);
+    gap: 1.5em;
+    box-shadow: var(--shadow-drop);
 }
 
 @media screen and (max-width: 500px) {
@@ -38,11 +38,10 @@
 }
 
 .section-text .block-title {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
-    max-width: 750px;
 }
 
 .list {
@@ -72,13 +71,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 4em;
+    gap: 2em;
     margin: 4em auto;
-    padding: 0 1.5em;
 }
 
 .tarife-title-text {
-    font-size: 3em;
+    font-size: 1.5em;
     color: #2E3E5C;
     font-weight: bold;
     margin: 0 auto;
@@ -90,11 +88,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 2em;
 
     justify-content: center;
 
-    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -109,16 +106,17 @@
 
     color: white;
     background-color: #FF6B6B;
-    padding: 0.25em 1em;
-    border-radius: 10px;
+    padding: 1em;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 
     text-decoration: none;
 }
 
 .download-button p, .fa-cloud-arrow-down {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
+    margin: 0;
 }
 
 .download-button:hover {
