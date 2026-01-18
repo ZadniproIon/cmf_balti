@@ -102,7 +102,7 @@ const Home = () => {
             oferim acces la informații detaliate privind achizițiile publice, rapoartele de activitate
             și contractele, pentru a asigura încrederea și responsabilitatea față de toți beneficiarii
             noștri.
-            <br />
+            
             Această abordare deschisă ne ajută să gestionăm eficient resursele și să fim mereu la
             dispoziția comunității.
           </p>
