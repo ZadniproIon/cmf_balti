@@ -9,7 +9,7 @@
     border: 1px solid var(--border);
     box-shadow: var(--shadow-drop);
     border-radius: 32px;
-    margin: 6em auto;
+    margin: 96px auto;
     flex-wrap: nowrap;
     padding: 32px;
 }
@@ -97,14 +97,15 @@
 
 /* "Informatii utile" section */
 .info-utile {
-    margin: 0 auto;
-    padding: 2em 0.5em;
+    margin: 96px auto;
+    padding: 0 0.5em;
+
     max-width: 1500px;
 }
 
 /* Title of the section */
 .info-utile > p {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     color: #2E3E5C;
     text-align: center;
@@ -113,106 +114,46 @@
 
 .info-utile-containers {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 6em;
+    gap: 2em;
 }
 
 .info-utile-containers > div {
-    width: 21em;
-    background-color: white;
-    border: 1px solid rgba(176, 190, 197, 0.5);
-    padding: 2em;
+    width: 320px;
+    background-color: var(--background-white);
+    border: 1px solid var(--border);
+    padding: 48px 32px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 40px -15px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    box-shadow: var(--shadow-drop);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 .info-utile-containers p {
-    margin: 1em 0;
-    font-size: 1.5em;
+    
+    font-size: 24px;
     font-weight: bold;
-    color: #2E3E5C;
-    margin: 2em 0;
+    color: var(--text-blue);
+    margin: 0;
 }
 
 .info-utile-containers p:last-child {
-    font-size: 1.25em;
+    font-size: 16px;
     font-weight: normal;
-    margin-bottom: 0;
-    width: 15rem;
-    margin: auto;
 }
 
 .info-utile .icon {
-    font-size: 9em;
-    color: #283B6A;
+    font-size: 150px;
+    color: var(--text-blue);
+    stroke-width: 0.5;
 }
 
-
-@media (max-width: 1400px) {
-    .info-utile-containers {
-        gap: 3em;
-    }
-}
 /* End of "Informatii utile" section */
-
-
-/* Pill container */
-.pill-container-wrapper {
-    margin: 0 1em;
-}
-/*
-.pill-container {
-
-    background-color: #F7F9FC;
-    border: 1px solid rgba(176, 190, 197, 0.5);
-    border-radius: 4em;
-
-    max-width: fit-content;
-    width: 100%;
-    padding: 1.75em 2.5em;
-
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1em;
-    margin: 3em auto;
-}
-
-.pill-container p {
-    font-size: 1.25em;
-    color:#2E3E5C;
-    text-align: justify;
-}
-
-.pill-container a {
-    text-decoration: none;
-    background-color: #FF6B6B;
-    color: white;
-    font-weight: bold;
-    padding: 1em 1.25em;
-    font-size: 1em;
-    border-radius: 4em;
-    font-size: 1.25em;
-    transition: background-color 0.3s ease;
-}
-
-.pill-container a:hover {
-    background-color: #E65555;
-}
-
-
-/* top right bottom left*/
-
-/*@media (max-width: 550px) {
-    .pill-container {
-        padding: 1em 1em 1em 1.35em;
-    }
-}
-*/
-/* End of pill container */
 
 
 /* "Despre CMF" main page section */

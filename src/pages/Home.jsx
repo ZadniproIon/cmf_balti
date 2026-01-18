@@ -1,5 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
-import { Clock, Heart, Phone } from 'lucide-react'
+import { Clock8, HeartPulse, PhoneCall } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -34,30 +34,21 @@ const Home = () => {
         <p>Informații utile</p>
         <div className="info-utile-containers">
           <div>
-            <Clock className="icon" />
+            <Clock8 className="icon" />
             <p>Orele de lucru</p>
             <p>
-              Luni - Vineri: 8:00 - 19:00
-              <br />
-              Sâmbătă: 8:00 - 13:00
+              Luni - Vineri: 8:00 - 19:00<br />Sâmbătă: 8:00 - 13:00
             </p>
           </div>
           <div>
-            <Heart className="icon" />
+            <HeartPulse className="icon" />
             <p>Centrele de sănătate</p>
             <p>Total 10 în orașul Bălți, cât și satele Elizaveta și Sadovoie</p>
           </div>
           <div>
-            <Phone className="icon" />
+            <PhoneCall className="icon" />
             <p>Contact</p>
-            <p>La numărul de telefon: 0231-99-77 sau la secțiunea Contacte</p>
-          </div>
-        </div>
-
-        <div className="pill-container-wrapper">
-          <div className="pill-container">
-            <p>Pentru mai multe detalii, vă rugăm să vizitați secțiunea</p>
-            <Link to="/contacte.html">Contacte</Link>
+            <p>La numărul de telefon: 02319977 sau la secțiunea Contacte</p>
           </div>
         </div>
       </div>
