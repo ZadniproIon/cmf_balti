@@ -127,13 +127,18 @@ const entries = [
 
 const MapFocus = ({ activeKey, targetKey, position }) => {
   const map = useMap()
-  const previousKey = useRef(null)
 
   useEffect(() => {
-    if (activeKey === targetKey && previousKey.current !== targetKey) {
-      map.setView(position, 14)
+    const handle = requestAnimationFrame(() => {
+      map.invalidateSize()
+    })
+    return () => cancelAnimationFrame(handle)
+  }, [map, activeKey])
+
+  useEffect(() => {
+    if (activeKey === targetKey) {
+      map.flyTo(position, 14, { duration: 0.6 })
     }
-    previousKey.current = activeKey
   }, [activeKey, targetKey, position, map])
 
   return null
@@ -173,7 +178,7 @@ const Contacte = () => {
       </div>
 
       <div id="contact-right-side">
-        <MapContainer center={centerCmf1} zoom={12} scrollWheelZoom={false}>
+        <MapContainer className="contact-map" center={centerCmf1} zoom={12} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

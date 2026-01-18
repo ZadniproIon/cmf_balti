@@ -119,10 +119,13 @@
     height: 650px;
     border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     background-color: #F7F9FC;
+}
+
+#contact-right-side .contact-map {
+    width: 100%;
+    height: 100%;
 }
 
 #contact-right-side .leaflet-container {
