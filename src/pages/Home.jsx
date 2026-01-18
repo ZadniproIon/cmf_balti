@@ -1,4 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
+import { Clock, Heart, Phone } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -39,7 +40,7 @@ const Home = () => {
         <p>Informații utile</p>
         <div className="info-utile-containers">
           <div>
-            <i className="fa-solid fa-clock icon"></i>
+            <Clock className="icon" />
             <p>Orele de lucru</p>
             <p>
               Luni - Vineri: 8:00 - 19:00
@@ -48,12 +49,12 @@ const Home = () => {
             </p>
           </div>
           <div>
-            <i className="fa-solid fa-heart-circle-bolt icon"></i>
+            <Heart className="icon" />
             <p>Centrele de sănătate</p>
             <p>Total 10 în orașul Bălți, cât și satele Elizaveta și Sadovoie</p>
           </div>
           <div>
-            <i className="fa-solid fa-phone icon"></i>
+            <Phone className="icon" />
             <p>Contact</p>
             <p>La numărul de telefon: 0231-99-77 sau la secțiunea Contacte</p>
           </div>

@@ -1,9 +1,11 @@
-﻿const AboveHeader = () => (
+import { Clock, Facebook, Phone, Youtube } from 'lucide-react'
+
+const AboveHeader = () => (
   <div className="above-header-wrapper">
     <div className="above-header">
       <div className="left-side">
         <div className="above-header-container">
-          <i className="fa-regular fa-clock icon"></i>
+          <Clock className="icon" />
           <p>
             Luni - Vineri: 8:00 - 19:00
             <br />
@@ -12,7 +14,7 @@
         </div>
 
         <div className="above-header-container">
-          <i className="fa-solid fa-phone icon"></i>
+          <Phone className="icon" />
           <p>(0231) 7-52-28</p>
         </div>
       </div>
@@ -20,10 +22,10 @@
       <div className="right-side">
         <div className="above-header-container">
           <a href="https://www.facebook.com/cmfbalti/" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-facebook icon"></i>
+            <Facebook className="icon" />
           </a>
           <a href="https://www.youtube.com/@cmfbaltiimsp3451" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-youtube icon"></i>
+            <Youtube className="icon" />
           </a>
         </div>
       </div>

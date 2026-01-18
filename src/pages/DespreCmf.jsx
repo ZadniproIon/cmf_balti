@@ -1,4 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
+import { MapPin, Phone } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -112,11 +113,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 1</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Decebal, 101V</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)7-43-34</p>
             </div>
           </div>
@@ -129,11 +130,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 2</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Șt. cel Mare, 52</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)2-12-32</p>
             </div>
           </div>
@@ -146,11 +147,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 3</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. G. Goșbuc, 13</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)2-42-74</p>
             </div>
           </div>
@@ -163,11 +164,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 4</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Strîii, 9</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)6-78-77</p>
             </div>
           </div>
@@ -180,11 +181,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 5</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. B. Glavan, 21</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)3-81-79</p>
             </div>
           </div>
@@ -197,11 +198,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 6</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Kiev, 30</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)4-45-77</p>
             </div>
           </div>
@@ -214,11 +215,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Kiev, 30</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)4-64-62</p>
             </div>
           </div>
@@ -231,11 +232,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Decebal, 101V</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)7-10-11</p>
             </div>
           </div>
@@ -248,11 +249,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Șt. cel Mare, 21</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)6-82-82</p>
             </div>
           </div>
@@ -265,11 +266,11 @@ const DespreCmf = () => {
           <div className="card-body">
             <p className="card-title">Oficiul Medicului de Familie s. Sadovoe</p>
             <div className="card-row">
-              <i className="fa-solid fa-location-dot"></i>
+              <MapPin className="card-icon" />
               <p>str. Parcovaia, 31</p>
             </div>
             <div className="card-row">
-              <i className="fa-solid fa-phone"></i>
+              <Phone className="card-icon" />
               <p>0(231)5-52-19</p>
             </div>
           </div>

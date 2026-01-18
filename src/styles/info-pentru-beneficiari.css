@@ -113,7 +113,7 @@
     text-decoration: none;
 }
 
-.download-button p, .fa-cloud-arrow-down {
+.download-button p, .download-icon {
     font-size: 1em;
     margin: 0;
 }

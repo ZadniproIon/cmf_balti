@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Download } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -383,7 +384,7 @@ const Transparenta = () => {
                   <p className="transparenta-result-meta">{doc.category} • {doc.year}</p>
                 </div>
                 <a href={doc.href} target="_blank" rel="noreferrer">
-                  <i className="fa-solid fa-cloud-arrow-down"></i>Descarca PDF
+                  <Download className="download-icon" />Descarca PDF
                 </a>
               </div>
             ))

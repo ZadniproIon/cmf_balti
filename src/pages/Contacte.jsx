@@ -1,6 +1,7 @@
 ﻿import { useEffect, useRef, useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
+import { MapPin } from 'lucide-react'
 import Dropdown from '../components/Dropdown'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
@@ -231,7 +232,7 @@ const Contacte = () => {
               ))}
             </div>
             <a href="">
-              <i className="fa-solid fa-location-dot"></i>Google Maps
+              <MapPin className="link-icon" />Google Maps
             </a>
           </Dropdown>
         ))}

@@ -79,8 +79,11 @@
     gap: 8px;
 }
 
-.card-row i {
-    font-size: 24px;
+.card-row .card-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
 }
 
 .card-row p {

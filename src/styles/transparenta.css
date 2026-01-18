@@ -34,8 +34,9 @@
     
 }
 
-.fa-chevron-down {
+.dropdown-icon {
     transition: transform 0.3s ease;
+    display: inline-block;
 }
 
 .dropdown-content {

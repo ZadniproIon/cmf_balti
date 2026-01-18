@@ -20,6 +20,18 @@
     scroll-behavior: smooth;
 }
 
+.icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+}
+
+.download-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+}
+
 body {
     margin: 0;
     padding: 0;

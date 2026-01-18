@@ -1,4 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
+import { Download } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -390,7 +391,7 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-solid fa-download"></i>
+            <Download className="download-icon" />
             <p>Anul 2021</p>
           </a>
 
@@ -400,7 +401,7 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-solid fa-download"></i>
+            <Download className="download-icon" />
             <p>Anul 2022</p>
           </a>
 
@@ -410,7 +411,7 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-solid fa-download"></i>
+            <Download className="download-icon" />
             <p>Anul 2023</p>
           </a>
 
@@ -420,7 +421,7 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-solid fa-download"></i>
+            <Download className="download-icon" />
             <p>Anul 2024</p>
           </a>
 
@@ -430,7 +431,7 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-solid fa-download"></i>
+            <Download className="download-icon" />
             <p>Anul 2025</p>
           </a>
 
@@ -440,7 +441,7 @@ const InfoBeneficiari = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-solid fa-download"></i>
+            <Download className="download-icon" />
             <p>Anul 2026</p>
           </a>
         </div>
