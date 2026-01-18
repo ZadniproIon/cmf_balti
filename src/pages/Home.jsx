@@ -59,12 +59,12 @@ const Home = () => {
             <img src="/images/main-page/despre-cmf-main-page.jpg" alt="Whatever" />
           </div>
           <div className="content-side">
-            <p>Despre CMF</p>
+            <p>Despre CMF Bălți</p>
             <p>
               IMSP „Centrul Medicilor de Familie Municipal Bălți” are ca obiectiv principal furnizarea
               asistenței medicale primare pentru întreaga populație, indiferent de statutul de
               asigurare.
-              <br />
+              <br/>
               Medicina de familie este esențială în prevenție, diagnostic și tratament. Medicii de
               familie, împreună cu echipele lor, contribuie la îmbunătățirea sănătății individuale și
               comunitare.
