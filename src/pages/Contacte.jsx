@@ -125,21 +125,80 @@ const entries = [
   },
 ]
 
-const MapFocus = ({ activeKey, targetKey, position }) => {
+const markers = [
+  {
+    id: 'nr-1',
+    position: [47.774417, 27.895833],
+    labels: [
+      'Centrul de Sanatate nr. 1',
+      'Centrul Comunitar de Sanatate Mintala (CCSM)',
+      'Administra?ia',
+    ],
+    keys: ['cs-1', 'ccsm', 'admin'],
+  },
+  {
+    id: 'nr-2',
+    position: [47.761139, 27.924306],
+    labels: ['Centrul de Sanatate nr. 2'],
+    keys: ['cs-2'],
+  },
+  {
+    id: 'nr-3',
+    position: [47.755611, 27.923361],
+    labels: ['Centrul de Sanatate nr. 3'],
+    keys: ['cs-3'],
+  },
+  {
+    id: 'nr-4',
+    position: [47.772083, 27.938528],
+    labels: ['Centrul de Sanatate nr. 4'],
+    keys: ['cs-4'],
+  },
+  {
+    id: 'nr-5',
+    position: [47.759, 27.887806],
+    labels: ['Centrul de Sanatate nr. 5'],
+    keys: ['cs-5'],
+  },
+  {
+    id: 'nr-6',
+    position: [47.781028, 27.925528],
+    labels: ['Centrul de Sanatate nr. 6', 'Centrul de Sanatate Prietenos Tinerilor ,ATIS"'],
+    keys: ['cs-6', 'atis'],
+  },
+  {
+    id: 'elizaveta',
+    position: [47.78325, 28.013278],
+    labels: ['Oficiul Medicului de Familie s. Elizaveta'],
+    keys: ['elizaveta'],
+  },
+  {
+    id: 'sadovoe',
+    position: [47.778861, 27.798],
+    labels: ['Oficiul Medicului de Familie s. Sadovoe'],
+    keys: ['sadovoe'],
+  },
+]
+
+const markerPositions = markers.reduce((acc, marker) => {
+  marker.keys.forEach((key) => {
+    acc[key] = marker.position
+  })
+  return acc
+}, {})
+
+const MapFocus = ({ activeKey, position }) => {
   const map = useMap()
 
   useEffect(() => {
     const handle = requestAnimationFrame(() => {
       map.invalidateSize()
+      if (position) {
+        map.flyTo(position, 14, { duration: 0.6 })
+      }
     })
     return () => cancelAnimationFrame(handle)
-  }, [map, activeKey])
-
-  useEffect(() => {
-    if (activeKey === targetKey) {
-      map.flyTo(position, 14, { duration: 0.6 })
-    }
-  }, [activeKey, targetKey, position, map])
+  }, [map, activeKey, position])
 
   return null
 }
@@ -149,7 +208,8 @@ const Contacte = () => {
   usePageStyles(pageStyles, 'contacte')
 
   const [openKey, setOpenKey] = useState(null)
-  const centerCmf1 = [47.7744167, 27.8958333]
+  const centerCmf1 = [47.774417, 27.895833]
+  const activePosition = markerPositions[openKey]
 
   const toggleKey = (key) => {
     setOpenKey((prev) => (prev === key ? null : key))
@@ -183,10 +243,16 @@ const Contacte = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <MapFocus activeKey={openKey} targetKey="cs-1" position={centerCmf1} />
-          <Marker position={centerCmf1}>
-            <Popup>Centrul de Sanatate nr. 1</Popup>
-          </Marker>
+          <MapFocus activeKey={openKey} position={activePosition} />
+          {markers.map((marker) => (
+            <Marker key={marker.id} position={marker.position}>
+              <Popup>
+                {marker.labels.map((label, index) => (
+                  <p key={`${marker.id}-${index}`}>{label}</p>
+                ))}
+              </Popup>
+            </Marker>
+          ))}
         </MapContainer>
       </div>
     </div>
