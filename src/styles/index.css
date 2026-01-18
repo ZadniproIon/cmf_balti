@@ -1,42 +1,37 @@
 /* "Programare online" section */
-.main-section-1-wrapper {
-    margin: 0 1.5em;
-}
-
 .main-section-1 {
     max-width: fit-content;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 32px;
     align-items: center;
-    background-color: #F7F9FC;
-    border: 1px solid rgba(176, 190, 197, 0.5);
-    border-radius: 40px;
-    margin: 3em auto;
+    background-color: var(--background-white);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-drop);
+    border-radius: 32px;
+    margin: 6em auto;
     flex-wrap: nowrap;
-}
-
-.main-section-1 .left-side, .main-section-1 .right-side {
-    margin: 3em;
+    padding: 32px;
 }
 
 .main-section-1 .left-side {
-    max-width: 28em;
+    max-width: 400px;
 }
 
 .main-section-1 p {
     color: #2E3E5C;
     margin: 2em 0;
-    text-align: justify;
+    
 }
 
 .main-section-1 p:first-child {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     margin: 0;
 }
 
 .main-section-1 p:nth-child(even) {
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 .main-section-1 a {
@@ -45,8 +40,8 @@
     max-width: fit-content;
     background-color: #FF6B6B;
     color: white;
-    border-radius: 10px;
-    font-size: 1.5em;
+    border-radius: 8px;
+    font-size: 1em;
     cursor: pointer;
     padding: 1em 2em;
     font-weight: bold;
@@ -61,10 +56,10 @@
 }
 
 .main-section-1 img {
-    border-radius: 1em;
+    border-radius: 1.5em;
     border: 1px solid rgba(176, 190, 197, 0.7);
     width: 100%;
-    max-width: 480px;
+    max-width: 400px;
     height: auto;
     object-fit: contain;
 }
@@ -76,7 +71,7 @@
     }
 }
 
-/* Switch to portrait view*/
+/* Switch to portrait view
 @media (max-width: 860px) {
     .main-section-1 {
         flex-direction: column;
@@ -97,7 +92,7 @@
     }
 
 
-}
+}*/
 /* End of "Programare online" section */
 
 /* "Informatii utile" section */

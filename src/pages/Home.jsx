@@ -7,35 +7,29 @@ import homeStyles from '../styles/index.css?raw'
 import pillStyles from '../styles/pill-container.css?raw'
 
 const pageStyles = [homeStyles, pillStyles, componentsStyles]
-
 const Home = () => {
   useDocumentTitle('Acasă - CMF Bălți')
   usePageStyles(pageStyles, 'home')
 
   return (
     <>
-      <div className="main-section-1-wrapper">
-        <div className="main-section-1">
-          <div className="left-side">
-            <p>
-              Programare
-              <br />
-              online
-            </p>
-            <p>
-              Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și
-              planificați-vă vizita din confortul casei.
-            </p>
-            <a href="https://sia.amp.md/" target="_blank" rel="noreferrer">
-              Apasă aici!
-            </a>
-          </div>
-          <div className="right-side">
-            <img src="/images/main-page/programare_online_screen_1.png" alt="Programare online" />
-          </div>
+      <div className="main-section-1">
+        <div className="left-side">
+          <p>
+            Programare online
+          </p>
+          <p>
+            Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și planificați-vă vizita din confortul casei.
+          </p>
+          <a href="https://sia.amp.md/" target="_blank" rel="noreferrer">
+            Apasă aici
+          </a>
+        </div>
+        <div className="right-side">
+          <img src="/images/main-page/programare_online_screen_1.png" alt="Programare online" />
         </div>
       </div>
-
+      
       <div className="info-utile">
         <p>Informații utile</p>
         <div className="info-utile-containers">
