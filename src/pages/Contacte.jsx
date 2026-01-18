@@ -1,4 +1,6 @@
-﻿import { useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
+import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
 import Dropdown from '../components/Dropdown'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
@@ -123,11 +125,26 @@ const entries = [
   },
 ]
 
+const MapFocus = ({ activeKey, targetKey, position }) => {
+  const map = useMap()
+  const previousKey = useRef(null)
+
+  useEffect(() => {
+    if (activeKey === targetKey && previousKey.current !== targetKey) {
+      map.setView(position, 14)
+    }
+    previousKey.current = activeKey
+  }, [activeKey, targetKey, position, map])
+
+  return null
+}
+
 const Contacte = () => {
   useDocumentTitle('Contacte - CMF Bălți')
   usePageStyles(pageStyles, 'contacte')
 
   const [openKey, setOpenKey] = useState(null)
+  const centerCmf1 = [47.7744167, 27.8958333]
 
   const toggleKey = (key) => {
     setOpenKey((prev) => (prev === key ? null : key))
@@ -156,8 +173,16 @@ const Contacte = () => {
       </div>
 
       <div id="contact-right-side">
-        <p>There should be something here, like a map</p>
-        <p>Maybe I will add it, maybe not 🥱</p>
+        <MapContainer center={centerCmf1} zoom={12} scrollWheelZoom={false}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <MapFocus activeKey={openKey} targetKey="cs-1" position={centerCmf1} />
+          <Marker position={centerCmf1}>
+            <Popup>Centrul de Sanatate nr. 1</Popup>
+          </Marker>
+        </MapContainer>
       </div>
     </div>
   )
