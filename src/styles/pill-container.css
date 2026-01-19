@@ -1,8 +1,8 @@
 /* Pill container */
 .pill-container {
 
-    background-color: #F7F9FC;
-    border: 1px solid rgba(176, 190, 197, 0.5);
+    background-color: var(--background-white);
+    border: 1px solid var(--border);
     border-radius: 4em;
 
     max-width: fit-content;
@@ -19,14 +19,14 @@
 
 .pill-container p {
     font-size: 1.25em;
-    color:#2E3E5C;
+    color: var(--text-blue);
     text-align: justify;
 }
 
 .pill-container a {
     text-decoration: none;
-    background-color: #FF6B6B;
-    color: white;
+    background-color: var(--red-normal);
+    color: var(--text-white);
     font-weight: bold;
     padding: 1em 1.25em;
     border-radius: 4em;
@@ -35,7 +35,11 @@
 }
 
 .pill-container a:hover {
-    background-color: #E65555;
+    background-color: var(--red-dark);
+}
+
+.pill-container a:active {
+    background-color: var(--red-light);
 }
 
 

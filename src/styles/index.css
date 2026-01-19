@@ -19,7 +19,7 @@
 }
 
 .main-section-1 p {
-    color: #2E3E5C;
+    color: var(--text-blue);
     margin: 2em 0;
     
 }
@@ -38,8 +38,8 @@
     all: unset;
     display: block;
     max-width: fit-content;
-    background-color: #FF6B6B;
-    color: white;
+    background-color: var(--red-normal);
+    color: var(--text-white);
     border-radius: 8px;
     font-size: 1em;
     cursor: pointer;
@@ -52,12 +52,16 @@
 }
 
 .main-section-1 a:hover {
-    background-color: #E65555; /* Hover color */
+    background-color: var(--red-dark); /* Hover color */
+}
+
+.main-section-1 a:active {
+    background-color: var(--red-light);
 }
 
 .main-section-1 img {
     border-radius: 1.5em;
-    border: 1px solid rgba(176, 190, 197, 0.7);
+    border: 1px solid var(--border);
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -70,29 +74,6 @@
         max-width: 400px;
     }
 }
-
-/* Switch to portrait view
-@media (max-width: 860px) {
-    .main-section-1 {
-        flex-direction: column;
-    }
-
-    .main-section-1 .left-side {
-        margin-bottom: 0;
-    }
-
-    .main-section-1 .left-side p:first-child {
-        text-align: center;
-        margin-top: 0.25em;
-    }
-
-
-    .main-section-1 a {
-        margin: 0 auto;
-    }
-
-
-}*/
 /* End of "Programare online" section */
 
 /* "Informatii utile" section */
@@ -107,7 +88,7 @@
 .info-utile > p {
     font-size: 2em;
     font-weight: bold;
-    color: #2E3E5C;
+    color: var(--text-blue);
     text-align: center;
 }
 
@@ -190,7 +171,7 @@
 }
 
 .content p:first-child {
-    color: #FFDD33;
+    color: var(--text-yellow);
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
@@ -200,7 +181,7 @@
 }
 
 .content p {
-    color: white;
+    color: var(--text-white);
     font-size: 1em;
     text-align: justify;
     line-height: 1.5;
@@ -210,9 +191,9 @@
 
 .content a {
     all: unset;
-    color: white;
+    color: var(--text-white);
     text-decoration: none;
-    background-color: #FF6B6B;
+    background-color: var(--red-normal);
     cursor: pointer;
     padding: 1em 2em;
     border-radius: 8px;
@@ -224,7 +205,11 @@
 }
 
 .content a:hover {
-    background-color: #E65555;
+    background-color: var(--red-dark);
+}
+
+.content a:active {
+    background-color: var(--red-light);
 }
 
 .content img {
@@ -248,11 +233,11 @@
 /* End of "Despre CMF" main page section */
 
 #esti-beneficiar {
-    background-color: white;
+    background-color: var(--text-white);
 }
 
 #esti-beneficiar p {
-    color: #2E3E5C;
+    color: var(--text-blue);
 }
 
 
@@ -280,7 +265,7 @@
 }
 
 .transparenta-section p:first-child {
-    color: #FFDD33;
+    color: var(--text-yellow);
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
@@ -291,7 +276,7 @@
 
 
 .transparenta-section p {
-    color: white;
+    color: var(--text-white);
     font-size: 1em;
     text-align: justify;
     line-height: 1.5;
@@ -315,10 +300,10 @@
     justify-content: center;
     text-align: center;
     padding: 1em 2em;
-    background-color: white;
+    background-color: var(--text-white);
     border-radius: 999px;
     font-size: 1em;
-    color: #2E3E5C;
+    color: var(--text-blue);
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
@@ -327,7 +312,7 @@
 
 /* "Parteneri oficiali" section */
 .parteneri-oficiali-wrapper {
-    background-color: white;
+    background-color: var(--text-white);
     margin: 96px auto;
 }
 
@@ -364,14 +349,14 @@
 
 .parteneri-oficiali p {
     text-align: center;
-    color: #2E3E5C;
+    color: var(--text-blue);
     font-size: 1.5em;
     line-height: 1.2;
 }
 
 .parteneri-oficiali a {
     font-size: 1em;
-    color: white;
+    color: var(--text-white);
     background-color: var(--background-blue);
     padding: 8px 12px 8px 8px;
     border-radius: 999px;
@@ -387,7 +372,7 @@
 }
 
 .parteneri-oficiali a:hover {
-    background-color: #FF5C5C;
+    background-color: var(--red-dark);
 }
 
 .parteneri-oficiali img {

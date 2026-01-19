@@ -12,7 +12,7 @@
     border-radius: 10px;
     
 
-    border: 1px solid rgba(176, 190, 197, 0.5);
+    border: 1px solid var(--border);
     box-shadow: 2px 2px 40px -15px rgba(0, 0, 0, 0.25);
     
     
@@ -28,7 +28,7 @@
     border-radius: 5px;
 
     font-size: 1.5em;
-    color: #2E3E5C;
+    color: var(--text-blue);
     font-weight: bold;
     cursor: pointer;
     
@@ -51,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5em;
-    border-top: 1px solid rgba(176, 190, 197, 0.5); /* Add this line */
+    border-top: 1px solid var(--border); /* Add this line */
 }
 
 .dropdown-content.show {
@@ -61,19 +61,8 @@
     opacity: 1;
 }
 
-
-/* idk what this is for
-.dropdown-content a {
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-    color: black;
-    
-}
-*/
-
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: var(--background-white);
 }
 
 
@@ -81,8 +70,8 @@
 /* these WERE pill containers */
 .pill-container {
 
-    background-color: #F7F9FC;
-    border: 1px solid rgba(176, 190, 197, 0.5);
+    background-color: var(--background-white);
+    border: 1px solid var(--border);
     border-radius: 10px;
     
     
@@ -103,7 +92,7 @@
 
 .pill-container p {
     font-size: 1.25em;
-    color:#2E3E5C;
+    color: var(--text-blue);
     text-align: justify;
     text-align: center;
     width: 500px;
@@ -126,8 +115,8 @@
 
 .pill-container a {
     text-decoration: none;
-    background-color: #FF6B6B;
-    color: white;
+    background-color: var(--red-normal);
+    color: var(--text-white);
     font-weight: bold;
     padding: 1em;
     border-radius: 10px;
@@ -137,14 +126,18 @@
     flex-direction: row;
     align-items: center;
     gap: 1em;
-    color: white;
+    color: var(--text-white);
     font-size: 1.25em;
     text-align: center;
     
 }
 
 .pill-container a:hover {
-    background-color: #E65555;
+    background-color: var(--red-dark);
+}
+
+.pill-container a:active {
+    background-color: var(--red-light);
 }
 
 /* The pill container switches to a column view*/
@@ -183,15 +176,15 @@
     display: flex;
     flex-direction: column;
     gap: 0.5em;
-    color: #2E3E5C;
+    color: var(--text-blue);
     font-weight: 600;
 }
 
 .transparenta-filters select {
     padding: 0.6em 0.75em;
-    border: 1px solid rgba(176, 190, 197, 0.6);
+    border: 1px solid var(--border);
     border-radius: 8px;
-    background-color: white;
+    background-color: var(--background-white);
     font-size: 1em;
 }
 
@@ -207,10 +200,10 @@
     align-items: center;
     gap: 1.5em;
     padding: 1em 1.25em;
-    border: 1px solid rgba(176, 190, 197, 0.5);
+    border: 1px solid var(--border);
     border-radius: 10px;
     box-shadow: var(--shadow-drop);
-    background-color: #ffffff;
+    background-color: var(--background-white);
 }
 
 .transparenta-result-text {
@@ -222,7 +215,7 @@
 .transparenta-result-title {
     margin: 0;
     font-size: 1.1em;
-    color: #2E3E5C;
+    color: var(--text-blue);
     font-weight: 600;
 }
 
@@ -234,8 +227,8 @@
 
 .transparenta-result a {
     text-decoration: none;
-    background-color: #FF6B6B;
-    color: white;
+    background-color: var(--red-normal);
+    color: var(--text-white);
     font-weight: 600;
     padding: 0.75em 1em;
     border-radius: 8px;
@@ -247,7 +240,11 @@
 }
 
 .transparenta-result a:hover {
-    background-color: #E65555;
+    background-color: var(--red-dark);
+}
+
+.transparenta-result a:active {
+    background-color: var(--red-light);
 }
 
 @media (max-width: 700px) {

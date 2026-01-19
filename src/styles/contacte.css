@@ -40,7 +40,7 @@
 
     font-size: 1.25em;
     line-height: 1;
-    color: #2E3E5C;
+    color: var(--text-blue);
     font-weight: bold;
     cursor: pointer;
 
@@ -60,7 +60,7 @@
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 
-    border-top: 1px solid rgba(176, 190, 197, 0.5); /* Add this line */
+    border-top: 1px solid var(--border);
     opacity: 0;
 
     padding: 0 1.5em;
@@ -106,7 +106,7 @@
     flex-direction: row;
     gap: 0.5em;
     align-items: center;
-    color: white;
+    color: var(--text-white);
     text-decoration: none;
 
     transition: all 0.3s ease;
@@ -116,6 +116,10 @@
     background-color: var(--red-dark);
 }
 
+.dropdown-content a:active {
+    background-color: var(--red-light);
+}
+
 /* Temporary */
 #contact-right-side {
     width: 740px;
@@ -123,7 +127,7 @@
     border-radius: 10px;
 
     overflow: hidden;
-    background-color: #F7F9FC;
+    background-color: var(--background-white);
 }
 
 .dropdown-content .link-icon {
@@ -145,12 +149,12 @@
 
 /* Ok, it works*/
 .active {
-    background-color: #283B6A;
-    color: white;
+    background-color: var(--background-blue);
+    color: var(--text-white);
 }
 
 .active .dropdown-header, .active .dropdown-text-content {
-    color: white;
+    color: var(--text-white);
 }
 
 @media screen and (max-width: 745px) {

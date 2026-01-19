@@ -41,12 +41,12 @@ body {
 
 /* Above header */
 .above-header-wrapper {
-    background-color: #283B6A;
+    background-color: var(--background-blue);
 }
 
 .above-header {
     
-    color: #FFFFFF;
+    color: var(--text-white);
     font-size: 1em;
 
     display: flex;
@@ -77,7 +77,7 @@ body {
 .above-header .icon {
     font-size: 2em;
     margin: 15px;
-    color: white;
+    color: var(--text-white);
 }
 
 
@@ -173,14 +173,19 @@ body {
 }
 
 .navbar .active {
-    background-color: var(--red-dark);
+    background-color: var(--red-light);
     color: var(--text-white);
     /*font-weight: 700;*/
 }
 
 .navbar li a:hover {
-    background-color: var(--red-normal);
+    background-color: var(--red-dark);
     color: var(--text-white);   
+}
+
+.navbar li a:active {
+    background-color: var(--red-light);
+    color: var(--text-white);
 }
 
 @media (max-width: 1100px) {
@@ -228,7 +233,7 @@ body {
 .hamburger span {
     width: 100%;
     height: 6px;
-    background: #2E3E5C;
+    background: var(--text-blue);
     transition: all 0.2s ease-in-out;
     border-radius: 5px;
     
@@ -259,7 +264,7 @@ body {
     right: -100%; /* Start off-screen on the right */
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    background: color-mix(in srgb, var(--background-white) 70%, transparent); /* Semi-transparent white */
     backdrop-filter: blur(10px);
     box-shadow: none !important;
     display: flex;
@@ -288,7 +293,7 @@ body {
 
 .mobile-menu a {
     text-decoration: none;
-    color: #2E3E5C;
+    color: var(--text-blue);
     font-size: 2em;
     text-transform: uppercase;
     font-weight: bold;
@@ -296,7 +301,7 @@ body {
 }
 
 .mobile-menu a:hover {
-    color: #FF5C5C;
+    color: var(--red-dark);
 }
 
 
