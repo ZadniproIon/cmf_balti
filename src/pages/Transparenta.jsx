@@ -400,7 +400,7 @@ const Transparenta = () => {
                   <p className="transparenta-result-meta">{doc.category} • {doc.year}</p>
                 </div>
                 <a href={doc.href} target="_blank" rel="noreferrer">
-                  <Download className="download-icon" />Descarca PDF
+                  <Download className="download-icon" />Accesează PDF
                 </a>
               </div>
             ))
