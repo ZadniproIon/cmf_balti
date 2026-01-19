@@ -1,5 +1,5 @@
 ﻿import { Link } from 'react-router-dom'
-import { Clock8, HeartPulse, PhoneCall } from 'lucide-react'
+import { Clock8, HeartPulse, PhoneCall, Globe } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -123,13 +123,9 @@ const Home = () => {
               <img src="/images/main-page/ms gov md.png" alt="Whatever" />
             </div>
             <div className="right-side">
-              <p>
-                Ministerul Sănătății
-                <br />
-                al Republicii Moldova
-              </p>
+              <p>Ministerul Sănătății al Republicii Moldova</p>
               <a href="https://ms.gov.md/" target="_blank" rel="noreferrer">
-                ms.gov.md
+                <Globe />ms.gov.md
               </a>
             </div>
           </div>
@@ -139,13 +135,10 @@ const Home = () => {
               <img src="/images/main-page/cnam.jpg" alt="Whatever" />
             </div>
             <div className="right-side">
-              <p>
-                Compania Națională de
-                <br />
-                Asigurări în Medicină
+              <p>Compania Națională de Asigurări în Medicină
               </p>
               <a href="http://cnam.md/" target="_blank" rel="noreferrer">
-                cnam.md
+                <Globe />cnam.md
               </a>
             </div>
           </div>
@@ -155,13 +148,9 @@ const Home = () => {
               <img src="/images/main-page/primaria balti.jpg" alt="Whatever" />
             </div>
             <div className="right-side">
-              <p>
-                Primăria
-                <br />
-                municipiului Bălți
-              </p>
+              <p>Primăria Municipiului Bălți</p>
               <a href="https://balti.md/" target="_blank" rel="noreferrer">
-                balti.md
+                <Globe />balti.md
               </a>
             </div>
           </div>
@@ -171,13 +160,9 @@ const Home = () => {
               <img src="/images/main-page/cnas.png" alt="Whatever" />
             </div>
             <div className="right-side">
-              <p>
-                Compania Națională
-                <br />
-                de Asigurări Medicale
-              </p>
+              <p>Compania Națională de Asigurări Sociale</p>
               <a href="https://cnas.gov.md/" target="_blank" rel="noreferrer">
-                cnas.gov.md
+                <Globe />cnas.gov.md
               </a>
             </div>
           </div>

@@ -327,18 +327,16 @@
 
 /* "Parteneri oficiali" section */
 .parteneri-oficiali-wrapper {
-    padding: 0.5em 1.5em;
     background-color: white;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin: 96px auto;
 }
 
 #parteneri-oficiali-title {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     line-height: 1;
-    color: #2E3E5C;
+    color: var(--text-blue);
 }
 
 .parteneri-oficiali {
@@ -349,40 +347,43 @@
 }
 
 .parteneri-oficiali > div {
-    border: 1px solid rgba(176, 190, 197, 0.5);
-    box-shadow: 2px 2px 40px -10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-drop);
+    border-radius: 24px;
     padding: 2em;
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 2em;
 
 
-    min-width: 600px;
-    max-width: 100%;
+    width: 500px;
 }
 
 .parteneri-oficiali p {
     text-align: center;
     color: #2E3E5C;
     font-size: 1.5em;
-    line-height: 1.25;
+    line-height: 1.2;
 }
 
 .parteneri-oficiali a {
-    font-size: 1.5em;
+    font-size: 1em;
     color: white;
-    background-color: #283B6A;
-    padding: 0.5em 0.75em;
+    background-color: var(--background-blue);
+    padding: 8px 12px 8px 8px;
     border-radius: 999px;
     margin: 0 auto;
-    width: 100%;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .parteneri-oficiali a:hover {
@@ -390,8 +391,8 @@
 }
 
 .parteneri-oficiali img {
-    width: 215px;
-    height: 215px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
 }
 
@@ -400,7 +401,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 63%;
+    width: 100%;
 }
 
 @media screen and (max-width: 650px) {
