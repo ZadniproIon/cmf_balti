@@ -1,5 +1,6 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Download } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -7,6 +8,12 @@ import titleStyles from '../styles/title-and-section-text.css?raw'
 import transparentaStyles from '../styles/transparenta.css?raw'
 
 const pageStyles = [titleStyles, transparentaStyles, componentsStyles]
+
+const categoryByHash = {
+  '#achizitii_publice': 'Achiziții publice',
+  '#rapoarte_de_activitate': 'Rapoarte de activitate',
+  '#contracte_cnam': 'Contracte CNAM',
+}
 
 const documents = [
   {
@@ -321,8 +328,17 @@ const Transparenta = () => {
   useDocumentTitle('Transparența - CMF Bălți')
   usePageStyles(pageStyles, 'transparenta')
 
+  const location = useLocation()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedYear, setSelectedYear] = useState('all')
+
+  useEffect(() => {
+    const category = categoryByHash[location.hash.toLowerCase()]
+    if (category) {
+      setSelectedCategory(category)
+      setSelectedYear('all')
+    }
+  }, [location.hash])
 
   const categoryOptions = useMemo(() => {
     return Array.from(new Set(documents.map((doc) => doc.category))).sort()

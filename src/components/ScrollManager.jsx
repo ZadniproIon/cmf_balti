@@ -11,8 +11,8 @@ const ScrollManager = () => {
         setTimeout(() => {
           target.scrollIntoView({ behavior: 'smooth' })
         }, 25)
+        return
       }
-      return
     }
 
     window.scrollTo({ top: 0 })
