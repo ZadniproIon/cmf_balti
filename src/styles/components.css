@@ -173,9 +173,8 @@ body {
 }
 
 .navbar .active {
-    background-color: var(--red-light);
+    background-color: var(--red-normal);
     color: var(--text-white);
-    /*font-weight: 700;*/
 }
 
 .navbar li a:hover {
