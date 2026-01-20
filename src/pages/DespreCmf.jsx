@@ -108,7 +108,7 @@ const DespreCmf = () => {
       <div className="card-container">
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-nr1.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-nr1.jpg" alt="Centrul de Sanatate Nr. 1" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 1</p>
@@ -125,7 +125,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-nr2.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-nr2.jpg" alt="Centrul de Sanatate Nr. 2" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 2</p>
@@ -142,7 +142,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-nr3.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-nr3.jpg" alt="Centrul de Sanatate Nr. 3" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 3</p>
@@ -159,7 +159,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-nr4.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-nr4.jpg" alt="Centrul de Sanatate Nr. 4" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 4</p>
@@ -176,7 +176,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-nr5.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-nr5.jpg" alt="Centrul de Sanatate Nr. 5" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 5</p>
@@ -193,7 +193,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-nr6.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-nr6.jpg" alt="Centrul de Sanatate Nr. 6" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 6</p>
@@ -210,7 +210,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-atis.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-atis.jpg" alt="Centrul de Sanatate Prietinos Tinerilor ATIS" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</p>
@@ -227,7 +227,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-ccsm.jpg" />
+            <img src="/images/despre-cmf-jpeg/cmf-ccsm.jpg" alt="Centrul Comunitar de Sanatate Mintala (CCSM)" />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</p>
@@ -244,7 +244,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-elizaveta.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-elizaveta.jpg" alt="Oficiul Medicului de Familie s. Elizaveta" />
           </div>
           <div className="card-body">
             <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
@@ -261,7 +261,7 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf/cmf-sadovoe.png" />
+            <img src="/images/despre-cmf-jpeg/cmf-sadovoe.jpg" alt="Oficiul Medicului de Familie s. Sadovoe" />
           </div>
           <div className="card-body">
             <p className="card-title">Oficiul Medicului de Familie s. Sadovoe</p>

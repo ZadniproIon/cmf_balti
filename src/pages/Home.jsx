@@ -26,7 +26,7 @@ const Home = () => {
           </a>
         </div>
         <div className="right-side">
-          <img src="/images/main-page/programare_online_screen_1.png" alt="Programare online" />
+          <img src="/images/main-page-jpeg/programare_online_screen_1.jpg" alt="Programare online" />
         </div>
       </div>
       
@@ -56,7 +56,7 @@ const Home = () => {
       <div className="content-wrapper" id="despre-cmf">
         <div className="content">
           <div className="image-side">
-            <img src="/images/main-page/despre-cmf-main-page.jpg" alt="Whatever" />
+            <img src="/images/main-page-jpeg/despre-cmf-main-page.jpg" alt="Despre CMF Balti" />
           </div>
           <div className="content-side">
             <p>Despre CMF Bălți</p>
@@ -89,7 +89,7 @@ const Home = () => {
             <Link to="/info-pentru-beneficiari.html">Află mai multe</Link>
           </div>
           <div className="image-side">
-            <img src="/images/main-page/esti-beneficiar-main-page.jpeg" alt="Whatever" />
+            <img src="/images/main-page-jpeg/esti-beneficiar-main-page.jpg" alt="Esti beneficiar" />
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ const Home = () => {
         <div className="parteneri-oficiali">
           <div>
             <div className="left-side">
-              <img src="/images/main-page/ms gov md.png" alt="Whatever" />
+              <img src="/images/main-page-jpeg/ms gov md.jpg" alt="Ministerul Sanatatii al Republicii Moldova" />
             </div>
             <div className="right-side">
               <p>Ministerul Sănătății al Republicii Moldova</p>
@@ -132,7 +132,7 @@ const Home = () => {
 
           <div>
             <div className="left-side">
-              <img src="/images/main-page/cnam.jpg" alt="Whatever" />
+              <img src="/images/main-page-jpeg/cnam.jpg" alt="Compania Nationala de Asigurari in Medicina" />
             </div>
             <div className="right-side">
               <p>Compania Națională de Asigurări în Medicină
@@ -145,7 +145,7 @@ const Home = () => {
 
           <div>
             <div className="left-side">
-              <img src="/images/main-page/primaria balti.jpg" alt="Whatever" />
+              <img src="/images/main-page-jpeg/primaria balti.jpg" alt="Primaria Municipiului Balti" />
             </div>
             <div className="right-side">
               <p>Primăria Municipiului Bălți</p>
@@ -157,7 +157,7 @@ const Home = () => {
 
           <div>
             <div className="left-side">
-              <img src="/images/main-page/cnas.png" alt="Whatever" />
+              <img src="/images/main-page-jpeg/cnas.jpg" alt="Compania Nationala de Asigurari Sociale" />
             </div>
             <div className="right-side">
               <p>Compania Națională de Asigurări Sociale</p>
