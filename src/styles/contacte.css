@@ -28,7 +28,6 @@
     border: 1px solid var(--border);
     box-shadow: var(--shadow-drop);
 
-    transition: 0.3s ease;
 }
 
 .dropdown-header {
@@ -44,7 +43,6 @@
     font-weight: bold;
     cursor: pointer;
 
-    transition: 0.3s ease;
 }
 
 
@@ -85,7 +83,6 @@
     flex-direction: column;
     gap: 0.5em;
 
-    transition: 0.3s ease;
 }
 
 .dropdown-text-content p {
