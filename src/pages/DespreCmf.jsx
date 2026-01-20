@@ -118,7 +118,7 @@ const DespreCmf = () => {
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)7-43-34</p>
+              <p>0231 7-43-34</p>
             </div>
           </div>
         </div>
@@ -131,11 +131,11 @@ const DespreCmf = () => {
             <p className="card-title">Centrul de Sănătate Nr. 2</p>
             <div className="card-row">
               <MapPin className="card-icon" />
-              <p>str. Șt. cel Mare, 52</p>
+              <p>str. Ștefan cel Mare, 52</p>
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)2-12-32</p>
+              <p>0231 2-12-32</p>
             </div>
           </div>
         </div>
@@ -148,11 +148,11 @@ const DespreCmf = () => {
             <p className="card-title">Centrul de Sănătate Nr. 3</p>
             <div className="card-row">
               <MapPin className="card-icon" />
-              <p>str. G. Goșbuc, 13</p>
+              <p>str. George Coșbuc, 13</p>
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)2-42-74</p>
+              <p>0231 2-42-74</p>
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@ const DespreCmf = () => {
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)6-78-77</p>
+              <p>0231 6-78-77</p>
             </div>
           </div>
         </div>
@@ -182,11 +182,11 @@ const DespreCmf = () => {
             <p className="card-title">Centrul de Sănătate Nr. 5</p>
             <div className="card-row">
               <MapPin className="card-icon" />
-              <p>str. B. Glavan, 21</p>
+              <p>str. Boris Glavan, 21</p>
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)3-81-79</p>
+              <p>0231 3-81-79</p>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@ const DespreCmf = () => {
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)4-45-77</p>
+              <p>0231 4-45-77</p>
             </div>
           </div>
         </div>
@@ -220,7 +220,7 @@ const DespreCmf = () => {
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)4-64-62</p>
+              <p>0231 4-64-62</p>
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@ const DespreCmf = () => {
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)7-10-11</p>
+              <p>0231 7-10-11</p>
             </div>
           </div>
         </div>
@@ -250,11 +250,11 @@ const DespreCmf = () => {
             <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
             <div className="card-row">
               <MapPin className="card-icon" />
-              <p>str. Șt. cel Mare, 21</p>
+              <p>str. Ștefan cel Mare, 21</p>
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)6-82-82</p>
+              <p>0231 6-82-82</p>
             </div>
           </div>
         </div>
@@ -271,7 +271,7 @@ const DespreCmf = () => {
             </div>
             <div className="card-row">
               <Phone className="card-icon" />
-              <p>0(231)5-52-19</p>
+              <p>0231 5-52-19</p>
             </div>
           </div>
         </div>

@@ -18,10 +18,10 @@ const entries = [
     lines: [
       'Adresa: Bălți, str. Decebal, 101V',
       'Email: cmfbalti@ms.md',
-      'Registratura et1: (0231) 7-43-34',
-      'Registratura et2: (0231) 7-37-65',
-      'Registratura et3: (0231) 7-07-18',
-      'Șef Centru de Sănătate: (0231) 7-25-43',
+      'Registratura et1: 0231 7-43-34',
+      'Registratura et2: 0231 7-37-65',
+      'Registratura et3: 0231 7-07-18',
+      'Șef Centru de Sănătate: 0231 7-25-43',
     ],
   },
   {
@@ -30,8 +30,8 @@ const entries = [
     lines: [
       'Adresa: Bălți, Strada Ștefan cel Mare, 52',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 2-12-32, 068759222',
-      'Șef Centru de Sănătate: (0231) 2-03-61',
+      'Registratura: 0231 2-12-32, 068759222',
+      'Șef Centru de Sănătate: 0231 2-03-61',
     ],
   },
   {
@@ -40,28 +40,28 @@ const entries = [
     lines: [
       'Adresa: Bălți, Strada George Goșbuc, 13',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 2-42-74',
-      'Șef Centru de Sănătate: (0231) 2-51-69',
+      'Registratura: 0231 2-42-74',
+      'Șef Centru de Sănătate: 0231 2-51-69',
     ],
   },
   {
     key: 'cs-4',
     title: 'Centrul de Sănătate nr. 4',
     lines: [
-      'Adresa: Bălți, Стрийская, 9',
+      'Adresa: Bălți, str. Strîii, 9',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 6-78-77',
-      'Șef Centru de Sănătate: (0231) 6-74-20',
+      'Registratura: 0231 6-78-77',
+      'Șef Centru de Sănătate: 0231 6-74-20',
     ],
   },
   {
     key: 'cs-5',
     title: 'Centrul de Sănătate nr. 5',
     lines: [
-      'Adresa: Bălți, Strada Boris Glăvan, 21',
+      'Adresa: Bălți, Strada Boris Glavan, 21',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 3-81-79',
-      'Șef Centru de Sănătate: (0231) 3-83-55',
+      'Registratura: 0231 3-81-79',
+      'Șef Centru de Sănătate: 0231 3-83-55',
     ],
   },
   {
@@ -70,8 +70,8 @@ const entries = [
     lines: [
       'Adresa: Bălți, Strada Kiev, 30',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 4-45-77',
-      'Șef Centru de Sănătate: (0231) 4-34-66',
+      'Registratura: 0231 4-45-77',
+      'Șef Centru de Sănătate: 0231 4-34-66',
     ],
   },
   {
@@ -96,14 +96,14 @@ const entries = [
     lines: [
       'Adresa: Bălți, Strada Decebal, 101V',
       'Email: cmfbalti@ms.md',
-      'Anticamera: (0231) 7-52-28',
-      'Fax: (0231) 7-25-88',
-      'Serviciul Resurse Unmane: (0231) 7-54-80',
-      'Contabilitatea: (0231) 7-52-29',
-      'Serviciul Juridic: (0231) 7-52-29',
-      'Serviciul Economico-Financiar: (0231) 7-16-60',
-      'Contabil Șef: (0231) 7-25-44',
-      'Serviciul Tehnologii Informaționale: (0231) 7-25-88',
+      'Anticamera: 0231 7-52-28',
+      'Fax: 0231 7-25-88',
+      'Serviciul Resurse Unmane: 0231 7-54-80',
+      'Contabilitatea: 0231 7-52-29',
+      'Serviciul Juridic: 0231 7-52-29',
+      'Serviciul Economico-Financiar: 0231 7-16-60',
+      'Contabil Șef: 0231 7-25-44',
+      'Serviciul Tehnologii Informaționale: 0231 7-25-88',
     ],
   },
   {
@@ -112,7 +112,7 @@ const entries = [
     lines: [
       'Adresa: s. Elizaveta, Unnamed Road, 21',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 6-82-82',
+      'Registratura: 0231 6-82-82',
     ],
   },
   {
@@ -121,7 +121,7 @@ const entries = [
     lines: [
       'Adresa: s. Sadovoe, str. Parcovaia, 31',
       'Email: cmfbalti@ms.md',
-      'Registratura: (0231) 5-52-19',
+      'Registratura: 0231 5-52-19',
     ],
   },
 ]
@@ -131,40 +131,40 @@ const markers = [
     id: 'nr-1',
     position: [47.774417, 27.895833],
     labels: [
-      'Centrul de Sanatate nr. 1',
-      'Centrul Comunitar de Sanatate Mintala (CCSM)',
-      'Administra?ia',
+      'Centrul de Sănătate nr. 1',
+      'Centrul Comunitar de Sănătate Mintală (CCSM)',
+      'Administrația',
     ],
     keys: ['cs-1', 'ccsm', 'admin'],
   },
   {
     id: 'nr-2',
     position: [47.761139, 27.924306],
-    labels: ['Centrul de Sanatate nr. 2'],
+    labels: ['Centrul de Sănătate nr. 2'],
     keys: ['cs-2'],
   },
   {
     id: 'nr-3',
     position: [47.755611, 27.923361],
-    labels: ['Centrul de Sanatate nr. 3'],
+    labels: ['Centrul de Sănătate nr. 3'],
     keys: ['cs-3'],
   },
   {
     id: 'nr-4',
     position: [47.772083, 27.938528],
-    labels: ['Centrul de Sanatate nr. 4'],
+    labels: ['Centrul de Sănătate nr. 4'],
     keys: ['cs-4'],
   },
   {
     id: 'nr-5',
     position: [47.759, 27.887806],
-    labels: ['Centrul de Sanatate nr. 5'],
+    labels: ['Centrul de Sănătate nr. 5'],
     keys: ['cs-5'],
   },
   {
     id: 'nr-6',
     position: [47.781028, 27.925528],
-    labels: ['Centrul de Sanatate nr. 6', 'Centrul de Sanatate Prietenos Tinerilor ,ATIS"'],
+    labels: ['Centrul de Sănătate nr. 6', 'Centrul de Sănătate Prietenos Tinerilor ,ATIS"'],
     keys: ['cs-6', 'atis'],
   },
   {
@@ -261,4 +261,6 @@ const Contacte = () => {
 }
 
 export default Contacte
+
+
 
