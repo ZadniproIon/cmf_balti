@@ -48,7 +48,7 @@ const Home = () => {
           <div>
             <PhoneCall className="icon" />
             <p>Contact</p>
-            <p>La numărul de telefon: 02319977 sau la secțiunea Contacte</p>
+            <p>La numărul de telefon: 02319977 sau la secțiunea <Link to="/contacte.html">Contacte</Link></p>
           </div>
         </div>
       </div>
