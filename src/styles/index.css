@@ -182,6 +182,10 @@
 
 
 /* "Despre CMF" main page section */
+.content-wrapper {
+    padding: 0 1.5em;
+}
+
 #despre-cmf {
     background-color: var(--background-blue);
 }
@@ -291,6 +295,7 @@
 /* "Transparenta" section*/
 .transparenta-section-wrapper {
     background-color: var(--background-blue);
+    padding: 0 1.5em;
 }
 
 .transparenta-section {
@@ -351,6 +356,18 @@
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    
+    .pills {
+        gap: 1em;
+    }
+    
+    .pills a {
+        max-width: 235px;
+        width: 100%;
+    }
 }
 /* End of "Transparenta" section*/
 
