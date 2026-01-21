@@ -199,6 +199,14 @@ const markerPositions = markers.reduce((acc, marker) => {
   return acc
 }, {})
 
+const getGoogleMapsHref = (key) => {
+  const position = markerPositions[key]
+  if (!position) {
+    return 'https://www.google.com/maps'
+  }
+  return `https://www.google.com/maps/search/?api=1&query=${position[0]},${position[1]}`
+}
+
 const MapFocus = ({ activeKey, position }) => {
   const map = useMap()
 
@@ -242,7 +250,7 @@ const Contacte = () => {
                 <p key={`${entry.key}-${index}`}>{line}</p>
               ))}
             </div>
-            <a href="">
+            <a href={getGoogleMapsHref(entry.key)} target="_blank" rel="noreferrer">
               <MapPin className="link-icon" />Google Maps
             </a>
           </Dropdown>
