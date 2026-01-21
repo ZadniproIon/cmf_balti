@@ -13,22 +13,25 @@ const Home = () => {
 
   return (
     <>
-      <div className="main-section-1">
-        <div className="left-side">
-          <p>
-            Programare online
-          </p>
-          <p>
-            Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și planificați-vă vizita din confortul casei.
-          </p>
-          <a href="https://sia.amp.md/" target="_blank" rel="noreferrer">
-            Apasă aici
-          </a>
-        </div>
-        <div className="right-side">
-          <img src="/images/main-page-jpeg/programare_online_screen_1.jpg" alt="Programare online" />
+      <div className="main-section-1-wrapper">
+        <div className="main-section-1">
+          <div className="left-side">
+            <p>
+              Programare online
+            </p>
+            <p>
+              Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și planificați-vă vizita din confortul casei.
+            </p>
+            <a href="https://sia.amp.md/" target="_blank" rel="noreferrer">
+              Apasă aici
+            </a>
+          </div>
+          <div className="right-side">
+            <img src="/images/main-page-jpeg/programare_online_screen_1.jpg" alt="Programare online" />
+          </div>
         </div>
       </div>
+      
       
       <div className="info-utile">
         <p>Informații utile</p>

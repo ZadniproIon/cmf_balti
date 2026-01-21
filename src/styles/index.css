@@ -1,4 +1,8 @@
 /* "Programare online" section */
+.main-section-1-wrapper {
+    padding: 0 1.5em;
+}
+
 .main-section-1 {
     max-width: fit-content;
     display: flex;
@@ -16,18 +20,19 @@
 
 .main-section-1 .left-side {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .main-section-1 p {
     color: var(--text-blue);
-    margin: 2em 0;
-    
+    margin: 0;
 }
 
 .main-section-1 p:first-child {
     font-size: 2em;
     font-weight: bold;
-    margin: 0;
 }
 
 .main-section-1 p:nth-child(even) {
@@ -68,13 +73,48 @@
     object-fit: contain;
 }
 
-/* Remove space between elements */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+    .main-section-1 {
+        flex-direction: column;
+    }
+
+    .main-section-1 p {
+        text-align: center;
+    }
+
+    .main-section-1 .left-side {
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;      
+    }
+
     .main-section-1 img {
-        max-width: 400px;
+        max-width: 600px;
+    }
+
+    .main-section-1 p:first-child {
+        margin-top: 8px;
     }
 }
+
 /* End of "Programare online" section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* "Informatii utile" section */
 .info-utile {
