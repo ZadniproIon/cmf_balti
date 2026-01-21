@@ -1,6 +1,10 @@
 ﻿import { useEffect, useRef, useState } from 'react'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
+import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
+import markerIcon from 'leaflet/dist/images/marker-icon.png'
+import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 import { MapPin } from 'lucide-react'
 import Dropdown from '../components/Dropdown'
 import useDocumentTitle from '../hooks/useDocumentTitle'
@@ -10,6 +14,13 @@ import contactStyles from '../styles/contacte.css?raw'
 import titleStyles from '../styles/title-and-section-text.css?raw'
 
 const pageStyles = [titleStyles, contactStyles, componentsStyles]
+
+delete L.Icon.Default.prototype._getIconUrl
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+})
 
 const entries = [
   {
