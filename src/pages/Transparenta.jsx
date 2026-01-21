@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Download } from 'lucide-react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -329,16 +329,47 @@ const Transparenta = () => {
   usePageStyles(pageStyles, 'transparenta')
 
   const location = useLocation()
-  const [selectedCategory, setSelectedCategory] = useState('all')
-  const [selectedYear, setSelectedYear] = useState('all')
+  const navigate = useNavigate()
+  const [selectedCategory, setSelectedCategory] = useState(() => {
+    const hashCategory = categoryByHash[location.hash.toLowerCase()]
+    if (hashCategory) {
+      return hashCategory
+    }
+    const params = new URLSearchParams(location.search)
+    const categoryKey = params.get('category')
+    if (categoryKey) {
+      const category = categoryByHash[`#${categoryKey.toLowerCase()}`]
+      if (category) {
+        return category
+      }
+    }
+    return 'all'
+  })
+  const [selectedYear, setSelectedYear] = useState(() => {
+    const params = new URLSearchParams(location.search)
+    return params.get('year') || 'all'
+  })
+
+  const prevLocationRef = useRef({ hash: location.hash, search: location.search })
+  const locationChanged =
+    prevLocationRef.current.hash !== location.hash ||
+    prevLocationRef.current.search !== location.search
 
   useEffect(() => {
-    const category = categoryByHash[location.hash.toLowerCase()]
-    if (category) {
-      setSelectedCategory(category)
-      setSelectedYear('all')
-    }
-  }, [location.hash])
+    prevLocationRef.current = { hash: location.hash, search: location.search }
+  }, [location.hash, location.search])
+
+  const hashByCategory = useMemo(() => {
+    return Object.fromEntries(
+      Object.entries(categoryByHash).map(([hash, category]) => [category, hash])
+    )
+  }, [])
+
+  const keyByCategory = useMemo(() => {
+    return Object.fromEntries(
+      Object.entries(categoryByHash).map(([hash, category]) => [category, hash.slice(1)])
+    )
+  }, [])
 
   const categoryOptions = useMemo(() => {
     return Array.from(new Set(documents.map((doc) => doc.category))).sort()
@@ -347,6 +378,25 @@ const Transparenta = () => {
   const yearOptions = useMemo(() => {
     return Array.from(new Set(documents.map((doc) => doc.year))).sort((a, b) => b - a)
   }, [])
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    const hashCategory = categoryByHash[location.hash.toLowerCase()]
+    const categoryKey = params.get('category')
+    const searchCategory = categoryKey ? categoryByHash[`#${categoryKey.toLowerCase()}`] : null
+    const nextCategory = hashCategory || searchCategory || 'all'
+    const searchYear = params.get('year')
+    let nextYear = 'all'
+    if (searchYear) {
+      const yearValue = Number(searchYear)
+      if (Number.isFinite(yearValue) && yearOptions.includes(yearValue)) {
+        nextYear = String(yearValue)
+      }
+    }
+
+    setSelectedCategory((prev) => (prev === nextCategory ? prev : nextCategory))
+    setSelectedYear((prev) => (prev === nextYear ? prev : nextYear))
+  }, [location.hash, location.search, yearOptions])
 
   const filteredDocuments = useMemo(() => {
     return documents.filter((doc) => {
@@ -359,6 +409,46 @@ const Transparenta = () => {
       return true
     })
   }, [selectedCategory, selectedYear])
+
+  useEffect(() => {
+    if (locationChanged) {
+      return
+    }
+
+    const params = new URLSearchParams(location.search)
+    const categoryKey = keyByCategory[selectedCategory]
+
+    if (selectedCategory === 'all' || !categoryKey) {
+      params.delete('category')
+    } else if (params.get('category') !== categoryKey) {
+      params.set('category', categoryKey)
+    }
+
+    if (selectedYear === 'all') {
+      params.delete('year')
+    } else if (params.get('year') !== selectedYear) {
+      params.set('year', selectedYear)
+    }
+
+    const nextSearch = params.toString()
+    const searchString = nextSearch ? `?${nextSearch}` : ''
+    const nextHash = selectedCategory === 'all' ? '' : (hashByCategory[selectedCategory] || '')
+
+    if (searchString === location.search && nextHash === location.hash) {
+      return
+    }
+
+    navigate({ search: searchString, hash: nextHash }, { replace: true })
+  }, [
+    selectedCategory,
+    selectedYear,
+    location.search,
+    location.hash,
+    navigate,
+    keyByCategory,
+    hashByCategory,
+    locationChanged,
+  ])
 
   return (
     <>
