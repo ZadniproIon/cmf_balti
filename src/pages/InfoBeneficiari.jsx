@@ -131,6 +131,7 @@ const InfoBeneficiari = () => {
               sale asigură, prin acțiuni preventive, educaționale, terapeutice și de recuperare,
               promovarea stării de sănătate a individului, familiei și colectivității.
               </p>
+              <br />
               <p>
                 Asistența medicală primară este garantată pentru întreaga populație a Republicii
                 Moldova, indiferent de statutul de asigurat sau neasigurat. Pentru a beneficia de
@@ -150,6 +151,7 @@ const InfoBeneficiari = () => {
                 </u>
                 .
               </p>
+              <br />
               <div className="list">
                 <p>
                   <b>Pașii de acces la serviciile de asistență medicală primară:</b>
@@ -184,6 +186,7 @@ const InfoBeneficiari = () => {
               Serviciul de laborator este o subdiviziune structurală a IMSP „CMF mun. Bălți”, organizată
               în anul 2003, odată cu deschiderea IMSP „Centrul Medicilor de Familie Municipal Bălți”.
               </p>
+              <br />
               <div className="list">
                 <p>
                   Serviciul își desfășoară activitatea prin intermediul a 6 laboratoare, amplasate în
@@ -217,12 +220,14 @@ const InfoBeneficiari = () => {
                   <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30.</li>
                 </ul>
               </div>
+              <br />
               <p>
                 Serviciul de imagistică reprezintă o subdiviziune de diagnostic destinată identificării
                 patologiilor prin metode radiologice, inclusiv ale sistemului pulmonar, osteoarticular,
                 ecografie abdominală, ecografie de sarcină, FGDS (Fibro-Gastro-Duodenoscopie) și
                 colonoscopie.
               </p>
+              <br />
               <p>
                 Serviciul este dotat cu echipamente moderne, performante: 2 instalații de diagnostic
                 radiologic digital, 1 instalație pentru videogastroscopie și colonoscopie, 3 ecografe
@@ -230,6 +235,7 @@ const InfoBeneficiari = () => {
                 investigații: 4000–5000 ecografii, 12.000–14.000 investigații radiologice (radiografii
                 pulmonare preventive și ale sistemului osteoarticular), 1500 investigații endoscopice.
               </p>
+              <br />
               <div className="list">
                 <p>
                   <b>Serviciul de imagistică efectuează:</b>
@@ -280,6 +286,7 @@ const InfoBeneficiari = () => {
               organizat în anul 2012, prin comasarea tuturor cabinetelor de fizioterapie, kinetoterapie
               și masaj din cadrul Centrelor de Sănătate, OMF Sadovoe și OMF Elizaveta.
               </p>
+              <br />
               <div className="list">
                 <p>
                   <b>Program de lucru:</b>
@@ -290,6 +297,7 @@ const InfoBeneficiari = () => {
                   <li>Cabinetul de kinetoterapie: Luni–Vineri, 08:30–18:00 (pauză: 13:00–13:30)</li>
                 </ul>
               </div>
+              <br />
               <div className="list">
                 <p>
                   <b>Serviciul corespunde normativelor sanitare și dispune de următoarele cabinete:</b>
@@ -304,6 +312,7 @@ const InfoBeneficiari = () => {
                   <li>Cabinete de lucru pentru asistenți medicali</li>
                 </ul>
               </div>
+              <br />
               <div className="list">
                 <p>
                   <b>Serviciul de reabilitare medicală și medicină fizică furnizează următoarele metode fizice:</b>
@@ -325,6 +334,7 @@ const InfoBeneficiari = () => {
                   <li>Ultrasonoterapie</li>
                 </ul>
               </div>
+              <br />
               <div className="list">
                 <p>
                   <b>Procedurile de reabilitare prestate de Serviciul de reabilitare medicală și medicină fizică sunt:</b>
