@@ -359,12 +359,6 @@ const Transparenta = () => {
     prevLocationRef.current = { hash: location.hash, search: location.search }
   }, [location.hash, location.search])
 
-  const hashByCategory = useMemo(() => {
-    return Object.fromEntries(
-      Object.entries(categoryByHash).map(([hash, category]) => [category, hash])
-    )
-  }, [])
-
   const keyByCategory = useMemo(() => {
     return Object.fromEntries(
       Object.entries(categoryByHash).map(([hash, category]) => [category, hash.slice(1)])
@@ -432,7 +426,7 @@ const Transparenta = () => {
 
     const nextSearch = params.toString()
     const searchString = nextSearch ? `?${nextSearch}` : ''
-    const nextHash = selectedCategory === 'all' ? '' : (hashByCategory[selectedCategory] || '')
+    const nextHash = ''
 
     if (searchString === location.search && nextHash === location.hash) {
       return
@@ -446,7 +440,6 @@ const Transparenta = () => {
     location.hash,
     navigate,
     keyByCategory,
-    hashByCategory,
     locationChanged,
   ])
 
