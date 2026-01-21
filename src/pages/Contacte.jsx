@@ -24,6 +24,22 @@ L.Icon.Default.mergeOptions({
 
 const entries = [
   {
+    key: 'admin',
+    title: 'Administrația',
+    lines: [
+      'Adresa: Bălți, Strada Decebal, 101V',
+      'Email: cmfbalti@ms.md',
+      'Anticamera: 0231 7-52-28',
+      'Fax: 0231 7-25-88',
+      'Serviciul Resurse Unmane: 0231 7-54-80',
+      'Contabilitatea: 0231 7-52-29',
+      'Serviciul Juridic: 0231 7-52-29',
+      'Serviciul Economico-Financiar: 0231 7-16-60',
+      'Contabil Șef: 0231 7-25-44',
+      'Serviciul Tehnologii Informaționale: 0231 7-25-88',
+    ],
+  },
+  {
     key: 'cs-1',
     title: 'Centrul de Sănătate nr. 1',
     lines: [
@@ -101,22 +117,6 @@ const entries = [
       'Adresa: Bălți, Strada Decebal, 101V',
       'Email: cmfbalti@ms.md',
       'Registratura: 0231 7-10-11',
-    ],
-  },
-  {
-    key: 'admin',
-    title: 'Administrația',
-    lines: [
-      'Adresa: Bălți, Strada Decebal, 101V',
-      'Email: cmfbalti@ms.md',
-      'Anticamera: 0231 7-52-28',
-      'Fax: 0231 7-25-88',
-      'Serviciul Resurse Unmane: 0231 7-54-80',
-      'Contabilitatea: 0231 7-52-29',
-      'Serviciul Juridic: 0231 7-52-29',
-      'Serviciul Economico-Financiar: 0231 7-16-60',
-      'Contabil Șef: 0231 7-25-44',
-      'Serviciul Tehnologii Informaționale: 0231 7-25-88',
     ],
   },
   {
