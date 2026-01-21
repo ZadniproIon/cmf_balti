@@ -11,7 +11,7 @@
 
 
 #contact-left-side {
-    max-width: 535px;
+    max-width: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -117,14 +117,14 @@
     background-color: var(--red-light);
 }
 
-/* Temporary */
 #contact-right-side {
-    width: 740px;
-    height: 650px;
-    border-radius: 10px;
+    width: 700px;
+    height: 600px;
+    border-radius: 16px;
 
     overflow: hidden;
     background-color: var(--background-white);
+    border: 1px solid var(--border);
 }
 
 .dropdown-content .link-icon {
@@ -154,7 +154,7 @@
     color: var(--text-white);
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 1024px) {
 
     #contact-content {
         padding: 0 1.5em;
