@@ -13,6 +13,7 @@ const Home = () => {
 
   return (
     <>
+      {/* Hero section */}
       <div className="main-section-1-wrapper">
         <div className="main-section-1">
           <div className="left-side">

@@ -119,7 +119,7 @@
 /* "Informatii utile" section */
 .info-utile {
     margin: 96px auto;
-    padding: 0 0.5em;
+    padding: 0 1.5em;
 
     max-width: 1500px;
 }
@@ -178,7 +178,6 @@
     color: var(--text-blue);
     stroke-width: 0.5;
 }
-
 /* End of "Informatii utile" section */
 
 
