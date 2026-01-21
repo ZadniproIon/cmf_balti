@@ -180,3 +180,11 @@
         height: 400px;
     }
 }
+
+@media screen and (min-width: 1025px) {
+    #contact-right-side {
+        position: sticky;
+        top: calc(var(--navbar-height) + 1.5em);
+        align-self: flex-start;
+    }
+}
