@@ -39,7 +39,7 @@ const entries = [
     key: 'cs-2',
     title: 'Centrul de Sănătate nr. 2',
     lines: [
-      'Adresa: Bălți, Strada Ștefan cel Mare, 52',
+      'Adresa: Bălți, str. Ștefan cel Mare, 52',
       'Email: cmfbalti@ms.md',
       'Registratura: 0231 2-12-32, 068759222',
       'Șef Centru de Sănătate: 0231 2-03-61',
@@ -49,7 +49,7 @@ const entries = [
     key: 'cs-3',
     title: 'Centrul de Sănătate nr. 3',
     lines: [
-      'Adresa: Bălți, Strada George Goșbuc, 13',
+      'Adresa: Bălți, str. George Goșbuc, 13',
       'Email: cmfbalti@ms.md',
       'Registratura: 0231 2-42-74',
       'Șef Centru de Sănătate: 0231 2-51-69',
@@ -69,7 +69,7 @@ const entries = [
     key: 'cs-5',
     title: 'Centrul de Sănătate nr. 5',
     lines: [
-      'Adresa: Bălți, Strada Boris Glavan, 21',
+      'Adresa: Bălți, str. Boris Glavan, 21',
       'Email: cmfbalti@ms.md',
       'Registratura: 0231 3-81-79',
       'Șef Centru de Sănătate: 0231 3-83-55',
@@ -79,7 +79,7 @@ const entries = [
     key: 'cs-6',
     title: 'Centrul de Sănătate nr. 6',
     lines: [
-      'Adresa: Bălți, Strada Kiev, 30',
+      'Adresa: Bălți, str. Kiev, 30',
       'Email: cmfbalti@ms.md',
       'Registratura: 0231 4-45-77',
       'Șef Centru de Sănătate: 0231 4-34-66',
@@ -89,8 +89,9 @@ const entries = [
     key: 'atis',
     title: 'Centrul de Sănătate Prietenos Tinerilor „ATIS”',
     lines: [
-      'Adresa: Bălți, Strada Kiev, 30',
+      'Adresa: Bălți, str. Kiev, 30',
       'Email: cmfbalti@ms.md',
+      'Telefon: 0231 4-46-62',
     ],
   },
   {
@@ -99,6 +100,7 @@ const entries = [
     lines: [
       'Adresa: Bălți, Strada Decebal, 101V',
       'Email: cmfbalti@ms.md',
+      'Registratura: 0231 7-10-11',
     ],
   },
   {
@@ -121,7 +123,7 @@ const entries = [
     key: 'elizaveta',
     title: 'Oficiul Medicului de Familie s. Elizaveta',
     lines: [
-      'Adresa: s. Elizaveta, Unnamed Road, 21',
+      'Adresa: s. Elizaveta, str. Ștefan cel Mare, 21',
       'Email: cmfbalti@ms.md',
       'Registratura: 0231 6-82-82',
     ],
