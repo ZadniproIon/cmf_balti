@@ -9,7 +9,7 @@ const Footer = () => (
             <img src="/images/logo-cmf.png" alt="Logo-ul CMF Bălți" />
           </div>
           <p className="footer-title">Centrul Medicilor de Familie mun. Bălți</p>
-          <p className="footer-tagline">Asistență medicală primară pentru comunitate.</p>
+          <p className="footer-tagline">Asistență medicală primară pentru comunitatea municipiului Bălți</p>
         </div>
 
         <div className="footer-section">
@@ -34,7 +34,7 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="footer-section">
+        <div className="footer-section" id='navigare'>
           <p className="footer-heading">Navigare</p>
           <ul className="footer-links">
             <li>
@@ -58,7 +58,7 @@ const Footer = () => (
 
       <div className="footer-bottom">
         <p>
-          Proiect făcut cu ❤️ de{' '}
+          Project made with love ❤️ by{' '}
           <a href="https://github.com/ZadniproIon" target="_blank" rel="noreferrer">
             Zadnipro Ion
           </a>
