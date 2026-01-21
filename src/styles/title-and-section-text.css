@@ -19,6 +19,7 @@
     color: var(--text-blue);
     font-size: 1em;
     line-height: 1.5;
+    margin: 0;
 }
 
 .section-text ul {
