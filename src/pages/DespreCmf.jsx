@@ -10,7 +10,10 @@ import titleStyles from '../styles/title-and-section-text.css?raw'
 const pageStyles = [despreStyles, titleStyles, componentsStyles, pillStyles]
 
 const DespreCmf = () => {
-  useDocumentTitle('Despre CMF - CMF Bălți')
+  useDocumentTitle(
+    'Despre CMF - CMF Bălți',
+    'Află despre CMF Bălți, misiune, servicii și echipele de medicină de familie.'
+  )
   usePageStyles(pageStyles, 'despre-cmf')
 
   return (

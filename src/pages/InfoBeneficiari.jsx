@@ -11,7 +11,10 @@ import titleStyles from '../styles/title-and-section-text.css?raw'
 const pageStyles = [quickSelectStyles, titleStyles, pillStyles, infoStyles, componentsStyles]
 
 const InfoBeneficiari = () => {
-  useDocumentTitle('Informații pentru beneficiari - CMF Bălți')
+  useDocumentTitle(
+    'Informații pentru beneficiari - CMF Bălți',
+    'Informații pentru beneficiari: drepturi, servicii, programări și ghiduri utile CMF Bălți.'
+  )
   usePageStyles(pageStyles, 'info-beneficiari')
 
   return (

@@ -226,7 +226,10 @@ const MapFocus = ({ activeKey, position }) => {
 }
 
 const Contacte = () => {
-  useDocumentTitle('Contacte - CMF Bălți')
+  useDocumentTitle(
+    'Contacte - CMF Bălți',
+    'Contacte CMF Bălți: adrese, telefoane, email și harta centrelor de sănătate.'
+  )
   usePageStyles(pageStyles, 'contacte')
 
   const [openKey, setOpenKey] = useState(null)

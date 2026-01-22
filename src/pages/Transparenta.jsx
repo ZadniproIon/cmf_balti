@@ -325,7 +325,10 @@ const documents = [
 ]
 
 const Transparenta = () => {
-  useDocumentTitle('Transparența - CMF Bălți')
+  useDocumentTitle(
+    'Transparența - CMF Bălți',
+    'Transparența CMF Bălți: achiziții publice, rapoarte de activitate și contracte.'
+  )
   usePageStyles(pageStyles, 'transparenta')
 
   const location = useLocation()

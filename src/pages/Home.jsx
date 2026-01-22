@@ -8,7 +8,10 @@ import pillStyles from '../styles/pill-container.css?raw'
 
 const pageStyles = [homeStyles, pillStyles, componentsStyles]
 const Home = () => {
-  useDocumentTitle('Acasă - CMF Bălți')
+  useDocumentTitle(
+    'Acasă - CMF Bălți',
+    'Centrul Medicilor de Familie mun. Bălți — programări online, informații utile și servicii pentru comunitate.'
+  )
   usePageStyles(pageStyles, 'home')
 
   return (
