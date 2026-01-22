@@ -111,7 +111,16 @@ const DespreCmf = () => {
       <div className="card-container">
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-nr1.jpg" alt="Centrul de Sanatate Nr. 1" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-nr1-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-nr1-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr1-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Nr. 1"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 1</p>
@@ -128,7 +137,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-nr2.jpg" alt="Centrul de Sanatate Nr. 2" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-nr2-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-nr2-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr2-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Nr. 2"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 2</p>
@@ -145,7 +163,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-nr3.jpg" alt="Centrul de Sanatate Nr. 3" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-nr3-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-nr3-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr3-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Nr. 3"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 3</p>
@@ -162,7 +189,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-nr4.jpg" alt="Centrul de Sanatate Nr. 4" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-nr4-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-nr4-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr4-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Nr. 4"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 4</p>
@@ -179,7 +215,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-nr5.jpg" alt="Centrul de Sanatate Nr. 5" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-nr5-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-nr5-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr5-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Nr. 5"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 5</p>
@@ -196,7 +241,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-nr6.jpg" alt="Centrul de Sanatate Nr. 6" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-nr6-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-nr6-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr6-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Nr. 6"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Nr. 6</p>
@@ -213,7 +267,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-atis.jpg" alt="Centrul de Sanatate Prietinos Tinerilor ATIS" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-atis-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-atis-350.jpg 350w, /images/despre-cmf-jpeg/cmf-atis-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul de Sanatate Prietinos Tinerilor ATIS"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</p>
@@ -230,7 +293,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-ccsm.jpg" alt="Centrul Comunitar de Sanatate Mintala (CCSM)" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-ccsm-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-ccsm-350.jpg 350w, /images/despre-cmf-jpeg/cmf-ccsm-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Centrul Comunitar de Sanatate Mintala (CCSM)"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</p>
@@ -247,7 +319,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-elizaveta.jpg" alt="Oficiul Medicului de Familie s. Elizaveta" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg 350w, /images/despre-cmf-jpeg/cmf-elizaveta-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Oficiul Medicului de Familie s. Elizaveta"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
@@ -264,7 +345,16 @@ const DespreCmf = () => {
 
         <div className="card">
           <div className="card-image">
-            <img src="/images/despre-cmf-jpeg/cmf-sadovoe.jpg" alt="Oficiul Medicului de Familie s. Sadovoe" />
+            <img
+              src="/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg"
+              srcSet="/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg 350w, /images/despre-cmf-jpeg/cmf-sadovoe-600.jpg 600w"
+              sizes="(max-width: 600px) 90vw, 350px"
+              width="350"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              alt="Oficiul Medicului de Familie s. Sadovoe"
+            />
           </div>
           <div className="card-body">
             <p className="card-title">Oficiul Medicului de Familie s. Sadovoe</p>
