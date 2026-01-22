@@ -7,9 +7,9 @@
     --text-blue: #2e3e5c;
     --text-white: #fcfcfc;
     --text-yellow: #ffdd33;
-    --red-dark: #ff4d4d;
-    --red-normal: #ff6b6b;
-    --red-light: #ff8585;
+    --red-dark: #b71c1c;
+    --red-normal: #d32f2f;
+    --red-light: #c62828;
     --shadow-drop: 0 4px 16px 0 rgba(128, 128, 128, 0.12);
     --navbar-height: 80px;
 }
