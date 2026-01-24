@@ -241,29 +241,41 @@ const Contacte = () => {
   }
 
   return (
-    <div id="contact-content">
-      <div id="contact-left-side">
-        {entries.map((entry) => (
-          <Dropdown
-            key={entry.key}
-            title={entry.title}
-            isOpen={openKey === entry.key}
-            onToggle={() => toggleKey(entry.key)}
-          >
-            <div className="dropdown-text-content">
-              {entry.lines.filter((line) => line && line.trim()).map((line, index) => (
-                <p key={`${entry.key}-${index}`}>{line}</p>
-              ))}
-            </div>
-            <a href={getGoogleMapsHref(entry.key)} target="_blank" rel="noreferrer">
-              <MapPin className="link-icon" />Google Maps
-            </a>
-          </Dropdown>
-        ))}
-      </div>
+    <section id="contact-content" aria-labelledby="contacte-title">
+      <h1 id="contacte-title" className="sr-only">Contacte</h1>
+      <section id="contact-left-side" aria-labelledby="contacte-list-title">
+        <h2 id="contacte-list-title" className="sr-only">Date de contact</h2>
+        <ul className="contact-list" role="list">
+          {entries.map((entry) => (
+            <li className="contact-list-item" key={entry.key}>
+              <Dropdown
+                title={entry.title}
+                isOpen={openKey === entry.key}
+                onToggle={() => toggleKey(entry.key)}
+              >
+                <div className="dropdown-text-content">
+                  {entry.lines.filter((line) => line && line.trim()).map((line, index) => (
+                    <p key={`${entry.key}-${index}`}>{line}</p>
+                  ))}
+                </div>
+                <a href={getGoogleMapsHref(entry.key)} target="_blank" rel="noreferrer">
+                  <MapPin className="link-icon" />Google Maps
+                </a>
+              </Dropdown>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-      <div id="contact-right-side">
-        <MapContainer className="contact-map" center={centerCmf1} zoom={12} scrollWheelZoom={true}>
+      <section id="contact-right-side" aria-labelledby="contacte-map-title">
+        <h2 id="contacte-map-title" className="sr-only">Harta centrelor de sănătate</h2>
+        <MapContainer
+          className="contact-map"
+          center={centerCmf1}
+          zoom={12}
+          scrollWheelZoom={true}
+          aria-label="Harta centrelor de sănătate"
+        >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -279,8 +291,8 @@ const Contacte = () => {
             </Marker>
           ))}
         </MapContainer>
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }
 
