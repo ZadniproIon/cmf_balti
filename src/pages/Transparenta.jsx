@@ -448,8 +448,9 @@ const Transparenta = () => {
 
   return (
     <>
-      <div className="section-text">
-        <div className="transparenta-filters">
+      <section className="section-text" aria-labelledby="transparenta-title">
+        <h1 id="transparenta-title" className="sr-only">Transparența</h1>
+        <div className="transparenta-filters" role="group" aria-label="Filtre documente">
           <label>
             <span>Categoria</span>
             <select value={selectedCategory} onChange={(event) => setSelectedCategory(event.target.value)}>
@@ -475,24 +476,24 @@ const Transparenta = () => {
           </label>
         </div>
 
-        <div className="transparenta-results">
+        <ul className="transparenta-results" role="list">
           {filteredDocuments.length === 0 ? (
-            <p>Nu există rezultate pentru filtrele selectate.</p>
+            <li className="transparenta-empty">Nu există rezultate pentru filtrele selectate.</li>
           ) : (
             filteredDocuments.map((doc, index) => (
-              <div className="transparenta-result" key={`${doc.category}-${doc.year}-${index}`}>
+              <li className="transparenta-result" key={`${doc.category}-${doc.year}-${index}`}>
                 <div className="transparenta-result-text">
-                  <p className="transparenta-result-title">{doc.title}</p>
+                  <h3 className="transparenta-result-title">{doc.title}</h3>
                   <p className="transparenta-result-meta">{doc.category} • {doc.year}</p>
                 </div>
                 <a href={doc.href} target="_blank" rel="noreferrer">
                   <Download className="download-icon" />Accesează PDF
                 </a>
-              </div>
+              </li>
             ))
           )}
-        </div>
-      </div>
+        </ul>
+      </section>
     </>
   )
 }
