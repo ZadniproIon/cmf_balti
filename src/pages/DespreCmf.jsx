@@ -18,98 +18,103 @@ const DespreCmf = () => {
 
   return (
     <>
-      <div className="title-of-page">
-        <p>
+      <header className="title-of-page">
+        <h1>
           Instituția Medico-Sanitară Publică
           <br />
           „Centrul Medicilor de Familie Municipal Bălți”
-        </p>
-      </div>
+        </h1>
+      </header>
 
-      <p className="title-text">Domeniul de activitate</p>
-      <div className="section-text">
-        <p>
-          Domeniul de activitate al IMSP„Centrul Medicilor de Familie Municipal Bălți”, este
-          acordarea serviciilor medicale primare.
-          <br />
-          <br />
-          Medicina de familie este o specialitate medicală care asigură asistența medicală primară și
-          reprezintă setul de servicii medicale ce include: activități de profilaxie, de consultanță
-          în scop curativ și de suport. Activitatea medicului de familie și echipa sa, asigură prin
-          acțiuni preventive, educaționale, terapeutice și de recuperare, promovarea stării de
-          sănătate a individului, familiei și colectivității. Asistența medicală primară este
-          garantată pentru toată populația Republicii Moldova, indiferent de statutul de asigurat sau
-          neasigurat.
-          <br />
-          <br />
-          Pentru a beneficia de asistență medicală primară este obligatorie înregistrarea pe lista
-          medicului de familie fiind respectat pricipiul deservirii teritoriale. Medicul de familie
-          este specialistul de prim-contact și cel care, după caz, organizează accesul la celelalte
-          tipuri de asistență și servicii medicale prevăzute de{' '}
-          <a
-            id="programul-unic-link"
-            href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Programul unic
-          </a>
-          .
-        </p>
-      </div>
+      <section aria-labelledby="domeniul-activitate-title">
+        <h2 id="domeniul-activitate-title" className="title-text">Domeniul de activitate</h2>
+        <div className="section-text">
+          <p>
+            Domeniul de activitate al IMSP„Centrul Medicilor de Familie Municipal Bălți”, este
+            acordarea serviciilor medicale primare.
+            <br />
+            <br />
+            Medicina de familie este o specialitate medicală care asigură asistența medicală primară și
+            reprezintă setul de servicii medicale ce include: activități de profilaxie, de consultanță
+            în scop curativ și de suport. Activitatea medicului de familie și echipa sa, asigură prin
+            acțiuni preventive, educaționale, terapeutice și de recuperare, promovarea stării de
+            sănătate a individului, familiei și colectivității. Asistența medicală primară este
+            garantată pentru toată populația Republicii Moldova, indiferent de statutul de asigurat sau
+            neasigurat.
+            <br />
+            <br />
+            Pentru a beneficia de asistență medicală primară este obligatorie înregistrarea pe lista
+            medicului de familie fiind respectat pricipiul deservirii teritoriale. Medicul de familie
+            este specialistul de prim-contact și cel care, după caz, organizează accesul la celelalte
+            tipuri de asistență și servicii medicale prevăzute de{' '}
+            <a
+              id="programul-unic-link"
+              href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Programul unic
+            </a>
+            .
+          </p>
+        </div>
+      </section>
 
-      <p className="title-text">Evoluția</p>
-      <div className="section-text">
-        <p>
-          Sistemul de sănătate din mun. Bălți până în anul 1997 a fost constituit din 13 instituții
-          medicale, sectorul de ambulator fiind reprezentat prin 3 policlinici pentru maturi și 2
-          policlinici pentru copii, inclusiv, specialiști de profil îngust, dispensare specializate și
-          2 centre de consultații pentru femei.
-          <br />
-          <br />
-          Odată cu adoptarea Concepției de dezvoltare a sistemului ocrotirii sănătății în Republica
-          Moldova pe perioada anilor 1997-2005 (Hotărârea Guvernului Republicii Moldova Nr.668 din
-          17.07.97), în corespundere cu prevederile Hotărârii Guvernului Republicii Moldova NR.I134
-          din 09.12.97„Cu privire la dezvoltarea asistenței medicale primare”, în scopul accelerării
-          procesului de reformă a sistemului sănătății și realizării măsurilor de trecere la o nouă
-          formă de asistență medicală primară, de către organele administrației publice locale au fost
-          luate unele decizii importante în acest context.
-          <br />
-          <br />
-          În luna februarie 1998, în municipiu, a fost instituită Asociația Medicală Teritorială,
-          denumită inițial „Asociația Policlinicilor mun. Bălți”. Noua instituție medicală, s-a format
-          prin comasarea policlinicilor pentru maturi/copii și centrelor de consultații pentru femei,
-          având drept scop acordarea asistenței medicale primare populației municipiului.
-          <br />
-          <br />
-          Din 01.03.98, prin reorganizarea acestor structuri au fost create 5 policlinici mixte,
-          ulterior, specialiștii fiind uniți într-o secție consultativ - diagnostică. Inițial, medicii
-          au activat în echipe mari, compuse din 3 terapeuți, 2 pediatri și 1 obstetrician-ginecolog.
-          Începând cu anul 2000, echipele s-au redus la 3 medici, unul dintre care, în mod obligatoriu,
-          era fost - pediatru, manevră îndreptată spre asigurarea asistenței medicale calitative
-          copiilor de vârstă fragedă în primul rând și sporirea gradului de responsabilitate a
-          fiecărui medic.
-          <br />
-          <br />
-          Ca rezultat a reformei administrativ - teritoriale, prin ordinul Ministerului Sănătății
-          Republicii Moldova Nr. I60 din 01.07.99 a fost aprobat noul sistem de sănătate a
-          municipiului Bălți. În baza „Asociației policlinicilor” fiind format „Centrul Medicilor de
-          Familie Municipal Bălți” cu retragerea specialiștilor de profil îngust în secția consultativă
-          a Spitalului Județean.
-          <br />
-          <br />
-          Structura Sistemului Ocrotirii Sănătății din municipiul Bălți n-a suferit modificări
-          esențiale nici după noua reformă administrativ - teritorială, în luna decembrie a anului 2003
-          fiind instituită Instituția Medico - Sanitară Publică „Centrul Medicilor de Familie Municipal
-          Bălți”, ce are în subdiviziune: 6 Centre de Sănătate și 2 OMF-uri - Oficiul Medicului de
-          Familie Sadovoe și Oficiul Medicului de Familie Elizaveta, ce deservesc populația de pe cele
-          81 de sectoare.
-        </p>
-      </div>
+      <section aria-labelledby="evolutia-title">
+        <h2 id="evolutia-title" className="title-text">Evoluția</h2>
+        <div className="section-text">
+          <p>
+            Sistemul de sănătate din mun. Bălți până în anul 1997 a fost constituit din 13 instituții
+            medicale, sectorul de ambulator fiind reprezentat prin 3 policlinici pentru maturi și 2
+            policlinici pentru copii, inclusiv, specialiști de profil îngust, dispensare specializate și
+            2 centre de consultații pentru femei.
+            <br />
+            <br />
+            Odată cu adoptarea Concepției de dezvoltare a sistemului ocrotirii sănătății în Republica
+            Moldova pe perioada anilor 1997-2005 (Hotărârea Guvernului Republicii Moldova Nr.668 din
+            17.07.97), în corespundere cu prevederile Hotărârii Guvernului Republicii Moldova NR.I134
+            din 09.12.97„Cu privire la dezvoltarea asistenței medicale primare”, în scopul accelerării
+            procesului de reformă a sistemului sănătății și realizării măsurilor de trecere la o nouă
+            formă de asistență medicală primară, de către organele administrației publice locale au fost
+            luate unele decizii importante în acest context.
+            <br />
+            <br />
+            În luna februarie 1998, în municipiu, a fost instituită Asociația Medicală Teritorială,
+            denumită inițial „Asociația Policlinicilor mun. Bălți”. Noua instituție medicală, s-a format
+            prin comasarea policlinicilor pentru maturi/copii și centrelor de consultații pentru femei,
+            având drept scop acordarea asistenței medicale primare populației municipiului.
+            <br />
+            <br />
+            Din 01.03.98, prin reorganizarea acestor structuri au fost create 5 policlinici mixte,
+            ulterior, specialiștii fiind uniți într-o secție consultativ - diagnostică. Inițial, medicii
+            au activat în echipe mari, compuse din 3 terapeuți, 2 pediatri și 1 obstetrician-ginecolog.
+            Începând cu anul 2000, echipele s-au redus la 3 medici, unul dintre care, în mod obligatoriu,
+            era fost - pediatru, manevră îndreptată spre asigurarea asistenței medicale calitative
+            copiilor de vârstă fragedă în primul rând și sporirea gradului de responsabilitate a
+            fiecărui medic.
+            <br />
+            <br />
+            Ca rezultat a reformei administrativ - teritoriale, prin ordinul Ministerului Sănătății
+            Republicii Moldova Nr. I60 din 01.07.99 a fost aprobat noul sistem de sănătate a
+            municipiului Bălți. În baza „Asociației policlinicilor” fiind format „Centrul Medicilor de
+            Familie Municipal Bălți” cu retragerea specialiștilor de profil îngust în secția consultativă
+            a Spitalului Județean.
+            <br />
+            <br />
+            Structura Sistemului Ocrotirii Sănătății din municipiul Bălți n-a suferit modificări
+            esențiale nici după noua reformă administrativ - teritorială, în luna decembrie a anului 2003
+            fiind instituită Instituția Medico - Sanitară Publică „Centrul Medicilor de Familie Municipal
+            Bălți”, ce are în subdiviziune: 6 Centre de Sănătate și 2 OMF-uri - Oficiul Medicului de
+            Familie Sadovoe și Oficiul Medicului de Familie Elizaveta, ce deservesc populația de pe cele
+            81 de sectoare.
+          </p>
+        </div>
+      </section>
 
-      <p className="title-text">Subdiviziunile IMSP „CMF mun. Bălți”</p>
-      <div className="card-container">
-        <div className="card">
+      <section aria-labelledby="subdiviziuni-title">
+        <h2 id="subdiviziuni-title" className="title-text">Subdiviziunile IMSP „CMF mun. Bălți”</h2>
+        <div className="card-container" role="list">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-nr1-350.jpg"
@@ -123,7 +128,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Nr. 1</p>
+            <h3 className="card-title">Centrul de Sănătate Nr. 1</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Decebal, 101V</p>
@@ -133,9 +138,9 @@ const DespreCmf = () => {
               <p>0231 7-43-34</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-nr2-350.jpg"
@@ -149,7 +154,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Nr. 2</p>
+            <h3 className="card-title">Centrul de Sănătate Nr. 2</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Ștefan cel Mare, 52</p>
@@ -159,9 +164,9 @@ const DespreCmf = () => {
               <p>0231 2-12-32</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-nr3-350.jpg"
@@ -175,7 +180,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Nr. 3</p>
+            <h3 className="card-title">Centrul de Sănătate Nr. 3</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. George Coșbuc, 13</p>
@@ -185,9 +190,9 @@ const DespreCmf = () => {
               <p>0231 2-42-74</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-nr4-350.jpg"
@@ -201,7 +206,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Nr. 4</p>
+            <h3 className="card-title">Centrul de Sănătate Nr. 4</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Strîii, 9</p>
@@ -211,9 +216,9 @@ const DespreCmf = () => {
               <p>0231 6-78-77</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-nr5-350.jpg"
@@ -227,7 +232,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Nr. 5</p>
+            <h3 className="card-title">Centrul de Sănătate Nr. 5</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Boris Glavan, 21</p>
@@ -237,9 +242,9 @@ const DespreCmf = () => {
               <p>0231 3-81-79</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-nr6-350.jpg"
@@ -253,7 +258,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Nr. 6</p>
+            <h3 className="card-title">Centrul de Sănătate Nr. 6</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Kiev, 30</p>
@@ -263,9 +268,9 @@ const DespreCmf = () => {
               <p>0231 4-45-77</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-atis-350.jpg"
@@ -279,7 +284,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</p>
+            <h3 className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Kiev, 30</p>
@@ -289,9 +294,9 @@ const DespreCmf = () => {
               <p>0231 4-64-62</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-ccsm-350.jpg"
@@ -305,7 +310,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</p>
+            <h3 className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Decebal, 101V</p>
@@ -315,9 +320,9 @@ const DespreCmf = () => {
               <p>0231 7-10-11</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg"
@@ -331,7 +336,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Oficiul Medicului de Familie s. Elizaveta</p>
+            <h3 className="card-title">Oficiul Medicului de Familie s. Elizaveta</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Ștefan cel Mare, 21</p>
@@ -341,9 +346,9 @@ const DespreCmf = () => {
               <p>0231 6-82-82</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
+        <article className="card" role="listitem">
           <div className="card-image">
             <img
               src="/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg"
@@ -357,7 +362,7 @@ const DespreCmf = () => {
             />
           </div>
           <div className="card-body">
-            <p className="card-title">Oficiul Medicului de Familie s. Sadovoe</p>
+            <h3 className="card-title">Oficiul Medicului de Familie s. Sadovoe</h3>
             <div className="card-row">
               <MapPin className="card-icon" />
               <p>str. Parcovaia, 31</p>
@@ -367,8 +372,9 @@ const DespreCmf = () => {
               <p>0231 5-52-19</p>
             </div>
           </div>
+        </article>
         </div>
-      </div>
+      </section>
     </>
   )
 }
