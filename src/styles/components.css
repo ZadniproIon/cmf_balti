@@ -223,6 +223,9 @@ body {
     top: 0;
     right: 5px;
     /*border: 1px solid red;*/
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 /* Remove focus/active state styles */
@@ -236,6 +239,12 @@ body {
 .hamburger:focus,
 .hamburger:active {
     background-color: transparent; /* Override default background */
+}
+
+.hamburger:focus-visible {
+    outline: 2px solid var(--red-normal);
+    outline-offset: 4px;
+    border-radius: 8px;
 }
 
 

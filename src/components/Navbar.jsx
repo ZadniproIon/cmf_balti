@@ -122,13 +122,20 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className={`hamburger${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          type="button"
+          className={`hamburger${menuOpen ? ' open' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          aria-label={menuOpen ? 'Închide meniul' : 'Deschide meniul'}
+        >
           <span className="line-1"></span>
           <span className="line-2"></span>
           <span className="line-3"></span>
-        </div>
+        </button>
 
-        <div className={`mobile-menu${menuOpen ? ' menu-open' : ''}`}>
+        <nav id="mobile-menu" className={`mobile-menu${menuOpen ? ' menu-open' : ''}`} aria-label="Navigare mobilă">
           <ul>
             {navItems.map((item) => (
               <li key={`${item.to}-mobile`}>
@@ -143,7 +150,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
     </div>
   )
 }
