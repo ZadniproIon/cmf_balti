@@ -16,17 +16,16 @@ const Home = () => {
 
   return (
     <>
-      {/* Hero section */}
-      <div className="main-section-1-wrapper">
+      <section className="main-section-1-wrapper" aria-labelledby="hero-title">
         <div className="main-section-1">
           <div className="left-side">
-            <p>
+            <h1 id="hero-title" className="hero-title">
               Programare online
-            </p>
-            <p>
+            </h1>
+            <p className="hero-description">
               Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și planificați-vă vizita din confortul casei.
             </p>
-            <a href="https://sia.amp.md/" target="_blank" rel="noreferrer">
+            <a className="hero-cta" href="https://sia.amp.md/" target="_blank" rel="noreferrer">
               Apasă aici
             </a>
           </div>
@@ -41,33 +40,33 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
       
       
-      <div className="info-utile">
-        <p>Informații utile</p>
-        <div className="info-utile-containers">
-          <div>
+      <section className="info-utile" aria-labelledby="info-utile-title">
+        <h2 id="info-utile-title" className="info-utile-title">Informații utile</h2>
+        <ul className="info-utile-containers" role="list">
+          <li className="info-utile-card">
             <Clock8 className="icon" />
-            <p>Orele de lucru</p>
+            <h3 className="info-utile-card-title">Orele de lucru</h3>
             <p>
               Luni - Vineri: 8:00 - 19:00<br />Sâmbătă: 8:00 - 13:00
             </p>
-          </div>
-          <div>
+          </li>
+          <li className="info-utile-card">
             <HeartPulse className="icon" />
-            <p>Centrele de sănătate</p>
+            <h3 className="info-utile-card-title">Centrele de sănătate</h3>
             <p>Total 10 în orașul Bălți, cât și satele Elizaveta și Sadovoie</p>
-          </div>
-          <div>
+          </li>
+          <li className="info-utile-card">
             <PhoneCall className="icon" />
-            <p>Contact</p>
+            <h3 className="info-utile-card-title">Contact</h3>
             <p>La numărul de telefon: 02319977 sau la secțiunea <Link to="/contacte.html">Contacte</Link></p>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </section>
 
-      <div className="content-wrapper" id="despre-cmf">
+      <section className="content-wrapper" id="despre-cmf" aria-labelledby="despre-cmf-title">
         <div className="content">
           <div className="image-side">
             <img
@@ -80,7 +79,7 @@ const Home = () => {
             />
           </div>
           <div className="content-side">
-            <p>Despre CMF Bălți</p>
+            <h2 id="despre-cmf-title" className="content-title">Despre CMF Bălți</h2>
             <p>
               IMSP „Centrul Medicilor de Familie Municipal Bălți” are ca obiectiv principal furnizarea
               asistenței medicale primare pentru întreaga populație, indiferent de statutul de
@@ -93,12 +92,12 @@ const Home = () => {
             <Link to="/despre-cmf.html">Află mai multe</Link>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="content-wrapper" id="esti-beneficiar">
+      <section className="content-wrapper" id="esti-beneficiar" aria-labelledby="esti-beneficiar-title">
         <div className="content">
           <div className="content-side">
-            <p>Ești beneficiar?</p>
+            <h2 id="esti-beneficiar-title" className="content-title">Ești beneficiar?</h2>
             <p>
               Dacă ești beneficiar al serviciilor medicale oferite de Centrul Medicilor de Familie din
               Bălți, medicul tău de familie va fi primul punct de contact pentru îngrijirea sănătății.
@@ -120,11 +119,11 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="transparenta-section-wrapper">
+      <section className="transparenta-section-wrapper" aria-labelledby="transparenta-title">
         <div className="transparenta-section">
-          <p>Transpa&shy;rență</p>
+          <h2 id="transparenta-title" className="transparenta-title">Transpa&shy;rență</h2>
           <p>
             Pentru noi, transparența este esențială în activitatea noastră zilnică. Ne angajăm să
             oferim acces la informații detaliate privind achizițiile publice, rapoartele de activitate
@@ -135,18 +134,18 @@ const Home = () => {
             dispoziția comunității.
           </p>
 
-          <div className="pills">
+          <nav className="pills" aria-label="Secțiuni de transparență">
             <Link to="/transparenta.html#achizitii_publice">Achiziții publice</Link>
             <Link to="/transparenta.html#rapoarte_de_activitate">Rapoarte de activitate</Link>
             <Link to="/transparenta.html#contracte_cnam">Contracte CNAM</Link>
-          </div>
+          </nav>
         </div>
-      </div>
+      </section>
 
-      <div className="parteneri-oficiali-wrapper">
-        <p id="parteneri-oficiali-title">Parteneri oficiali</p>
-        <div className="parteneri-oficiali">
-          <div>
+      <section className="parteneri-oficiali-wrapper" aria-labelledby="parteneri-oficiali-title">
+        <h2 id="parteneri-oficiali-title">Parteneri oficiali</h2>
+        <ul className="parteneri-oficiali" role="list">
+          <li className="partner-card">
             <div className="left-side">
               <img
                 src="/images/main-page-jpeg/ms%20gov%20md-150.jpg"
@@ -158,14 +157,14 @@ const Home = () => {
               />
             </div>
             <div className="right-side">
-              <p>Ministerul Sănătății al Republicii Moldova</p>
+              <h3 className="partner-name">Ministerul Sănătății al Republicii Moldova</h3>
               <a href="https://ms.gov.md/" target="_blank" rel="noreferrer">
                 <Globe />ms.gov.md
               </a>
             </div>
-          </div>
+          </li>
 
-          <div>
+          <li className="partner-card">
             <div className="left-side">
               <img
                 src="/images/main-page-jpeg/cnam-150.jpg"
@@ -177,15 +176,14 @@ const Home = () => {
               />
             </div>
             <div className="right-side">
-              <p>Compania Națională de Asigurări în Medicină
-              </p>
+              <h3 className="partner-name">Compania Națională de Asigurări în Medicină</h3>
               <a href="http://cnam.md/" target="_blank" rel="noreferrer">
                 <Globe />cnam.md
               </a>
             </div>
-          </div>
+          </li>
 
-          <div>
+          <li className="partner-card">
             <div className="left-side">
               <img
                 src="/images/main-page-jpeg/primaria%20balti-150.jpg"
@@ -197,14 +195,14 @@ const Home = () => {
               />
             </div>
             <div className="right-side">
-              <p>Primăria Municipiului Bălți</p>
+              <h3 className="partner-name">Primăria Municipiului Bălți</h3>
               <a href="https://balti.md/" target="_blank" rel="noreferrer">
                 <Globe />balti.md
               </a>
             </div>
-          </div>
+          </li>
 
-          <div>
+          <li className="partner-card">
             <div className="left-side">
               <img
                 src="/images/main-page-jpeg/cnas-150.jpg"
@@ -216,14 +214,14 @@ const Home = () => {
               />
             </div>
             <div className="right-side">
-              <p>Compania Națională de Asigurări Sociale</p>
+              <h3 className="partner-name">Compania Națională de Asigurări Sociale</h3>
               <a href="https://cnas.gov.md/" target="_blank" rel="noreferrer">
                 <Globe />cnas.gov.md
               </a>
             </div>
-          </div>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </section>
     </>
   )
 }
