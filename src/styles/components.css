@@ -419,6 +419,11 @@ body.menu-lock {
     gap: 0.5em;
 }
 
+.site-footer .footer-address {
+    margin: 0;
+    font-style: normal;
+}
+
 .site-footer .footer-heading {
     margin: 0;
     color: var(--text-yellow);
