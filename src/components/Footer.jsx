@@ -43,10 +43,10 @@ const Footer = () => (
               <Link to="/">Acasă</Link>
             </li>
             <li>
-              <Link to="/despre-cmf">Despre noi</Link>
+              <Link to="/despre-noi">Despre noi</Link>
             </li>
             <li>
-              <Link to="/info-pentru-beneficiari">Generale</Link>
+              <Link to="/generale">Generale</Link>
             </li>
             <li>
               <Link to="/transparenta">Transparență</Link>

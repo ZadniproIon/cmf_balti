@@ -7,11 +7,11 @@ const navItems = [
     label: 'Acasă',
   },
   {
-    to: '/despre-cmf',
+    to: '/despre-noi',
     label: 'Despre noi',
   },
   {
-    to: '/info-pentru-beneficiari',
+    to: '/generale',
     label: 'Generale',
   },
   {

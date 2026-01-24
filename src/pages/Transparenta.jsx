@@ -326,8 +326,8 @@ const documents = [
 
 const Transparenta = () => {
   useDocumentTitle(
-    'Transparența - CMF Bălți',
-    'Transparența CMF Bălți: achiziții publice, rapoarte de activitate și contracte.'
+    'Transparență - CMF Bălți',
+    'Transparență CMF Bălți: achiziții publice, rapoarte de activitate și contracte.'
   )
   usePageStyles(pageStyles, 'transparenta')
 
@@ -449,7 +449,7 @@ const Transparenta = () => {
   return (
     <>
       <section className="section-text" aria-labelledby="transparenta-title">
-        <h1 id="transparenta-title" className="sr-only">Transparența</h1>
+        <h1 id="transparenta-title" className="sr-only">Transparență</h1>
         <div className="transparenta-filters" role="group" aria-label="Filtre documente">
           <label>
             <span>Categoria</span>

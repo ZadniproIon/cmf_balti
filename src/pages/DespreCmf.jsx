@@ -11,7 +11,7 @@ const pageStyles = [despreStyles, titleStyles, componentsStyles, pillStyles]
 
 const DespreCmf = () => {
   useDocumentTitle(
-    'Despre CMF - CMF Bălți',
+    'Despre noi - CMF Bălți',
     'Află despre CMF Bălți, misiune, servicii și echipele de medicină de familie.'
   )
   usePageStyles(pageStyles, 'despre-cmf')

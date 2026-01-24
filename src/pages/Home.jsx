@@ -9,7 +9,7 @@ import pillStyles from '../styles/pill-container.css?raw'
 const pageStyles = [homeStyles, pillStyles, componentsStyles]
 const Home = () => {
   useDocumentTitle(
-    'Acasă - CMF Bălți',
+    'CMF Bălți',
     'Centrul Medicilor de Familie mun. Bălți — programări online, informații utile și servicii pentru comunitate.'
   )
   usePageStyles(pageStyles, 'home')
@@ -89,7 +89,7 @@ const Home = () => {
               familie, împreună cu echipele lor, contribuie la îmbunătățirea sănătății individuale și
               comunitare.
             </p>
-            <Link to="/despre-cmf">Află mai multe</Link>
+            <Link to="/despre-noi">Află mai multe</Link>
           </div>
         </div>
       </section>
@@ -106,7 +106,7 @@ const Home = () => {
               medicale, tratamente și acces la alte tipuri de servicii specializate. Aceste servicii
               sunt disponibile pentru toți, indiferent de statutul de asigurat sau neasigurat.
             </p>
-            <Link to="/info-pentru-beneficiari">Află mai multe</Link>
+            <Link to="/generale">Află mai multe</Link>
           </div>
           <div className="image-side">
             <img

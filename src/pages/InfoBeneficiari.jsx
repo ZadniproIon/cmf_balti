@@ -12,14 +12,14 @@ const pageStyles = [quickSelectStyles, titleStyles, pillStyles, infoStyles, comp
 
 const InfoBeneficiari = () => {
   useDocumentTitle(
-    'Informații pentru beneficiari - CMF Bălți',
+    'Generale - CMF Bălți',
     'Informații pentru beneficiari: drepturi, servicii, programări și ghiduri utile CMF Bălți.'
   )
   usePageStyles(pageStyles, 'info-beneficiari')
 
   return (
     <>
-      <h1 className="sr-only">Informații pentru beneficiari</h1>
+      <h1 className="sr-only">Generale</h1>
       <section className="quick-select" aria-labelledby="quick-select-title">
         <h2 id="quick-select-title" className="quick-select-title">Apasă butoanele pentru acces direct</h2>
         <nav className="select-options" aria-label="Navigare rapidă">
