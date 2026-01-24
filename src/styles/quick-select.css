@@ -13,7 +13,7 @@
     max-width: 700px;
 }
 
-.quick-select p {
+.quick-select-title {
     font-size: 1.5em;
     color: var(--text-blue);
     text-align: center;

@@ -19,114 +19,118 @@ const InfoBeneficiari = () => {
 
   return (
     <>
-      <div className="quick-select">
-        <p>Apasă butoanele pentru acces direct</p>
-        <div className="select-options">
+      <h1 className="sr-only">Informații pentru beneficiari</h1>
+      <section className="quick-select" aria-labelledby="quick-select-title">
+        <h2 id="quick-select-title" className="quick-select-title">Apasă butoanele pentru acces direct</h2>
+        <nav className="select-options" aria-label="Navigare rapidă">
           <a href="#drepturile_pacientului">Drepturile pacientului</a>
           <a href="#responsabilitatile_pacientului">Responsabilitățile pacientului</a>
           <a href="#servicii">Servicii</a>
           <a href="#asigurarea_obligatorie_de_asistenta_medicala">Asigurarea obligatorie</a>
           <a href="#tarife">Tarife</a>
+        </nav>
+      </section>
+
+      <section aria-labelledby="drepturile_pacientului">
+        <h2 className="title-text" id="drepturile_pacientului">
+          Drepturile pacientului
+        </h2>
+        <div className="section-text">
+          <p>Pacientul are dreptul la:</p>
+          <ul>
+            <li>
+              informații complete asupra stării de sănătate, metodelor de profilaxie, diagnostic,
+              tratament și recuperare, precum și despre riscurile potențiale și eficiența terapeutică a
+              acestora, prognoza și progresul tratamentului, precum și despre alternativele metodelor
+              propuse, inclusiv opțiunea de a nu urma un tratament;
+            </li>
+            <li>
+              informații cu privire la prestatorul de servicii de sănătate, profilul acestuia, volumul,
+              calitatea, costul și modalitatea de prestare a serviciilor respective;
+            </li>
+            <li>
+              dreptul de a refuza sau opri o intervenție medicală; implicațiile refuzului sau opririi
+              unei astfel de intervenții trebuie explicate clar pacientului;
+            </li>
+            <li>
+              acceptarea sau refuzul de a participa la cercetări biomedicale (studii clinice), conform
+              prevederilor prezentei legi și altor acte normative în vigoare;
+            </li>
+            <li>
+              protecția datelor cu caracter personal, inclusiv a informațiilor privind starea de
+              sănătate, diagnosticul și tratamentul; aceste informații nu vor fi dezvăluite unor terțe
+              persoane și vor fi păstrate în conformitate cu regulamentele de confidențialitate;
+            </li>
+            <li>acces la asistență medicală gratuită, în volumul stabilit de legislație;</li>
+            <li>
+              o atitudine respectuoasă și umană din partea prestatorului de servicii de sănătate,
+              indiferent de vârstă, apartenență etnică sau statut socio-economic;
+            </li>
+            <li>
+              securitatea vieții personale, integritatea fizică, psihică și morală, cu respectarea
+              discreției în timpul acordării serviciilor medicale;
+            </li>
+            <li>
+              reducerea suferinței și atenuarea durerii prin metode legale disponibile, în funcție de
+              posibilitățile reale ale prestatorului de servicii de sănătate;
+            </li>
+            <li>îngrijire terminală demnă de o ființă umană.</li>
+          </ul>
         </div>
-      </div>
+      </section>
 
-      <p className="title-text" id="drepturile_pacientului">
-        Drepturile pacientului
-      </p>
-      <div className="section-text">
-        <p>Pacientul are dreptul la:</p>
-        <ul>
-          <li>
-            informații complete asupra stării de sănătate, metodelor de profilaxie, diagnostic,
-            tratament și recuperare, precum și despre riscurile potențiale și eficiența terapeutică a
-            acestora, prognoza și progresul tratamentului, precum și despre alternativele metodelor
-            propuse, inclusiv opțiunea de a nu urma un tratament;
-          </li>
-          <li>
-            informații cu privire la prestatorul de servicii de sănătate, profilul acestuia, volumul,
-            calitatea, costul și modalitatea de prestare a serviciilor respective;
-          </li>
-          <li>
-            dreptul de a refuza sau opri o intervenție medicală; implicațiile refuzului sau opririi
-            unei astfel de intervenții trebuie explicate clar pacientului;
-          </li>
-          <li>
-            acceptarea sau refuzul de a participa la cercetări biomedicale (studii clinice), conform
-            prevederilor prezentei legi și altor acte normative în vigoare;
-          </li>
-          <li>
-            protecția datelor cu caracter personal, inclusiv a informațiilor privind starea de
-            sănătate, diagnosticul și tratamentul; aceste informații nu vor fi dezvăluite unor terțe
-            persoane și vor fi păstrate în conformitate cu regulamentele de confidențialitate;
-          </li>
-          <li>acces la asistență medicală gratuită, în volumul stabilit de legislație;</li>
-          <li>
-            o atitudine respectuoasă și umană din partea prestatorului de servicii de sănătate,
-            indiferent de vârstă, apartenență etnică sau statut socio-economic;
-          </li>
-          <li>
-            securitatea vieții personale, integritatea fizică, psihică și morală, cu respectarea
-            discreției în timpul acordării serviciilor medicale;
-          </li>
-          <li>
-            reducerea suferinței și atenuarea durerii prin metode legale disponibile, în funcție de
-            posibilitățile reale ale prestatorului de servicii de sănătate;
-          </li>
-          <li>îngrijire terminală demnă de o ființă umană.</li>
-        </ul>
-      </div>
+      <section aria-labelledby="responsabilitatile_pacientului">
+        <h2 className="title-text" id="responsabilitatile_pacientului">
+          Responsabi&shy;litățile pacientului
+        </h2>
+        <div className="section-text">
+          <p>Pacientul are următoarele responsabilități:</p>
+          <ul>
+            <li>să fie înregistrat pe lista unui medic de familie;</li>
+            <li>
+              să aibă grijă de propria sănătate și să adopte un mod de viață sănătos, excluzând acțiunile
+              premeditate care dăunează sănătății sale și a altor persoane;
+            </li>
+            <li>
+              să respecte măsurile de precauție în contactele cu alte persoane, inclusiv cu lucrătorii
+              medicali, în cazul în care are cunoștință că suferă de o boală care prezintă pericol
+              social;
+            </li>
+            <li>
+              să întreprindă, în lipsa contraindicațiilor medicale, măsuri profilactice obligatorii,
+              inclusiv imunizări, a căror neîndeplinire amenință propria sănătate și creează un pericol
+              social;
+            </li>
+            <li>
+              să comunice lucrătorului medical informații complete despre bolile suportate și cele
+              curente, despre afecțiunile care prezintă pericol social, inclusiv în cazul donării
+              benevole de sânge, substanțe biologice lichide, organe și țesuturi;
+            </li>
+            <li>
+              să respecte regulile de comportament stabilite pentru pacienți în instituția
+              medico-sanitară, precum și recomandările medicului pe durata tratamentului ambulator sau
+              staționar;
+            </li>
+            <li>
+              să evite utilizarea produselor farmaceutice și a substanțelor medicamentoase fără
+              prescrierea și acceptul medicului curant, inclusiv droguri, alte substanțe psihotrope și
+              alcool, pe durata tratamentului în instituția medico-sanitară;
+            </li>
+            <li>
+              să respecte drepturile și demnitatea celorlalți pacienți, precum și ale personalului
+              medico-sanitar.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-      <p className="title-text" id="responsabilitatile_pacientului">
-        Responsabi&shy;litățile pacientului
-      </p>
-      <div className="section-text">
-        <p>Pacientul are următoarele responsabilități:</p>
-        <ul>
-          <li>să fie înregistrat pe lista unui medic de familie;</li>
-          <li>
-            să aibă grijă de propria sănătate și să adopte un mod de viață sănătos, excluzând acțiunile
-            premeditate care dăunează sănătății sale și a altor persoane;
-          </li>
-          <li>
-            să respecte măsurile de precauție în contactele cu alte persoane, inclusiv cu lucrătorii
-            medicali, în cazul în care are cunoștință că suferă de o boală care prezintă pericol
-            social;
-          </li>
-          <li>
-            să întreprindă, în lipsa contraindicațiilor medicale, măsuri profilactice obligatorii,
-            inclusiv imunizări, a căror neîndeplinire amenință propria sănătate și creează un pericol
-            social;
-          </li>
-          <li>
-            să comunice lucrătorului medical informații complete despre bolile suportate și cele
-            curente, despre afecțiunile care prezintă pericol social, inclusiv în cazul donării
-            benevole de sânge, substanțe biologice lichide, organe și țesuturi;
-          </li>
-          <li>
-            să respecte regulile de comportament stabilite pentru pacienți în instituția
-            medico-sanitară, precum și recomandările medicului pe durata tratamentului ambulator sau
-            staționar;
-          </li>
-          <li>
-            să evite utilizarea produselor farmaceutice și a substanțelor medicamentoase fără
-            prescrierea și acceptul medicului curant, inclusiv droguri, alte substanțe psihotrope și
-            alcool, pe durata tratamentului în instituția medico-sanitară;
-          </li>
-          <li>
-            să respecte drepturile și demnitatea celorlalți pacienți, precum și ale personalului
-            medico-sanitar.
-          </li>
-        </ul>
-      </div>
-
-      <p className="title-text" id="servicii">
-        Servicii
-      </p>
-      <div className="section-text">
-        <div className="servicii-block">
-          <div className="block">
-            <p className="block-title">Medicina de familie</p>
-            <div className='block-content'>
+      <section aria-labelledby="servicii">
+        <h2 className="title-text" id="servicii">Servicii</h2>
+        <div className="section-text">
+          <div className="servicii-block">
+            <article className="block">
+              <h3 className="block-title">Medicina de familie</h3>
+              <div className="block-content">
               <p>
               Medicina de familie este o specialitate medicală care asigură asistența medicală primară
               și reprezintă un set de servicii medicale ce include activități de profilaxie,
@@ -179,12 +183,12 @@ const InfoBeneficiari = () => {
                   </li>
                 </ol>
               </div>
-            </div>
-          </div>
+              </div>
+            </article>
 
-          <div className="block">
-            <p className="block-title">Serviciul de laborator</p>
-            <div className='block-content'>
+            <article className="block">
+              <h3 className="block-title">Serviciul de laborator</h3>
+              <div className="block-content">
               <p>
               Serviciul de laborator este o subdiviziune structurală a IMSP „CMF mun. Bălți”, organizată
               în anul 2003, odată cu deschiderea IMSP „Centrul Medicilor de Familie Municipal Bălți”.
@@ -206,12 +210,12 @@ const InfoBeneficiari = () => {
                   <li>OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21</li>
                 </ol>
               </div>
-            </div>
-          </div>
+              </div>
+            </article>
 
-          <div className="block">
-            <p className="block-title">Serviciul de imagistică</p>
-            <div className='block-content'>
+            <article className="block">
+              <h3 className="block-title">Serviciul de imagistică</h3>
+              <div className="block-content">
               <div className="list">
                 <p>
                   Serviciul își desfășoară activitatea prin intermediul cabinetelor amplasate în diferite
@@ -277,13 +281,13 @@ const InfoBeneficiari = () => {
                 </ul>
               </div>
 
-            </div>
-            
-          </div>
+              </div>
+              
+            </article>
 
-          <div className="block">
-            <p className="block-title">Serviciul de reabilitare medicală și medicină fizică</p>
-            <div className='block-content'>
+            <article className="block">
+              <h3 className="block-title">Serviciul de reabilitare medicală și medicină fizică</h3>
+              <div className="block-content">
               <p>
               Serviciul de reabilitare medicală și medicină fizică al IMSP „CMF mun. Bălți” a fost
               organizat în anul 2012, prin comasarea tuturor cabinetelor de fizioterapie, kinetoterapie
@@ -348,56 +352,58 @@ const InfoBeneficiari = () => {
                   <li>Kinetoterapie activă în grup</li>
                 </ul>
               </div>
-            </div>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
 
-      <p className="title-text" id="asigurarea_obligatorie_de_asistenta_medicala">
-        Asigurarea obligatorie de asistență medicală
-      </p>
-      <div className="section-text">
-        <p>
-          <b>Asigurările obligatorii de asistență medicală (AOAM)</b> reprezintă un sistem&nbsp;autonom
-          garantat de stat de protecție financiară a populației în domeniul ocrotirii sănătății prin
-          constituirea, pe principii de solidaritate, din contul primelor de asigurare, a unor fonduri
-          bănești destinate pentru acoperirea cheltuielilor de tratare a stărilor condiționate de
-          survenirea evenimentelor asigurate (maladie sau afecțiune). Sistemul asigurării obligatorii
-          de asistență medicală oferă cetățenilor posibilități egale în obținerea asistenței medicale
-          oportune și calitative.
-        </p>
-        <p>
-          În Republica Moldova, sistemul asigurării obligatorii de asistență medicală este gestionat
-          de către&nbsp;<b>Compania Națională de Asigurări în Medicină</b>&nbsp;(CNAM -&nbsp;
-          <a href="http://cnam.md/" target="_blank" rel="noreferrer" className="simple-link">
-            cnam.md
-          </a>
-          ), iar sarcina de bază a acestuia este de a acoperi cheltuielile sistemului de sănătate,
-          pentru tratamentul și profilaxia maladiilor persoanelor asigurate.&nbsp;
-        </p>
-        <p>
-          De remarcat este faptul că cele mai multe servicii medicale sunt consumate de către copii și
-          bătrâni, grupuri sociale care nu achită personal primele de asigurare. Plătitorii de prime
-          din salariu utilizează serviciile medicale relativ mai puțin. Când aceștia nu vor mai activa
-          în câmpul muncii, cheltuielile pentru tratament vor fi suportate de către viitorii angajați.
-          Potrivit datelor din rapoartele CNAM, omul în perioada copilăriei și la vârsta de pensionare
-          folosește un volum de servicii medicale, costul cărora este cel puțin la nivelul
-          contribuțiilor sale în perioada activ a vieții sociale.
-        </p>
-        <p>
-          Respectiv, cu cât vom fi mai mulți în SAOAM, cu atât mai multe servicii și medicamente
-          asigurate vom avea, instituții medicale mai performante și lucrători medicali mai bine
-          plătiți. Calitatea serviciilor depinde direct de contribuțiile noastre în sistemul de
-          asigurare obligatorie de asistență medicală.
-        </p>
-      </div>
+      <section aria-labelledby="asigurarea_obligatorie_de_asistenta_medicala">
+        <h2 className="title-text" id="asigurarea_obligatorie_de_asistenta_medicala">
+          Asigurarea obligatorie de asistență medicală
+        </h2>
+        <div className="section-text">
+          <p>
+            <b>Asigurările obligatorii de asistență medicală (AOAM)</b> reprezintă un sistem&nbsp;autonom
+            garantat de stat de protecție financiară a populației în domeniul ocrotirii sănătății prin
+            constituirea, pe principii de solidaritate, din contul primelor de asigurare, a unor fonduri
+            bănești destinate pentru acoperirea cheltuielilor de tratare a stărilor condiționate de
+            survenirea evenimentelor asigurate (maladie sau afecțiune). Sistemul asigurării obligatorii
+            de asistență medicală oferă cetățenilor posibilități egale în obținerea asistenței medicale
+            oportune și calitative.
+          </p>
+          <p>
+            În Republica Moldova, sistemul asigurării obligatorii de asistență medicală este gestionat
+            de către&nbsp;<b>Compania Națională de Asigurări în Medicină</b>&nbsp;(CNAM -&nbsp;
+            <a href="http://cnam.md/" target="_blank" rel="noreferrer" className="simple-link">
+              cnam.md
+            </a>
+            ), iar sarcina de bază a acestuia este de a acoperi cheltuielile sistemului de sănătate,
+            pentru tratamentul și profilaxia maladiilor persoanelor asigurate.&nbsp;
+          </p>
+          <p>
+            De remarcat este faptul că cele mai multe servicii medicale sunt consumate de către copii și
+            bătrâni, grupuri sociale care nu achită personal primele de asigurare. Plătitorii de prime
+            din salariu utilizează serviciile medicale relativ mai puțin. Când aceștia nu vor mai activa
+            în câmpul muncii, cheltuielile pentru tratament vor fi suportate de către viitorii angajați.
+            Potrivit datelor din rapoartele CNAM, omul în perioada copilăriei și la vârsta de pensionare
+            folosește un volum de servicii medicale, costul cărora este cel puțin la nivelul
+            contribuțiilor sale în perioada activ a vieții sociale.
+          </p>
+          <p>
+            Respectiv, cu cât vom fi mai mulți în SAOAM, cu atât mai multe servicii și medicamente
+            asigurate vom avea, instituții medicale mai performante și lucrători medicali mai bine
+            plătiți. Calitatea serviciilor depinde direct de contribuțiile noastre în sistemul de
+            asigurare obligatorie de asistență medicală.
+          </p>
+        </div>
+      </section>
 
-      <p className="title-text" id="tarife">
-        Tarife
-      </p>
-      <div className="tarife">
-        <p className="tarife-title-text">Extras din catalogul tarifelor</p>
-        <div className="download-button-class">
+      <section aria-labelledby="tarife">
+        <h2 className="title-text" id="tarife">Tarife</h2>
+        <div className="tarife">
+          <h3 className="tarife-title-text">Extras din catalogul tarifelor</h3>
+          <div className="download-button-class">
           <a
             className="download-button"
             href="https://server.cmf-balti.md/static/pdf/article-pdf-511-0.3289387758139458.pdf"
@@ -457,8 +463,9 @@ const InfoBeneficiari = () => {
             <Download className="download-icon" />
             <p>Anul 2026</p>
           </a>
+          </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
