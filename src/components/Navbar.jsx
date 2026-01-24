@@ -3,23 +3,23 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const navItems = [
   {
-    to: '/index.html',
+    to: '/',
     label: 'Acasă',
   },
   {
-    to: '/despre-cmf.html',
+    to: '/despre-cmf',
     label: 'Despre noi',
   },
   {
-    to: '/info-pentru-beneficiari.html',
+    to: '/info-pentru-beneficiari',
     label: 'Generale',
   },
   {
-    to: '/transparenta.html',
+    to: '/transparenta',
     label: 'Transparență',
   },
   {
-    to: '/contacte.html',
+    to: '/contacte',
     label: 'Contacte',
   },
 ]
@@ -101,7 +101,7 @@ const Navbar = () => {
 
   return (
     <header className={`navbar${isHidden ? ' navbar-hidden' : ''}`}>
-        <Link className="left-side" to="/index.html">
+        <Link className="left-side" to="/">
           <img src="/images/logo-cmf.png" alt="Logo-ul CMF Balti" />
           <p>
             Centrul Medicilor de
@@ -114,7 +114,7 @@ const Navbar = () => {
           <ul>
             {navItems.map((item) => (
               <li key={item.to}>
-                <NavLink to={item.to} className={navLinkClassName} end={item.to === '/index.html'}>
+                <NavLink to={item.to} className={navLinkClassName} end={item.to === '/'}>
                   {item.label}
                 </NavLink>
               </li>
@@ -142,7 +142,7 @@ const Navbar = () => {
                 <NavLink
                   to={item.to}
                   className={navLinkClassName}
-                  end={item.to === '/index.html'}
+                  end={item.to === '/'}
                   onClick={() => setMenuOpen(false)}
                 >
                   {item.label}

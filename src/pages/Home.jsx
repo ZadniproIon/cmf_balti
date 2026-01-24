@@ -61,7 +61,7 @@ const Home = () => {
           <li className="info-utile-card">
             <PhoneCall className="icon" />
             <h3 className="info-utile-card-title">Contact</h3>
-            <p>La numărul de telefon: 02319977 sau la secțiunea <Link to="/contacte.html">Contacte</Link></p>
+            <p>La numărul de telefon: 02319977 sau la secțiunea <Link to="/contacte">Contacte</Link></p>
           </li>
         </ul>
       </section>
@@ -89,7 +89,7 @@ const Home = () => {
               familie, împreună cu echipele lor, contribuie la îmbunătățirea sănătății individuale și
               comunitare.
             </p>
-            <Link to="/despre-cmf.html">Află mai multe</Link>
+            <Link to="/despre-cmf">Află mai multe</Link>
           </div>
         </div>
       </section>
@@ -106,7 +106,7 @@ const Home = () => {
               medicale, tratamente și acces la alte tipuri de servicii specializate. Aceste servicii
               sunt disponibile pentru toți, indiferent de statutul de asigurat sau neasigurat.
             </p>
-            <Link to="/info-pentru-beneficiari.html">Află mai multe</Link>
+            <Link to="/info-pentru-beneficiari">Află mai multe</Link>
           </div>
           <div className="image-side">
             <img
@@ -135,9 +135,9 @@ const Home = () => {
           </p>
 
           <nav className="pills" aria-label="Secțiuni de transparență">
-            <Link to="/transparenta.html#achizitii_publice">Achiziții publice</Link>
-            <Link to="/transparenta.html#rapoarte_de_activitate">Rapoarte de activitate</Link>
-            <Link to="/transparenta.html#contracte_cnam">Contracte CNAM</Link>
+            <Link to="/transparenta#achizitii_publice">Achiziții publice</Link>
+            <Link to="/transparenta#rapoarte_de_activitate">Rapoarte de activitate</Link>
+            <Link to="/transparenta#contracte_cnam">Contracte CNAM</Link>
           </nav>
         </div>
       </section>

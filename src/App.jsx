@@ -9,12 +9,16 @@ import Transparenta from './pages/Transparenta'
 const App = () => (
   <Routes>
     <Route path="/" element={<Layout />}>
-      <Route index element={<Navigate to="/index.html" replace />} />
-      <Route path="index.html" element={<Home />} />
-      <Route path="despre-cmf.html" element={<DespreCmf />} />
-      <Route path="info-pentru-beneficiari.html" element={<InfoBeneficiari />} />
-      <Route path="transparenta.html" element={<Transparenta />} />
-      <Route path="contacte.html" element={<Contacte />} />
+      <Route index element={<Home />} />
+      <Route path="despre-cmf" element={<DespreCmf />} />
+      <Route path="info-pentru-beneficiari" element={<InfoBeneficiari />} />
+      <Route path="transparenta" element={<Transparenta />} />
+      <Route path="contacte" element={<Contacte />} />
+      <Route path="index.html" element={<Navigate to="/" replace />} />
+      <Route path="despre-cmf.html" element={<Navigate to="/despre-cmf" replace />} />
+      <Route path="info-pentru-beneficiari.html" element={<Navigate to="/info-pentru-beneficiari" replace />} />
+      <Route path="transparenta.html" element={<Navigate to="/transparenta" replace />} />
+      <Route path="contacte.html" element={<Navigate to="/contacte" replace />} />
     </Route>
   </Routes>
 )

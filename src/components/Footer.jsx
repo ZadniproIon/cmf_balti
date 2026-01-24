@@ -40,19 +40,19 @@ const Footer = () => (
           <h3 className="footer-heading">Navigare</h3>
           <ul className="footer-links">
             <li>
-              <Link to="/index.html">Acasă</Link>
+              <Link to="/">Acasă</Link>
             </li>
             <li>
-              <Link to="/despre-cmf.html">Despre noi</Link>
+              <Link to="/despre-cmf">Despre noi</Link>
             </li>
             <li>
-              <Link to="/info-pentru-beneficiari.html">Generale</Link>
+              <Link to="/info-pentru-beneficiari">Generale</Link>
             </li>
             <li>
-              <Link to="/transparenta.html">Transparență</Link>
+              <Link to="/transparenta">Transparență</Link>
             </li>
             <li>
-              <Link to="/contacte.html">Contacte</Link>
+              <Link to="/contacte">Contacte</Link>
             </li>
           </ul>
         </nav>
