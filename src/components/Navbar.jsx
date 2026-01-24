@@ -100,7 +100,7 @@ const Navbar = () => {
   const navLinkClassName = ({ isActive }) => (isActive ? 'active' : undefined)
 
   return (
-    <div className={`navbar${isHidden ? ' navbar-hidden' : ''}`}>
+    <header className={`navbar${isHidden ? ' navbar-hidden' : ''}`}>
         <Link className="left-side" to="/index.html">
           <img src="/images/logo-cmf.png" alt="Logo-ul CMF Balti" />
           <p>
@@ -110,7 +110,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <div className="right-side">
+        <nav className="right-side" aria-label="Navigare principala">
           <ul>
             {navItems.map((item) => (
               <li key={item.to}>
@@ -120,7 +120,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
         <button
           type="button"
@@ -151,7 +151,7 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-    </div>
+    </header>
   )
 }
 
