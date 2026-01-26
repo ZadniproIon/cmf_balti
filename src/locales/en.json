@@ -1,4 +1,4 @@
-﻿{
+{
   "language": {
     "label": "Language",
     "ro": "RO",
@@ -15,11 +15,11 @@
   "meta": {
     "home": {
       "title": "CMF Bălți",
-      "description": "CMF Bălți — online appointments, useful info, and community services."
+      "description": "CMF Bălți - online appointments, useful info, and community services."
     },
     "about": {
       "title": "About Us - CMF Bălți",
-      "description": "Learn about CMF Bălți, mission, services, and family medicine teams."
+      "description": "Learn about CMF Bălți, its mission, services, and family medicine teams."
     },
     "general": {
       "title": "General - CMF Bălți",
@@ -38,9 +38,447 @@
       "description": "The requested page was not found."
     }
   },
+  "home": {
+    "hero": {
+      "title": "Online appointment",
+      "text": "Book a consultation with your family doctor in just a few steps. Avoid queues and plan your visit from the comfort of your home.",
+      "cta": "Click here"
+    },
+    "info": {
+      "title": "Useful information",
+      "cards": {
+        "hours": {
+          "title": "Working hours",
+          "text": "Monday - Friday: 8:00 - 19:00\nSaturday: 8:00 - 13:00"
+        },
+        "centers": {
+          "title": "Health centers",
+          "text": "A total of 10 in the city of Bălți, as well as the villages of Elizaveta and Sadovoie"
+        },
+        "contact": {
+          "title": "Contact",
+          "text": "By phone: 02319977 or in the <0>Contact</0> section"
+        }
+      }
+    },
+    "about": {
+      "title": "About CMF Bălți",
+      "text": "IMSP \"Municipal Center of Family Doctors Bălți\" has as its main objective the provision of primary medical care to the entire population, regardless of insurance status. Family medicine is essential in prevention, diagnosis and treatment. Family doctors, together with their teams, contribute to improving individual and community health.",
+      "cta": "Learn more"
+    },
+    "beneficiary": {
+      "title": "Are you a beneficiary?",
+      "text": "If you are a beneficiary of the medical services provided by the Center of Family Doctors in Bălți, your family doctor will be the first point of contact for your health care. Registering with a family doctor is essential in order to receive medical consultations, treatments and access to other specialized services. These services are available to everyone, regardless of insured or uninsured status.",
+      "cta": "Learn more"
+    },
+    "transparency": {
+      "title": "Transparency",
+      "text": "For us, transparency is essential in our daily activity. We are committed to providing access to detailed information on public procurement, activity reports and contracts to ensure trust and accountability to all our beneficiaries. This open approach helps us manage resources efficiently and always be at the community's disposal.",
+      "pills": {
+        "procurement": "Public procurement",
+        "reports": "Activity reports",
+        "contracts": "CNAM contracts"
+      }
+    },
+    "partners": {
+      "title": "Official partners",
+      "ministry": "Ministry of Health of the Republic of Moldova",
+      "cnam": "National Health Insurance Company",
+      "city": "City Hall of the Municipality of Bălți",
+      "cnas": "National Social Insurance Company"
+    }
+  },
+  "about": {
+    "header": "Public Medical-Sanitary Institution\n\"Municipal Center of Family Doctors Bălți\"",
+    "activity": {
+      "title": "Field of activity",
+      "text": "The field of activity of IMSP \"Municipal Center of Family Doctors Bălți\" is the provision of primary medical services.\n\nFamily medicine is a medical specialty that provides primary medical care and represents a set of medical services that includes preventive activities, curative counseling and support. The activity of the family doctor and the team, through preventive, educational, therapeutic and recovery actions, promotes the health of the individual, family and community. Primary medical care is guaranteed for the entire population of the Republic of Moldova, regardless of insured or uninsured status.\n\nTo benefit from primary medical care, registration on the family doctor's list is mandatory, respecting the principle of territorial coverage. The family doctor is the first-contact specialist who, as needed, organizes access to other types of care and medical services provided by the Unified Program."
+    },
+    "evolution": {
+      "title": "Evolution",
+      "text": "The health system in mun. Bălți until 1997 consisted of 13 medical institutions; the outpatient sector was represented by 3 polyclinics for adults and 2 polyclinics for children, including narrow-profile specialists, specialized dispensaries and 2 consultation centers for women.\n\nWith the adoption of the Concept for the development of the health system in the Republic of Moldova for the period 1997-2005 (Government Decision of the Republic of Moldova No. 668 of 17.07.97), in accordance with the provisions of Government Decision No. I134 of 09.12.97 \"On the development of primary medical care\", in order to accelerate the reform of the health system and implement measures for the transition to a new form of primary medical care, the local public administration bodies took a number of important decisions in this context.\n\nIn February 1998, a Territorial Medical Association was established in the municipality, initially named \"Association of Polyclinics of mun. Bălți\". The new medical institution was formed by merging the adult/children polyclinics and the consultation centers for women, with the purpose of providing primary medical care to the population of the municipality.\n\nFrom 01.03.98, through the reorganization of these structures, 5 mixed polyclinics were created; later, the specialists were united in a consultative-diagnostic section. Initially, doctors worked in large teams composed of 3 therapists, 2 pediatricians and 1 obstetrician-gynecologist. Starting in 2000, the teams were reduced to 3 doctors, one of whom, obligatorily, was a former pediatrician, a move aimed primarily at ensuring high-quality medical care for young children and increasing the responsibility of each doctor.\n\nAs a result of the administrative-territorial reform, by order of the Ministry of Health of the Republic of Moldova No. I60 of 01.07.99, the new health system of the municipality of Bălți was approved. Based on the \"Association of Polyclinics\", the \"Municipal Center of Family Doctors Bălți\" was formed, with the withdrawal of narrow-profile specialists to the consultative section of the District Hospital.\n\nThe structure of the health system of the municipality of Bălți did not undergo significant changes even after the new administrative-territorial reform; in December 2003 the Public Medical-Sanitary Institution \"Municipal Center of Family Doctors Bălți\" was established, which has as subdivisions: 6 Health Centers and 2 OMFs - the Family Doctor's Office Sadovoe and the Family Doctor's Office Elizaveta, serving the population of the 81 sectors."
+    },
+    "subdivisions": {
+      "title": "Subdivisions of IMSP \"CMF mun. Bălți\"",
+      "cards": {
+        "cs1": {
+          "title": "Health Center No. 1",
+          "address": "str. Decebal, 101V",
+          "phone": "0231 7-43-34",
+          "alt": "Health Center No. 1"
+        },
+        "cs2": {
+          "title": "Health Center No. 2",
+          "address": "str. Ștefan cel Mare, 52",
+          "phone": "0231 2-12-32",
+          "alt": "Health Center No. 2"
+        },
+        "cs3": {
+          "title": "Health Center No. 3",
+          "address": "str. George Coșbuc, 13",
+          "phone": "0231 2-42-74",
+          "alt": "Health Center No. 3"
+        },
+        "cs4": {
+          "title": "Health Center No. 4",
+          "address": "str. Strîii, 9",
+          "phone": "0231 6-78-77",
+          "alt": "Health Center No. 4"
+        },
+        "cs5": {
+          "title": "Health Center No. 5",
+          "address": "str. Boris Glavan, 21",
+          "phone": "0231 3-81-79",
+          "alt": "Health Center No. 5"
+        },
+        "cs6": {
+          "title": "Health Center No. 6",
+          "address": "str. Kiev, 30",
+          "phone": "0231 4-45-77",
+          "alt": "Health Center No. 6"
+        },
+        "atis": {
+          "title": "Youth-friendly Health Center \"ATIS\"",
+          "address": "str. Kiev, 30",
+          "phone": "0231 4-64-62",
+          "alt": "Youth-friendly Health Center ATIS"
+        },
+        "ccsm": {
+          "title": "Community Mental Health Center (CCSM)",
+          "address": "str. Decebal, 101V",
+          "phone": "0231 7-10-11",
+          "alt": "Community Mental Health Center (CCSM)"
+        },
+        "elizaveta": {
+          "title": "Family Doctor's Office s. Elizaveta",
+          "address": "str. Ștefan cel Mare, 21",
+          "phone": "0231 6-82-82",
+          "alt": "Family Doctor's Office s. Elizaveta"
+        },
+        "sadovoe": {
+          "title": "Family Doctor's Office s. Sadovoe",
+          "address": "str. Parcovaia, 31",
+          "phone": "0231 5-52-19",
+          "alt": "Family Doctor's Office s. Sadovoe"
+        }
+      }
+    }
+  },
+  "general": {
+    "quickSelect": "Press the buttons for quick access",
+    "quickLinks": {
+      "rights": "Patient rights",
+      "responsibilities": "Patient responsibilities",
+      "services": "Services",
+      "insurance": "Mandatory insurance",
+      "tarife": "Tariffs"
+    },
+    "rights": {
+      "title": "Patient rights",
+      "intro": "The patient has the right to:",
+      "items": [
+        "complete information about the state of health, methods of prevention, diagnosis, treatment and recovery, as well as potential risks and therapeutic effectiveness, the prognosis and progress of treatment, and alternatives to the proposed methods, including the option not to undergo treatment;",
+        "information about the health service provider, its profile, volume, quality, cost and method of providing those services;",
+        "the right to refuse or stop a medical intervention; the implications of such refusal or stoppage must be clearly explained to the patient;",
+        "consent or refusal to participate in biomedical research (clinical studies) in accordance with the provisions of this law and other normative acts in force;",
+        "protection of personal data, including information on health status, diagnosis and treatment; this information will not be disclosed to third parties and will be kept in accordance with confidentiality regulations;",
+        "access to free medical care in the volume established by law;",
+        "a respectful and humane attitude from the health service provider regardless of age, ethnic affiliation or socio-economic status;",
+        "personal privacy and physical, psychological and moral integrity, with respect for discretion during the provision of medical services;",
+        "reduction of suffering and relief of pain through legal methods available, depending on the real possibilities of the health service provider;",
+        "dignified end-of-life care."
+      ]
+    },
+    "responsibilities": {
+      "title": "Patient responsibilities",
+      "intro": "The patient has the following responsibilities:",
+      "items": [
+        "to be registered on the list of a family doctor;",
+        "to take care of their own health and adopt a healthy lifestyle, excluding premeditated actions that harm their health and the health of other persons;",
+        "to observe precautionary measures in contacts with other persons, including medical workers, if they are aware that they suffer from a disease that presents a social danger;",
+        "in the absence of medical contraindications, to undertake mandatory prophylactic measures, including immunizations, the failure of which threatens their own health and creates a social danger;",
+        "to inform the medical worker of complete information about past and current illnesses, about conditions that pose a social danger, including in the case of voluntary donation of blood, biological fluids, organs and tissues;",
+        "to comply with the rules of conduct established for patients in the medical institution, as well as the doctor's recommendations during outpatient or inpatient treatment;",
+        "to avoid the use of pharmaceutical products and medicinal substances without the prescription and consent of the attending physician, including drugs, other psychotropic substances and alcohol, during treatment in the medical institution;",
+        "to respect the rights and dignity of other patients, as well as of the medical staff."
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "family": {
+        "title": "Family medicine",
+        "paragraph1": "Family medicine is a medical specialty that provides primary medical care and represents a set of medical services that includes preventive activities, curative counseling and support. The activity of the family doctor and the team, through preventive, educational, therapeutic and recovery actions, promotes the health of the individual, family and community.",
+        "paragraph2": "Primary medical care is guaranteed for the entire population of the Republic of Moldova, regardless of insured or uninsured status. To benefit from primary medical care, registration on the family doctor's list is mandatory, respecting the principle of territorial coverage. The family doctor is the first-contact specialist who, as needed, organizes access to other types of care and medical services provided by the Unified Program.",
+        "programLink": "Unified Program",
+        "stepsTitle": "Steps to access primary medical care services:",
+        "steps": [
+          "You have the right and the obligation to choose and register with a primary medical care institution.",
+          "To receive a consultation with the family doctor, an appointment is required by phone, internet or directly at the institution's registration desks.",
+          "The family doctor issues the referral/extract for consultation with a specialist doctor or for hospitalization.",
+          "The family doctor or, as appropriate, the pediatrician, endocrinologist, psychiatrist, neurologist can prescribe reimbursed medicines.",
+          "The family doctor is obliged to monitor your condition throughout the outpatient treatment."
+        ]
+      },
+      "lab": {
+        "title": "Laboratory service",
+        "paragraph1": "The laboratory service is a structural subdivision of IMSP \"CMF mun. Bălți\", organized in 2003, along with the opening of IMSP \"Municipal Center of Family Doctors Bălți\".",
+        "listTitle": "The service carries out its activity through 6 laboratories located within the 6 health centers - subdivisions of IMSP \"CMF mun. Bălți\" - and one laboratory located in the premises of OMF Elizaveta:",
+        "labs": [
+          "Health Center No. 1, mun. Bălți, str. Decebal, 101V",
+          "Health Center No. 2, mun. Bălți, str. Ștefan cel Mare, 52",
+          "Health Center No. 3, mun. Bălți, str. George Coșbuc, 13",
+          "Health Center No. 4, mun. Bălți, bd. Larisa, 9",
+          "Health Center No. 5, mun. Bălți, str. Boris Glăvan, 21",
+          "Health Center No. 6, mun. Bălți, str. Kiev, 30",
+          "OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21"
+        ]
+      },
+      "imaging": {
+        "title": "Imaging service",
+        "locationsTitle": "The service carries out its activity through offices located in different health centers of the city:",
+        "locations": [
+          "Health Center No. 1, mun. Bălți, str. Decebal, 101V;",
+          "Health Center No. 2, mun. Bălți, str. Ștefan cel Mare, 52;",
+          "Health Center No. 6, mun. Bălți, str. Kiev, 30."
+        ],
+        "paragraph1": "The imaging service is a diagnostic subdivision intended to identify pathologies through radiological methods, including those of the pulmonary system, osteoarticular system, abdominal ultrasound, pregnancy ultrasound, FGDS (fibro-gastro-duodenoscopy) and colonoscopy.",
+        "paragraph2": "The service is equipped with modern, high-performance equipment: 2 digital radiology installations, 1 installation for videogastroscopy and colonoscopy, 3 new ultrasound machines, metrologically tested, which allow annually performing the following volume of investigations: 4000-5000 ultrasounds, 12,000-14,000 radiological investigations (preventive chest X-rays and osteoarticular system studies), 1500 endoscopic investigations.",
+        "radiologyTitle": "Radiological investigations:",
+        "radiology": [
+          "diagnostic chest X-ray;",
+          "preventive chest X-ray;",
+          "spine X-ray (no film is issued, only DVD);",
+          "skull X-ray;",
+          "osteoarticular system X-ray."
+        ],
+        "ultrasoundTitle": "Ultrasound investigations of internal organs:",
+        "ultrasound": [
+          "abdominal (liver, spleen, gallbladder, pancreas);",
+          "urinary system (kidneys, adrenal glands, bladder);",
+          "pelvic organs, transabdominal (bladder, prostate);",
+          "thyroid gland;",
+          "breast;",
+          "obstetric ultrasound (EUS) for pregnancy monitoring."
+        ],
+        "endoscopyTitle": "Diagnostic endoscopy:",
+        "endoscopy": [
+          "FGDS (fibro-gastro-duodenoscopy);",
+          "Colonoscopy."
+        ]
+      },
+      "rehab": {
+        "title": "Medical rehabilitation and physical medicine service",
+        "paragraph1": "The medical rehabilitation and physical medicine service of IMSP \"CMF mun. Bălți\" was organized in 2012 by merging all physiotherapy, kinesiotherapy and massage offices in the Health Centers, OMF Sadovoe and OMF Elizaveta.",
+        "scheduleTitle": "Working schedule:",
+        "schedule": [
+          "Physiotherapy rooms: Monday-Friday, 08:00-18:00 (break: 12:00-12:30)",
+          "Massage rooms: Monday-Friday, 08:00-15:30 (break: 12:00-12:30)",
+          "Kinesiotherapy room: Monday-Friday, 08:30-18:00 (break: 13:00-13:30)"
+        ],
+        "cabinetsTitle": "The service meets sanitary regulations and has the following offices:",
+        "cabinets": [
+          "Physiotherapy",
+          "Kinesiotherapy",
+          "Massage",
+          "Aerosol therapy",
+          "Thermotherapy",
+          "Work offices for doctors",
+          "Work offices for medical assistants"
+        ],
+        "methodsTitle": "The medical rehabilitation and physical medicine service provides the following physical methods:",
+        "methods": [
+          "Aerosol therapy",
+          "Applications with paraffin and ozokerite",
+          "Pulsed currents",
+          "Darsonvalization",
+          "Electrophoresis",
+          "Phototherapy (tubus)",
+          "Phonophoresis",
+          "Galvanization",
+          "Laser therapy",
+          "Magnetotherapy",
+          "Rusterapy",
+          "Ultraviolet rays (general)",
+          "Electrosleep",
+          "Ultrasound therapy"
+        ],
+        "proceduresTitle": "Rehabilitation procedures provided by the medical rehabilitation and physical medicine service are:",
+        "procedures": [
+          "Therapeutic massage",
+          "Therapeutic kinesiotherapy",
+          "Group active kinesiotherapy"
+        ]
+      }
+    },
+    "insurance": {
+      "title": "Mandatory health insurance",
+      "paragraphs": [
+        "Mandatory health insurance (AOAM) represents an autonomous, state-guaranteed system of financial protection of the population in the field of health care through the formation, on principles of solidarity, from insurance premiums, of monetary funds intended to cover the costs of treating conditions caused by insured events (illness or disease). The mandatory health insurance system offers citizens equal opportunities to obtain timely and quality medical care.",
+        "In the Republic of Moldova, the mandatory health insurance system is managed by the National Health Insurance Company (CNAM - cnam.md), and its main task is to cover the expenses of the health system for the treatment and prevention of diseases of insured persons.",
+        "It is worth noting that most medical services are consumed by children and the elderly, social groups that do not pay insurance premiums personally. Salary premium payers use medical services relatively less. When they are no longer active in the labor market, treatment costs will be covered by future employees. According to CNAM reports, during childhood and at retirement age a person uses a volume of medical services whose cost is at least at the level of their contributions during the active period of social life.",
+        "Therefore, the more of us are in the AOAM system, the more insured services and medicines we will have, more performant medical institutions and better paid medical workers. The quality of services depends directly on our contributions to the mandatory health insurance system."
+      ],
+      "cnamLabel": "cnam.md"
+    },
+    "tarife": {
+      "title": "Tariffs",
+      "subtitle": "Extract from the tariff catalog",
+      "year": "Year {{year}}"
+    }
+  },
+  "transparenta": {
+    "title": "Transparency",
+    "filters": {
+      "category": "Category",
+      "year": "Year",
+      "allCategories": "All categories",
+      "allYears": "All years"
+    },
+    "empty": "No results for the selected filters.",
+    "cta": "Open PDF",
+    "categories": {
+      "procurement": "Public procurement",
+      "reports": "Activity reports",
+      "contracts": "CNAM contracts"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "listTitle": "Contact details",
+    "mapTitle": "Health centers map",
+    "mapAria": "Health centers map",
+    "googleMaps": "Google Maps",
+    "entries": {
+      "admin": {
+        "title": "Administration",
+        "lines": [
+          "Address: Bălți, Strada Decebal, 101V",
+          "Email: cmfbalti@ms.md",
+          "Reception: 0231 7-52-28",
+          "Fax: 0231 7-25-88",
+          "Human Resources Service: 0231 7-54-80",
+          "Accounting: 0231 7-52-29",
+          "Legal Service: 0231 7-52-29",
+          "Economic and Financial Service: 0231 7-16-60",
+          "Chief Accountant: 0231 7-25-44",
+          "Information Technology Service: 0231 7-25-88"
+        ]
+      },
+      "cs1": {
+        "title": "Health Center No. 1",
+        "lines": [
+          "Address: Bălți, str. Decebal, 101V",
+          "Email: cmfbalti@ms.md",
+          "Registry, floor 1: 0231 7-43-34",
+          "Registry, floor 2: 0231 7-37-65",
+          "Registry, floor 3: 0231 7-07-18",
+          "Head of Health Center: 0231 7-25-43"
+        ]
+      },
+      "cs2": {
+        "title": "Health Center No. 2",
+        "lines": [
+          "Address: Bălți, str. Ștefan cel Mare, 52",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 2-12-32, 068759222",
+          "Head of Health Center: 0231 2-03-61"
+        ]
+      },
+      "cs3": {
+        "title": "Health Center No. 3",
+        "lines": [
+          "Address: Bălți, str. George Goșbuc, 13",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 2-42-74",
+          "Head of Health Center: 0231 2-51-69"
+        ]
+      },
+      "cs4": {
+        "title": "Health Center No. 4",
+        "lines": [
+          "Address: Bălți, str. Strîii, 9",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 6-78-77",
+          "Head of Health Center: 0231 6-74-20"
+        ]
+      },
+      "cs5": {
+        "title": "Health Center No. 5",
+        "lines": [
+          "Address: Bălți, str. Boris Glavan, 21",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 3-81-79",
+          "Head of Health Center: 0231 3-83-55"
+        ]
+      },
+      "cs6": {
+        "title": "Health Center No. 6",
+        "lines": [
+          "Address: Bălți, str. Kiev, 30",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 4-45-77",
+          "Head of Health Center: 0231 4-34-66"
+        ]
+      },
+      "atis": {
+        "title": "Youth-friendly Health Center \"ATIS\"",
+        "lines": [
+          "Address: Bălți, str. Kiev, 30",
+          "Email: cmfbalti@ms.md",
+          "Phone: 0231 4-46-62"
+        ]
+      },
+      "ccsm": {
+        "title": "Community Mental Health Center (CCSM)",
+        "lines": [
+          "Address: Bălți, Strada Decebal, 101V",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 7-10-11"
+        ]
+      },
+      "elizaveta": {
+        "title": "Family Doctor's Office s. Elizaveta",
+        "lines": [
+          "Address: s. Elizaveta, str. Ștefan cel Mare, 21",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 6-82-82"
+        ]
+      },
+      "sadovoe": {
+        "title": "Family Doctor's Office s. Sadovoe",
+        "lines": [
+          "Address: s. Sadovoe, str. Parcovaia, 31",
+          "Email: cmfbalti@ms.md",
+          "Registry: 0231 5-52-19"
+        ]
+      }
+    },
+    "markers": {
+      "cs1": "Health Center No. 1",
+      "ccsm": "Community Mental Health Center (CCSM)",
+      "admin": "Administration",
+      "cs2": "Health Center No. 2",
+      "cs3": "Health Center No. 3",
+      "cs4": "Health Center No. 4",
+      "cs5": "Health Center No. 5",
+      "cs6": "Health Center No. 6",
+      "atis": "Youth-friendly Health Center \"ATIS\"",
+      "elizaveta": "Family Doctor's Office s. Elizaveta",
+      "sadovoe": "Family Doctor's Office s. Sadovoe"
+    }
+  },
   "notFound": {
     "title": "Error 404",
-    "text": "The page does not exist or has been moved. You can return to the <0>home page</0> or open one of the sections above.",
+    "text": "The page does not exist or has been moved. You can return to the <0>home page</0> or access one of the sections above.",
     "back": "Back home"
+  },
+  "footer": {
+    "contact": "Contact",
+    "program": "Schedule",
+    "navigation": "Navigation",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "credit": "Project made with love {{heart}} by {{name}}"
   }
 }
