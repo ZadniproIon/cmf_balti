@@ -26,7 +26,7 @@ const Footer = () => {
                 <ul className="footer-list footer-contact">
                   <li>{t('footer.address')}: {t('footer.addressValue')}</li>
                   <li>
-                    {t('footer.phone')}: <a href="tel:02319977">02319977</a>
+                    {t('footer.phone')}: <a href="tel:02319977">0231 7-52-28</a>
                   </li>
                   <li>
                     {t('footer.email')}: <a href="mailto:cmfbalti@ms.md">cmfbalti@ms.md</a>
