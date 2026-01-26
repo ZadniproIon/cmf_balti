@@ -172,7 +172,16 @@
     font-size: 16px;
     font-weight: normal;
     color: var(--text-blue);
+    line-height: 1.5;
+    min-height: 4.5em;
+    display: flex;
+    align-items: center;
     margin: 0;
+}
+
+.info-utile-card p > span {
+    display: block;
+    width: 100%;
 }
 
 .info-utile-containers a {

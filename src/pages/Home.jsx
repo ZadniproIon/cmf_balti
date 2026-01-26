@@ -52,27 +52,33 @@ const Home = () => {
             <Clock8 className="icon" />
             <h3 className="info-utile-card-title">{t('home.info.cards.hours.title')}</h3>
             <p>
-              {hoursLines.map((line, index) => (
-                <span key={line}>
-                  {line}
-                  {index < hoursLines.length - 1 ? <br /> : null}
-                </span>
-              ))}
+              <span>
+                {hoursLines.map((line, index) => (
+                  <span key={line}>
+                    {line}
+                    {index < hoursLines.length - 1 ? <br /> : null}
+                  </span>
+                ))}
+              </span>
             </p>
           </li>
           <li className="info-utile-card">
             <HeartPulse className="icon" />
             <h3 className="info-utile-card-title">{t('home.info.cards.centers.title')}</h3>
-            <p>{t('home.info.cards.centers.text')}</p>
+            <p>
+              <span>{t('home.info.cards.centers.text')}</span>
+            </p>
           </li>
           <li className="info-utile-card">
             <PhoneCall className="icon" />
             <h3 className="info-utile-card-title">{t('home.info.cards.contact.title')}</h3>
             <p>
-              <Trans
-                i18nKey="home.info.cards.contact.text"
-                components={[<Link key="contact-link" to={withLang('/contacte')} />]}
-              />
+              <span>
+                <Trans
+                  i18nKey="home.info.cards.contact.text"
+                  components={[<Link key="contact-link" to={withLang('/contacte')} />]}
+                />
+              </span>
             </p>
           </li>
         </ul>
