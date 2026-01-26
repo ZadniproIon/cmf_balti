@@ -444,7 +444,7 @@
 .parteneri-oficiali .partner-name {
     text-align: center;
     color: var(--text-blue);
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.2;
     font-weight: 400;
     margin: 0;
@@ -480,16 +480,22 @@
 .parteneri-oficiali .right-side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 100%;
+    min-height: 150px;
 }
 
 .parteneri-oficiali .right-side .partner-name {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.parteneri-oficiali .right-side a {
+    margin-top: auto;
 }
 
 @media (max-width: 675px) {
@@ -503,8 +509,12 @@
         padding: 1.5em;
     }
 
-    .parteneri-oficiali p {
-        font-size: 1.25em;
+    .parteneri-oficiali .partner-name {
+        font-size: 1em;
+    }
+
+    .parteneri-oficiali .right-side {
+        min-height: 110px;
     }
 }
 /* End of "Parteneri oficiali" section */
