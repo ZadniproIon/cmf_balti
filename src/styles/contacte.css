@@ -51,7 +51,7 @@
     align-items: center;
     padding: 1.2em;
 
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1;
     color: var(--text-blue);
     font-weight: bold;
@@ -99,7 +99,7 @@
 }
 
 .dropdown-text-content {
-    font-size: 1em;
+    font-size: 1rem;
     
     color: var(--text-white);
     
@@ -120,7 +120,7 @@
     max-width: fit-content;
     background-color: var(--red-normal);
     padding: 1em;
-    font-size: 1em;
+    font-size: 1rem;
 
     border-radius: 8px;
 
@@ -208,7 +208,7 @@
 @media screen and (min-width: 1025px) {
     #contact-right-side {
         position: sticky;
-        top: calc(var(--navbar-height) + 1.5em);
+        top: calc(var(--navbar-height) + 24px);
         align-self: flex-start;
     }
 }

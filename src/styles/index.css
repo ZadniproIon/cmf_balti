@@ -7,15 +7,15 @@
     max-width: fit-content;
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 2em;
     align-items: center;
     background-color: var(--background-white);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-drop);
     border-radius: 32px;
-    margin: 96px auto;
+    margin: 6em auto;
     flex-wrap: nowrap;
-    padding: 32px;
+    padding: 2em;
 }
 
 .main-section-1 .left-side {
@@ -32,12 +32,12 @@
 }
 
 .main-section-1 .hero-title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .main-section-1 .hero-description {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .main-section-1 a {
@@ -47,7 +47,7 @@
     background-color: var(--red-normal);
     color: var(--text-white);
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
     padding: 1em 2em;
     font-weight: bold;
@@ -66,7 +66,7 @@
 }
 
 .main-section-1 img {
-    border-radius: 1.5em;
+    border-radius: 24px;
     border: 1px solid var(--border);
     width: 100%;
     max-width: 400px;
@@ -94,7 +94,7 @@
     }
 
     .main-section-1 p:first-child {
-        margin-top: 8px;
+        margin-top: 0.5em;
     }
 }
 
@@ -119,7 +119,7 @@
 
 /* "Informatii utile" section */
 .info-utile {
-    margin: 96px auto;
+    margin: 6em auto;
     padding: 0 1.5em;
 
     max-width: 1500px;
@@ -127,7 +127,7 @@
 
 /* Title of the section */
 .info-utile-title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--text-blue);
     text-align: center;
@@ -149,7 +149,7 @@
     width: 320px;
     background-color: var(--background-white);
     border: 1px solid var(--border);
-    padding: 48px 32px;
+    padding: 3em 2em;
     text-align: center;
     border-radius: 24px;
     box-shadow: var(--shadow-drop);
@@ -157,23 +157,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 1.5em;
 }
 
 .info-utile-card-title {
     
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--text-blue);
     margin: 0;
 }
 
 .info-utile-card p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     color: var(--text-blue);
     line-height: 1.5;
-    min-height: 4.5em;
+    min-height: 72px;
     display: flex;
     align-items: center;
     margin: 0;
@@ -190,7 +190,7 @@
 }
 
 .info-utile .icon {
-    font-size: 150px;
+    font-size: 9.375rem;
     color: var(--text-blue);
     stroke-width: 0.5;
 }
@@ -208,7 +208,7 @@
 
 .content {
 
-    padding: 64px 0;
+    padding: 4em 0;
 
     margin: 0 auto;
 
@@ -218,7 +218,7 @@
     align-items: center;
     flex-wrap: nowrap;
     
-    gap: 64px;
+    gap: 4em;
 }
 
 .content .image-side {
@@ -236,7 +236,7 @@
 
 .content-title {
     color: var(--text-yellow);
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -247,7 +247,7 @@
 
 .content p {
     color: var(--text-white);
-    font-size: 1em;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.5;
     margin: 0;
@@ -263,7 +263,7 @@
     padding: 1em 2em;
     border-radius: 8px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0 auto;
     transition: background-color 0.3s ease;
@@ -328,12 +328,12 @@
 
 
     gap: 2em;
-    padding: 64px 0;
+    padding: 4em 0;
 }
 
 .transparenta-title {
     color: var(--text-yellow);
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -344,7 +344,7 @@
 
 .transparenta-section p {
     color: var(--text-white);
-    font-size: 1em;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.5;
     margin: 0;
@@ -369,7 +369,7 @@
     padding: 1em 2em;
     background-color: var(--text-white);
     border-radius: 999px;
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-blue);
     white-space: nowrap;
     text-decoration: none;
@@ -403,12 +403,12 @@
 /* "Parteneri oficiali" section */
 .parteneri-oficiali-wrapper {
     background-color: var(--text-white);
-    margin: 96px auto;
+    margin: 6em auto;
     padding: 0 1.5em;
 }
 
 #parteneri-oficiali-title {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     line-height: 1;
@@ -444,17 +444,17 @@
 .parteneri-oficiali .partner-name {
     text-align: center;
     color: var(--text-blue);
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400;
     margin: 0;
 }
 
 .parteneri-oficiali a {
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-white);
     background-color: var(--background-blue);
-    padding: 8px 12px 8px 8px;
+    padding: 0.5em 0.75em 0.5em 0.5em;
     border-radius: 999px;
     margin: 0 auto;
     text-align: center;
@@ -464,7 +464,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 0.5em;
 }
 
 .parteneri-oficiali a:hover {
@@ -510,7 +510,7 @@
     }
 
     .parteneri-oficiali .partner-name {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .parteneri-oficiali .right-side {

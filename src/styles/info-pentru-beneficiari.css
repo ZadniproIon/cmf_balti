@@ -11,7 +11,7 @@
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625em;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -23,7 +23,7 @@
     border: 1px solid var(--border);
     color: var(--text-blue);
     padding: 2em;
-    border-radius: 1.5em;
+    border-radius: 24px;
 
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 }
 
 .section-text .block-title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     color: var(--text-blue);
@@ -79,7 +79,7 @@
 }
 
 .tarife-title-text {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: var(--text-blue);
     font-weight: bold;
     margin: 0 auto;
@@ -117,7 +117,7 @@
 }
 
 .download-button p, .download-icon {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0;
 }
 

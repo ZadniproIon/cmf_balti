@@ -25,7 +25,7 @@
     width: 1px;
     height: 1px;
     padding: 0;
-    margin: -1px;
+    margin: -0.0625em;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
@@ -59,7 +59,7 @@ body {
 .above-header {
     
     color: var(--text-white);
-    font-size: 1em;
+    font-size: 1rem;
 
     display: flex;
     justify-content: space-between;
@@ -87,8 +87,8 @@ body {
 }
 
 .above-header .icon {
-    font-size: 2em;
-    margin: 15px;
+    font-size: 2rem;
+    margin: 0.46875em;
     color: var(--text-white);
 }
 
@@ -109,7 +109,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 1em;
     background-color: var(--background-white);
     box-shadow: var(--shadow-drop);
     position: fixed;
@@ -132,13 +132,13 @@ body {
 }
 
 .navbar .right-side {
-    gap: 16px;
+    gap: 1em;
 }
 
 .navbar .left-side {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5em;
     text-decoration: none;
     color: var(--text-blue);
 }
@@ -149,7 +149,7 @@ body {
     padding: 0;
     overflow: hidden;
     display: flex;
-    gap: 16px;
+    gap: 1em;
     align-items: center;
 }
 
@@ -164,10 +164,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 16px;
+    padding: 1em;
     text-decoration: none;
     color: var(--text-blue);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -182,7 +182,7 @@ body {
 
 .navbar .left-side p {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: normal;
     margin: 0;
     color: var(--text-blue);
@@ -206,9 +206,9 @@ body {
 .language-switcher {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5714em;
     color: var(--text-blue);
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .language-label {
@@ -218,8 +218,8 @@ body {
 .language-switcher select {
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 6px 10px;
-    font-size: 14px;
+    padding: 0.4286em 0.7143em;
+    font-size: 0.875rem;
     font-weight: 600;
     color: var(--text-blue);
     background-color: var(--background-white);
@@ -231,9 +231,9 @@ body {
 }
 
 .language-switcher-mobile {
-    margin-top: 24px;
+    margin-top: 1.5em;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75em;
 }
 
 .language-switcher-mobile label,
@@ -350,13 +350,13 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 .mobile-menu a {
     text-decoration: none;
     color: var(--text-blue);
-    font-size: 2em;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -427,7 +427,7 @@ body.menu-lock {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 0.5em;
 }
 
 .site-footer .footer-brand-logo img {
@@ -438,7 +438,7 @@ body.menu-lock {
 
 .site-footer .footer-title {
     margin: 0;
-    font-size: 1.15em;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--text-white);
 }
@@ -471,7 +471,7 @@ body.menu-lock {
     color: var(--text-yellow);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    font-size: 0.85em;
+    font-size: 0.85rem;
     font-weight: 700;
 }
 
@@ -515,7 +515,7 @@ body.menu-lock {
     margin: 0;
     text-align: center;
     color: var(--text-white);
-    font-size: 0.95em;
+    font-size: 0.95rem;
 }
 
 .site-footer .footer-bottom a {

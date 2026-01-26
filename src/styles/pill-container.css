@@ -3,7 +3,7 @@
 
     background-color: var(--background-white);
     border: 1px solid var(--border);
-    border-radius: 4em;
+    border-radius: 64px;
 
     max-width: fit-content;
     width: 100%;
@@ -18,7 +18,7 @@
 }
 
 .pill-container p {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: var(--text-blue);
     text-align: justify;
 }
@@ -29,8 +29,8 @@
     color: var(--text-white);
     font-weight: bold;
     padding: 1em 1.25em;
-    border-radius: 4em;
-    font-size: 1.25em;
+    border-radius: 80px;
+    font-size: 1.25rem;
     transition: background-color 0.3s ease;
 }
 

@@ -27,7 +27,7 @@
     border: 1px solid var(--border);
     border-radius: 8px;
     background-color: var(--background-white);
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-blue);
 }
 
@@ -63,7 +63,7 @@
 
 .transparenta-result-title {
     margin: 0;
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--text-blue);
     font-weight: 600;
 }

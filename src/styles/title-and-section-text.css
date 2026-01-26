@@ -1,5 +1,5 @@
 .title-text {
-    font-size: 2em;
+    font-size: 2rem;
     color: var(--text-yellow);
     text-align: center;
     background-color: var(--background-blue);
@@ -17,7 +17,7 @@
 .section-text p, .section-text ul, .section-text ol {
     text-align: justify;
     color: var(--text-blue);
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 0;
 }
