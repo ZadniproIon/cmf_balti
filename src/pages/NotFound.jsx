@@ -18,7 +18,7 @@ const NotFound = () => {
         <p className="not-found-text">
           Pagina nu există sau a fost mutată.
           <br />
-          Poți reveni la <Link className="not-found-inline-link" to="/">pagina principală</Link> sau accesa una dintre link-urile de mai sus.
+          Poți reveni la <Link className="not-found-inline-link" to="/">pagina principală</Link> sau accesa unul dintre link-urile de mai sus.
         </p>
         <Link className="not-found-link" to="/">
           <ArrowLeft className="icon" />
