@@ -4,6 +4,7 @@ import Contacte from './pages/Contacte'
 import DespreCmf from './pages/DespreCmf'
 import Home from './pages/Home'
 import InfoBeneficiari from './pages/InfoBeneficiari'
+import NotFound from './pages/NotFound'
 import Transparenta from './pages/Transparenta'
 
 const App = () => (
@@ -21,6 +22,7 @@ const App = () => (
       <Route path="info-pentru-beneficiari.html" element={<Navigate to="/generale" replace />} />
       <Route path="transparenta.html" element={<Navigate to="/transparenta" replace />} />
       <Route path="contacte.html" element={<Navigate to="/contacte" replace />} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   </Routes>
 )
