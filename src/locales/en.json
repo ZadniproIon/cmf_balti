@@ -103,61 +103,61 @@
       "cards": {
         "cs1": {
           "title": "Health Center No. 1",
-          "address": "str. Decebal, 101V",
+          "address": "Bălți, Decebal St., 101V",
           "phone": "0231 7-43-34",
           "alt": "Health Center No. 1"
         },
         "cs2": {
           "title": "Health Center No. 2",
-          "address": "str. Ștefan cel Mare, 52",
+          "address": "Bălți, Ștefan cel Mare St., 52",
           "phone": "0231 2-12-32",
           "alt": "Health Center No. 2"
         },
         "cs3": {
           "title": "Health Center No. 3",
-          "address": "str. George Coșbuc, 13",
+          "address": "Bălți, George Coșbuc St., 13",
           "phone": "0231 2-42-74",
           "alt": "Health Center No. 3"
         },
         "cs4": {
           "title": "Health Center No. 4",
-          "address": "str. Strîii, 9",
+          "address": "Bălți, Strîii St., 9",
           "phone": "0231 6-78-77",
           "alt": "Health Center No. 4"
         },
         "cs5": {
           "title": "Health Center No. 5",
-          "address": "str. Boris Glavan, 21",
+          "address": "Bălți, Boris Glavan St., 21",
           "phone": "0231 3-81-79",
           "alt": "Health Center No. 5"
         },
         "cs6": {
           "title": "Health Center No. 6",
-          "address": "str. Kiev, 30",
+          "address": "Bălți, Kiev St., 30",
           "phone": "0231 4-45-77",
           "alt": "Health Center No. 6"
         },
         "atis": {
           "title": "Youth-friendly Health Center \"ATIS\"",
-          "address": "str. Kiev, 30",
+          "address": "Bălți, Kiev St., 30",
           "phone": "0231 4-64-62",
           "alt": "Youth-friendly Health Center ATIS"
         },
         "ccsm": {
           "title": "Community Mental Health Center (CCSM)",
-          "address": "str. Decebal, 101V",
+          "address": "Bălți, Decebal St., 101V",
           "phone": "0231 7-10-11",
           "alt": "Community Mental Health Center (CCSM)"
         },
         "elizaveta": {
           "title": "Family Doctor's Office s. Elizaveta",
-          "address": "str. Ștefan cel Mare, 21",
+          "address": "Elizaveta, Ștefan cel Mare St., 21",
           "phone": "0231 6-82-82",
           "alt": "Family Doctor's Office s. Elizaveta"
         },
         "sadovoe": {
           "title": "Family Doctor's Office s. Sadovoe",
-          "address": "str. Parcovaia, 31",
+          "address": "Sadovoe, Parcovaia St., 31",
           "phone": "0231 5-52-19",
           "alt": "Family Doctor's Office s. Sadovoe"
         }
@@ -224,22 +224,22 @@
         "paragraph1": "The laboratory service is a structural subdivision of IMSP \"CMF mun. Bălți\", organized in 2003, along with the opening of IMSP \"Municipal Center of Family Doctors Bălți\".",
         "listTitle": "The service carries out its activity through 6 laboratories located within the 6 health centers - subdivisions of IMSP \"CMF mun. Bălți\" - and one laboratory located in the premises of OMF Elizaveta:",
         "labs": [
-          "Health Center No. 1, mun. Bălți, str. Decebal, 101V",
-          "Health Center No. 2, mun. Bălți, str. Ștefan cel Mare, 52",
-          "Health Center No. 3, mun. Bălți, str. George Coșbuc, 13",
-          "Health Center No. 4, mun. Bălți, bd. Larisa, 9",
-          "Health Center No. 5, mun. Bălți, str. Boris Glăvan, 21",
-          "Health Center No. 6, mun. Bălți, str. Kiev, 30",
-          "OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21"
+          "Health Center No. 1, Bălți, Decebal St., 101V",
+          "Health Center No. 2, Bălți, Ștefan cel Mare St., 52",
+          "Health Center No. 3, Bălți, George Coșbuc St., 13",
+          "Health Center No. 4, Bălți, Larisa Blvd., 9",
+          "Health Center No. 5, Bălți, Boris Glăvan St., 21",
+          "Health Center No. 6, Bălți, Kiev St., 30",
+          "OMF Elizaveta, Elizaveta, Ștefan cel Mare St., 21"
         ]
       },
       "imaging": {
         "title": "Imaging service",
         "locationsTitle": "The service carries out its activity through offices located in different health centers of the city:",
         "locations": [
-          "Health Center No. 1, mun. Bălți, str. Decebal, 101V;",
-          "Health Center No. 2, mun. Bălți, str. Ștefan cel Mare, 52;",
-          "Health Center No. 6, mun. Bălți, str. Kiev, 30."
+          "Health Center No. 1, Bălți, Decebal St., 101V;",
+          "Health Center No. 2, Bălți, Ștefan cel Mare St., 52;",
+          "Health Center No. 6, Bălți, Kiev St., 30."
         ],
         "paragraph1": "The imaging service is a diagnostic subdivision intended to identify pathologies through radiological methods, including those of the pulmonary system, osteoarticular system, abdominal ultrasound, pregnancy ultrasound, FGDS (fibro-gastro-duodenoscopy) and colonoscopy.",
         "paragraph2": "The service is equipped with modern, high-performance equipment: 2 digital radiology installations, 1 installation for videogastroscopy and colonoscopy, 3 new ultrasound machines, metrologically tested, which allow annually performing the following volume of investigations: 4000-5000 ultrasounds, 12,000-14,000 radiological investigations (preventive chest X-rays and osteoarticular system studies), 1500 endoscopic investigations.",
@@ -352,7 +352,7 @@
       "admin": {
         "title": "Administration",
         "lines": [
-          "Address: Bălți, Strada Decebal, 101V",
+          "Address: Bălți, Decebal St., 101V",
           "Email: cmfbalti@ms.md",
           "Reception: 0231 7-52-28",
           "Fax: 0231 7-25-88",
@@ -367,7 +367,7 @@
       "cs1": {
         "title": "Health Center No. 1",
         "lines": [
-          "Address: Bălți, str. Decebal, 101V",
+          "Address: Bălți, Decebal St., 101V",
           "Email: cmfbalti@ms.md",
           "Registry, floor 1: 0231 7-43-34",
           "Registry, floor 2: 0231 7-37-65",
@@ -378,7 +378,7 @@
       "cs2": {
         "title": "Health Center No. 2",
         "lines": [
-          "Address: Bălți, str. Ștefan cel Mare, 52",
+          "Address: Bălți, Ștefan cel Mare St., 52",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 2-12-32, 068759222",
           "Head of Health Center: 0231 2-03-61"
@@ -387,7 +387,7 @@
       "cs3": {
         "title": "Health Center No. 3",
         "lines": [
-          "Address: Bălți, str. George Goșbuc, 13",
+          "Address: Bălți, George Goșbuc St., 13",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 2-42-74",
           "Head of Health Center: 0231 2-51-69"
@@ -396,7 +396,7 @@
       "cs4": {
         "title": "Health Center No. 4",
         "lines": [
-          "Address: Bălți, str. Strîii, 9",
+          "Address: Bălți, Strîii St., 9",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 6-78-77",
           "Head of Health Center: 0231 6-74-20"
@@ -405,7 +405,7 @@
       "cs5": {
         "title": "Health Center No. 5",
         "lines": [
-          "Address: Bălți, str. Boris Glavan, 21",
+          "Address: Bălți, Boris Glavan St., 21",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 3-81-79",
           "Head of Health Center: 0231 3-83-55"
@@ -414,7 +414,7 @@
       "cs6": {
         "title": "Health Center No. 6",
         "lines": [
-          "Address: Bălți, str. Kiev, 30",
+          "Address: Bălți, Kiev St., 30",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 4-45-77",
           "Head of Health Center: 0231 4-34-66"
@@ -423,7 +423,7 @@
       "atis": {
         "title": "Youth-friendly Health Center \"ATIS\"",
         "lines": [
-          "Address: Bălți, str. Kiev, 30",
+          "Address: Bălți, Kiev St., 30",
           "Email: cmfbalti@ms.md",
           "Phone: 0231 4-46-62"
         ]
@@ -431,7 +431,7 @@
       "ccsm": {
         "title": "Community Mental Health Center (CCSM)",
         "lines": [
-          "Address: Bălți, Strada Decebal, 101V",
+          "Address: Bălți, Decebal St., 101V",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 7-10-11"
         ]
@@ -439,7 +439,7 @@
       "elizaveta": {
         "title": "Family Doctor's Office s. Elizaveta",
         "lines": [
-          "Address: s. Elizaveta, str. Ștefan cel Mare, 21",
+          "Address: Elizaveta, Ștefan cel Mare St., 21",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 6-82-82"
         ]
@@ -447,7 +447,7 @@
       "sadovoe": {
         "title": "Family Doctor's Office s. Sadovoe",
         "lines": [
-          "Address: s. Sadovoe, str. Parcovaia, 31",
+          "Address: Sadovoe, Parcovaia St., 31",
           "Email: cmfbalti@ms.md",
           "Registry: 0231 5-52-19"
         ]
@@ -483,13 +483,13 @@
     "navigation": "Navigation",
     "navigationLabel": "Footer navigation",
     "address": "Address",
-    "addressValue": "Bălți, Strada Decebal, 101V",
+    "addressValue": "Bălți, Decebal St., 101V",
     "phone": "Phone",
     "email": "Email",
     "hours": {
       "weekdays": "Monday - Friday: 8:00 - 19:00",
       "saturday": "Saturday: 8:00 - 13:00"
     },
-    "credit": "Project made with {{heart}} by <0>{{name}}</0>"
+    "credit": "Project made with love {{heart}} by <0>{{name}}</0>"
   }
 }
