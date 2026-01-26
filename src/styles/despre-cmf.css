@@ -18,7 +18,7 @@
     padding: 0 1.5em;
     justify-content: space-evenly;
     gap: 2em;
-    align-items: center;
+    align-items: stretch;
     
     
     max-width: 1165px;
