@@ -1,378 +1,137 @@
-﻿import { Link } from 'react-router-dom'
-import { MapPin, Phone } from 'lucide-react'
+﻿import { MapPin, Phone } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
 import despreStyles from '../styles/despre-cmf.css?raw'
 import pillStyles from '../styles/pill-container.css?raw'
 import titleStyles from '../styles/title-and-section-text.css?raw'
-//
+
 const pageStyles = [despreStyles, titleStyles, componentsStyles, pillStyles]
 
+const subdivisionAssets = {
+  cs1: {
+    src: '/images/despre-cmf-jpeg/cmf-nr1-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-nr1-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr1-600.jpg 600w',
+  },
+  cs2: {
+    src: '/images/despre-cmf-jpeg/cmf-nr2-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-nr2-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr2-600.jpg 600w',
+  },
+  cs3: {
+    src: '/images/despre-cmf-jpeg/cmf-nr3-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-nr3-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr3-600.jpg 600w',
+  },
+  cs4: {
+    src: '/images/despre-cmf-jpeg/cmf-nr4-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-nr4-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr4-600.jpg 600w',
+  },
+  cs5: {
+    src: '/images/despre-cmf-jpeg/cmf-nr5-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-nr5-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr5-600.jpg 600w',
+  },
+  cs6: {
+    src: '/images/despre-cmf-jpeg/cmf-nr6-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-nr6-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr6-600.jpg 600w',
+  },
+  atis: {
+    src: '/images/despre-cmf-jpeg/cmf-atis-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-atis-350.jpg 350w, /images/despre-cmf-jpeg/cmf-atis-600.jpg 600w',
+  },
+  ccsm: {
+    src: '/images/despre-cmf-jpeg/cmf-ccsm-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-ccsm-350.jpg 350w, /images/despre-cmf-jpeg/cmf-ccsm-600.jpg 600w',
+  },
+  elizaveta: {
+    src: '/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg 350w, /images/despre-cmf-jpeg/cmf-elizaveta-600.jpg 600w',
+  },
+  sadovoe: {
+    src: '/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg',
+    srcSet: '/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg 350w, /images/despre-cmf-jpeg/cmf-sadovoe-600.jpg 600w',
+  },
+}
+
+const cardOrder = ['cs1', 'cs2', 'cs3', 'cs4', 'cs5', 'cs6', 'atis', 'ccsm', 'elizaveta', 'sadovoe']
+
+const renderWithBreaks = (text) => {
+  const parts = text.split('\n')
+  return parts.map((part, index) => (
+    <span key={`${part}-${index}`}>
+      {part}
+      {index < parts.length - 1 ? (
+        <>
+          <br />
+          <br />
+        </>
+      ) : null}
+    </span>
+  ))
+}
+
 const DespreCmf = () => {
-  useDocumentTitle(
-    'Despre noi - CMF Bălți',
-    'Află despre CMF Bălți, misiune, servicii și echipele de medicină de familie.'
-  )
+  const { t } = useTranslation()
+
+  useDocumentTitle(t('meta.about.title'), t('meta.about.description'))
   usePageStyles(pageStyles, 'despre-cmf')
+
+  const subdivisions = t('about.subdivisions.cards', { returnObjects: true })
 
   return (
     <>
       <header className="title-of-page">
-        <h1>
-          Instituția Medico-Sanitară Publică
-          <br />
-          „Centrul Medicilor de Familie Municipal Bălți”
-        </h1>
+        <h1>{renderWithBreaks(t('about.header'))}</h1>
       </header>
 
       <section aria-labelledby="domeniul-activitate-title">
-        <h2 id="domeniul-activitate-title" className="title-text">Domeniul de activitate</h2>
+        <h2 id="domeniul-activitate-title" className="title-text">{t('about.activity.title')}</h2>
         <div className="section-text">
-          <p>
-            Domeniul de activitate al IMSP„Centrul Medicilor de Familie Municipal Bălți”, este
-            acordarea serviciilor medicale primare.
-            <br />
-            <br />
-            Medicina de familie este o specialitate medicală care asigură asistența medicală primară și
-            reprezintă setul de servicii medicale ce include: activități de profilaxie, de consultanță
-            în scop curativ și de suport. Activitatea medicului de familie și echipa sa, asigură prin
-            acțiuni preventive, educaționale, terapeutice și de recuperare, promovarea stării de
-            sănătate a individului, familiei și colectivității. Asistența medicală primară este
-            garantată pentru toată populația Republicii Moldova, indiferent de statutul de asigurat sau
-            neasigurat.
-            <br />
-            <br />
-            Pentru a beneficia de asistență medicală primară este obligatorie înregistrarea pe lista
-            medicului de familie fiind respectat pricipiul deservirii teritoriale. Medicul de familie
-            este specialistul de prim-contact și cel care, după caz, organizează accesul la celelalte
-            tipuri de asistență și servicii medicale prevăzute de{' '}
-            <a
-              id="programul-unic-link"
-              href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Programul unic
-            </a>
-            .
-          </p>
+          <p>{renderWithBreaks(t('about.activity.text'))}</p>
         </div>
       </section>
 
       <section aria-labelledby="evolutia-title">
-        <h2 id="evolutia-title" className="title-text">Evoluția</h2>
+        <h2 id="evolutia-title" className="title-text">{t('about.evolution.title')}</h2>
         <div className="section-text">
-          <p>
-            Sistemul de sănătate din mun. Bălți până în anul 1997 a fost constituit din 13 instituții
-            medicale, sectorul de ambulator fiind reprezentat prin 3 policlinici pentru maturi și 2
-            policlinici pentru copii, inclusiv, specialiști de profil îngust, dispensare specializate și
-            2 centre de consultații pentru femei.
-            <br />
-            <br />
-            Odată cu adoptarea Concepției de dezvoltare a sistemului ocrotirii sănătății în Republica
-            Moldova pe perioada anilor 1997-2005 (Hotărârea Guvernului Republicii Moldova Nr.668 din
-            17.07.97), în corespundere cu prevederile Hotărârii Guvernului Republicii Moldova NR.I134
-            din 09.12.97„Cu privire la dezvoltarea asistenței medicale primare”, în scopul accelerării
-            procesului de reformă a sistemului sănătății și realizării măsurilor de trecere la o nouă
-            formă de asistență medicală primară, de către organele administrației publice locale au fost
-            luate unele decizii importante în acest context.
-            <br />
-            <br />
-            În luna februarie 1998, în municipiu, a fost instituită Asociația Medicală Teritorială,
-            denumită inițial „Asociația Policlinicilor mun. Bălți”. Noua instituție medicală, s-a format
-            prin comasarea policlinicilor pentru maturi/copii și centrelor de consultații pentru femei,
-            având drept scop acordarea asistenței medicale primare populației municipiului.
-            <br />
-            <br />
-            Din 01.03.98, prin reorganizarea acestor structuri au fost create 5 policlinici mixte,
-            ulterior, specialiștii fiind uniți într-o secție consultativ - diagnostică. Inițial, medicii
-            au activat în echipe mari, compuse din 3 terapeuți, 2 pediatri și 1 obstetrician-ginecolog.
-            Începând cu anul 2000, echipele s-au redus la 3 medici, unul dintre care, în mod obligatoriu,
-            era fost - pediatru, manevră îndreptată spre asigurarea asistenței medicale calitative
-            copiilor de vârstă fragedă în primul rând și sporirea gradului de responsabilitate a
-            fiecărui medic.
-            <br />
-            <br />
-            Ca rezultat a reformei administrativ - teritoriale, prin ordinul Ministerului Sănătății
-            Republicii Moldova Nr. I60 din 01.07.99 a fost aprobat noul sistem de sănătate a
-            municipiului Bălți. În baza „Asociației policlinicilor” fiind format „Centrul Medicilor de
-            Familie Municipal Bălți” cu retragerea specialiștilor de profil îngust în secția consultativă
-            a Spitalului Județean.
-            <br />
-            <br />
-            Structura Sistemului Ocrotirii Sănătății din municipiul Bălți n-a suferit modificări
-            esențiale nici după noua reformă administrativ - teritorială, în luna decembrie a anului 2003
-            fiind instituită Instituția Medico - Sanitară Publică „Centrul Medicilor de Familie Municipal
-            Bălți”, ce are în subdiviziune: 6 Centre de Sănătate și 2 OMF-uri - Oficiul Medicului de
-            Familie Sadovoe și Oficiul Medicului de Familie Elizaveta, ce deservesc populația de pe cele
-            81 de sectoare.
-          </p>
+          <p>{renderWithBreaks(t('about.evolution.text'))}</p>
         </div>
       </section>
 
       <section aria-labelledby="subdiviziuni-title">
-        <h2 id="subdiviziuni-title" className="title-text">Subdiviziunile IMSP „CMF mun. Bălți”</h2>
+        <h2 id="subdiviziuni-title" className="title-text">{t('about.subdivisions.title')}</h2>
         <div className="card-container" role="list">
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-nr1-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-nr1-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr1-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Nr. 1"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Nr. 1</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Decebal, 101V</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 7-43-34</p>
-            </div>
-          </div>
-        </article>
+          {cardOrder.map((key) => {
+            const details = subdivisions[key]
+            const asset = subdivisionAssets[key]
 
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-nr2-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-nr2-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr2-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Nr. 2"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Nr. 2</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Ștefan cel Mare, 52</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 2-12-32</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-nr3-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-nr3-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr3-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Nr. 3"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Nr. 3</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. George Coșbuc, 13</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 2-42-74</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-nr4-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-nr4-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr4-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Nr. 4"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Nr. 4</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Strîii, 9</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 6-78-77</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-nr5-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-nr5-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr5-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Nr. 5"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Nr. 5</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Boris Glavan, 21</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 3-81-79</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-nr6-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-nr6-350.jpg 350w, /images/despre-cmf-jpeg/cmf-nr6-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Nr. 6"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Nr. 6</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Kiev, 30</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 4-45-77</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-atis-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-atis-350.jpg 350w, /images/despre-cmf-jpeg/cmf-atis-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul de Sanatate Prietinos Tinerilor ATIS"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul de Sănătate Prietinos Tinerilor „ATIS”</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Kiev, 30</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 4-64-62</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-ccsm-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-ccsm-350.jpg 350w, /images/despre-cmf-jpeg/cmf-ccsm-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Centrul Comunitar de Sanatate Mintala (CCSM)"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Centrul Comunitar de Sănătate Mintală (CCSM)</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Decebal, 101V</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 7-10-11</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-elizaveta-350.jpg 350w, /images/despre-cmf-jpeg/cmf-elizaveta-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Oficiul Medicului de Familie s. Elizaveta"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Oficiul Medicului de Familie s. Elizaveta</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Ștefan cel Mare, 21</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 6-82-82</p>
-            </div>
-          </div>
-        </article>
-
-        <article className="card" role="listitem">
-          <div className="card-image">
-            <img
-              src="/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg"
-              srcSet="/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg 350w, /images/despre-cmf-jpeg/cmf-sadovoe-600.jpg 600w"
-              sizes="(max-width: 600px) 90vw, 350px"
-              width="350"
-              height="200"
-              loading="lazy"
-              decoding="async"
-              alt="Oficiul Medicului de Familie s. Sadovoe"
-            />
-          </div>
-          <div className="card-body">
-            <h3 className="card-title">Oficiul Medicului de Familie s. Sadovoe</h3>
-            <div className="card-row">
-              <MapPin className="card-icon" />
-              <p>str. Parcovaia, 31</p>
-            </div>
-            <div className="card-row">
-              <Phone className="card-icon" />
-              <p>0231 5-52-19</p>
-            </div>
-          </div>
-        </article>
+            return (
+              <article className="card" role="listitem" key={key}>
+                <div className="card-image">
+                  <img
+                    src={asset.src}
+                    srcSet={asset.srcSet}
+                    sizes="(max-width: 600px) 90vw, 350px"
+                    width="350"
+                    height="200"
+                    loading="lazy"
+                    decoding="async"
+                    alt={details.alt}
+                  />
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">{details.title}</h3>
+                  <div className="card-row">
+                    <MapPin className="card-icon" />
+                    <p>{details.address}</p>
+                  </div>
+                  <div className="card-row">
+                    <Phone className="card-icon" />
+                    <p>{details.phone}</p>
+                  </div>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </section>
     </>
@@ -380,4 +139,3 @@ const DespreCmf = () => {
 }
 
 export default DespreCmf
-

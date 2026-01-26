@@ -1,0 +1,46 @@
+﻿{
+  "language": {
+    "label": "Language",
+    "ro": "RO",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "general": "General",
+    "transparenta": "Transparency",
+    "contact": "Contact"
+  },
+  "meta": {
+    "home": {
+      "title": "CMF Bălți",
+      "description": "CMF Bălți — online appointments, useful info, and community services."
+    },
+    "about": {
+      "title": "About Us - CMF Bălți",
+      "description": "Learn about CMF Bălți, mission, services, and family medicine teams."
+    },
+    "general": {
+      "title": "General - CMF Bălți",
+      "description": "Information for beneficiaries: rights, services, appointments, and useful guides at CMF Bălți."
+    },
+    "transparenta": {
+      "title": "Transparency - CMF Bălți",
+      "description": "CMF Bălți transparency: public procurement, activity reports, and contracts."
+    },
+    "contact": {
+      "title": "Contact - CMF Bălți",
+      "description": "CMF Bălți contacts: addresses, phone numbers, email, and health center map."
+    },
+    "notFound": {
+      "title": "Error 404 - CMF Bălți",
+      "description": "The requested page was not found."
+    }
+  },
+  "notFound": {
+    "title": "Error 404",
+    "text": "The page does not exist or has been moved. You can return to the <0>home page</0> or open one of the sections above.",
+    "back": "Back home"
+  }
+}

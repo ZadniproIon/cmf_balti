@@ -1,5 +1,5 @@
-﻿import { Link } from 'react-router-dom'
-import { Download } from 'lucide-react'
+﻿import { Download } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import useDocumentTitle from '../hooks/useDocumentTitle'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
@@ -11,347 +11,253 @@ import titleStyles from '../styles/title-and-section-text.css?raw'
 const pageStyles = [quickSelectStyles, titleStyles, pillStyles, infoStyles, componentsStyles]
 
 const InfoBeneficiari = () => {
-  useDocumentTitle(
-    'Generale - CMF Bălți',
-    'Informații pentru beneficiari: drepturi, servicii, programări și ghiduri utile CMF Bălți.'
-  )
+  const { t } = useTranslation()
+
+  useDocumentTitle(t('meta.general.title'), t('meta.general.description'))
   usePageStyles(pageStyles, 'info-beneficiari')
+
+  const rightsItems = t('general.rights.items', { returnObjects: true })
+  const responsibilitiesItems = t('general.responsibilities.items', { returnObjects: true })
+  const services = t('general.services', { returnObjects: true })
+  const insuranceParagraphs = t('general.insurance.paragraphs', { returnObjects: true })
+
+  const programLabel = services.family.programLink
+  const programParagraphParts = services.family.paragraph2.split(programLabel)
+  const cnamLabel = t('general.insurance.cnamLabel')
+
+  const quickLinks = [
+    { href: '#drepturile_pacientului', label: t('general.quickLinks.rights') },
+    { href: '#responsabilitatile_pacientului', label: t('general.quickLinks.responsibilities') },
+    { href: '#servicii', label: t('general.quickLinks.services') },
+    { href: '#asigurarea_obligatorie_de_asistenta_medicala', label: t('general.quickLinks.insurance') },
+    { href: '#tarife', label: t('general.quickLinks.tarife') },
+  ]
+
+  const tarifeDownloads = [
+    {
+      year: 2021,
+      href: 'https://server.cmf-balti.md/static/pdf/article-pdf-511-0.3289387758139458.pdf',
+    },
+    {
+      year: 2022,
+      href: 'https://server.cmf-balti.md/static/pdf/article-pdf-512-0.1886027953116397.pdf',
+    },
+    {
+      year: 2023,
+      href: 'https://server.cmf-balti.md/static/pdf/article-pdf-513-0.2620717613034873.pdf',
+    },
+    {
+      year: 2024,
+      href: 'https://server.cmf-balti.md/static/pdf/article-pdf-553-0.3840356830293784.pdf',
+    },
+    {
+      year: 2025,
+      href: 'https://server.cmf-balti.md/static/pdf/article-pdf-617-0.31922044473368605.pdf',
+    },
+    {
+      year: 2026,
+      href: 'https://server.cmf-balti.md/static/pdf/article-pdf-698-0.6186151516443106.pdf',
+    },
+  ]
 
   return (
     <>
-      <h1 className="sr-only">Generale</h1>
+      <h1 className="sr-only">{t('nav.general')}</h1>
       <section className="quick-select" aria-labelledby="quick-select-title">
-        <h2 id="quick-select-title" className="quick-select-title">Apasă butoanele pentru acces direct</h2>
+        <h2 id="quick-select-title" className="quick-select-title">{t('general.quickSelect')}</h2>
         <nav className="select-options" aria-label="Navigare rapidă">
-          <a href="#drepturile_pacientului">Drepturile pacientului</a>
-          <a href="#responsabilitatile_pacientului">Responsabilitățile pacientului</a>
-          <a href="#servicii">Servicii</a>
-          <a href="#asigurarea_obligatorie_de_asistenta_medicala">Asigurarea obligatorie</a>
-          <a href="#tarife">Tarife</a>
+          {quickLinks.map((link) => (
+            <a key={link.href} href={link.href}>
+              {link.label}
+            </a>
+          ))}
         </nav>
       </section>
 
       <section aria-labelledby="drepturile_pacientului">
         <h2 className="title-text" id="drepturile_pacientului">
-          Drepturile pacientului
+          {t('general.rights.title')}
         </h2>
         <div className="section-text">
-          <p>Pacientul are dreptul la:</p>
+          <p>{t('general.rights.intro')}</p>
           <ul>
-            <li>
-              informații complete asupra stării de sănătate, metodelor de profilaxie, diagnostic,
-              tratament și recuperare, precum și despre riscurile potențiale și eficiența terapeutică a
-              acestora, prognoza și progresul tratamentului, precum și despre alternativele metodelor
-              propuse, inclusiv opțiunea de a nu urma un tratament;
-            </li>
-            <li>
-              informații cu privire la prestatorul de servicii de sănătate, profilul acestuia, volumul,
-              calitatea, costul și modalitatea de prestare a serviciilor respective;
-            </li>
-            <li>
-              dreptul de a refuza sau opri o intervenție medicală; implicațiile refuzului sau opririi
-              unei astfel de intervenții trebuie explicate clar pacientului;
-            </li>
-            <li>
-              acceptarea sau refuzul de a participa la cercetări biomedicale (studii clinice), conform
-              prevederilor prezentei legi și altor acte normative în vigoare;
-            </li>
-            <li>
-              protecția datelor cu caracter personal, inclusiv a informațiilor privind starea de
-              sănătate, diagnosticul și tratamentul; aceste informații nu vor fi dezvăluite unor terțe
-              persoane și vor fi păstrate în conformitate cu regulamentele de confidențialitate;
-            </li>
-            <li>acces la asistență medicală gratuită, în volumul stabilit de legislație;</li>
-            <li>
-              o atitudine respectuoasă și umană din partea prestatorului de servicii de sănătate,
-              indiferent de vârstă, apartenență etnică sau statut socio-economic;
-            </li>
-            <li>
-              securitatea vieții personale, integritatea fizică, psihică și morală, cu respectarea
-              discreției în timpul acordării serviciilor medicale;
-            </li>
-            <li>
-              reducerea suferinței și atenuarea durerii prin metode legale disponibile, în funcție de
-              posibilitățile reale ale prestatorului de servicii de sănătate;
-            </li>
-            <li>îngrijire terminală demnă de o ființă umană.</li>
+            {rightsItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
       </section>
 
       <section aria-labelledby="responsabilitatile_pacientului">
         <h2 className="title-text" id="responsabilitatile_pacientului">
-          Responsabi&shy;litățile pacientului
+          {t('general.responsibilities.title')}
         </h2>
         <div className="section-text">
-          <p>Pacientul are următoarele responsabilități:</p>
+          <p>{t('general.responsibilities.intro')}</p>
           <ul>
-            <li>să fie înregistrat pe lista unui medic de familie;</li>
-            <li>
-              să aibă grijă de propria sănătate și să adopte un mod de viață sănătos, excluzând acțiunile
-              premeditate care dăunează sănătății sale și a altor persoane;
-            </li>
-            <li>
-              să respecte măsurile de precauție în contactele cu alte persoane, inclusiv cu lucrătorii
-              medicali, în cazul în care are cunoștință că suferă de o boală care prezintă pericol
-              social;
-            </li>
-            <li>
-              să întreprindă, în lipsa contraindicațiilor medicale, măsuri profilactice obligatorii,
-              inclusiv imunizări, a căror neîndeplinire amenință propria sănătate și creează un pericol
-              social;
-            </li>
-            <li>
-              să comunice lucrătorului medical informații complete despre bolile suportate și cele
-              curente, despre afecțiunile care prezintă pericol social, inclusiv în cazul donării
-              benevole de sânge, substanțe biologice lichide, organe și țesuturi;
-            </li>
-            <li>
-              să respecte regulile de comportament stabilite pentru pacienți în instituția
-              medico-sanitară, precum și recomandările medicului pe durata tratamentului ambulator sau
-              staționar;
-            </li>
-            <li>
-              să evite utilizarea produselor farmaceutice și a substanțelor medicamentoase fără
-              prescrierea și acceptul medicului curant, inclusiv droguri, alte substanțe psihotrope și
-              alcool, pe durata tratamentului în instituția medico-sanitară;
-            </li>
-            <li>
-              să respecte drepturile și demnitatea celorlalți pacienți, precum și ale personalului
-              medico-sanitar.
-            </li>
+            {responsibilitiesItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </div>
       </section>
 
       <section aria-labelledby="servicii">
-        <h2 className="title-text" id="servicii">Servicii</h2>
+        <h2 className="title-text" id="servicii">{t('general.services.title')}</h2>
         <div className="section-text">
           <div className="servicii-block">
             <article className="block">
-              <h3 className="block-title">Medicina de familie</h3>
+              <h3 className="block-title">{services.family.title}</h3>
               <div className="block-content">
-              <p>
-              Medicina de familie este o specialitate medicală care asigură asistența medicală primară
-              și reprezintă un set de servicii medicale ce include activități de profilaxie,
-              consultanță în scop curativ și suport. Activitatea medicului de familie și a echipei
-              sale asigură, prin acțiuni preventive, educaționale, terapeutice și de recuperare,
-              promovarea stării de sănătate a individului, familiei și colectivității.
-              </p>
-              <br />
-              <p>
-                Asistența medicală primară este garantată pentru întreaga populație a Republicii
-                Moldova, indiferent de statutul de asigurat sau neasigurat. Pentru a beneficia de
-                asistență medicală primară, este obligatorie înregistrarea pe lista medicului de familie,
-                respectându-se principiul deservirii teritoriale. Medicul de familie este specialistul
-                de prim contact și cel care, după caz, organizează accesul la celelalte tipuri de
-                asistență și servicii medicale prevăzute de{' '}
-                <u>
-                  <a
-                    href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="simple-link"
-                  >
-                    Programul unic
-                  </a>
-                </u>
-                .
-              </p>
-              <br />
-              <div className="list">
+                <p>{services.family.paragraph1}</p>
+                <br />
                 <p>
-                  <b>Pașii de acces la serviciile de asistență medicală primară:</b>
+                  {programParagraphParts.length > 1 ? (
+                    <>
+                      {programParagraphParts[0]}
+                      <u>
+                        <a
+                          href="https://www.legis.md/cautare/getResults?doc_id=93248&lang=ro"
+                          target="_blank"
+                          rel="noreferrer"
+                          className="simple-link"
+                        >
+                          {programLabel}
+                        </a>
+                      </u>
+                      {programParagraphParts.slice(1).join(programLabel)}
+                    </>
+                  ) : (
+                    services.family.paragraph2
+                  )}
                 </p>
-                <ol>
-                  <li>Aveți dreptul și obligația de a vă alege și înregistra la instituția medico-sanitară primară.</li>
-                  <li>
-                    Pentru a beneficia de consultația medicului de familie, este necesară programarea
-                    prin telefon, internet sau direct la ghișeele de înregistrare ale instituției.
-                  </li>
-                  <li>
-                    Medicul de familie vă eliberează biletul de trimitere/extras pentru consultația
-                    medicului specialist sau pentru spitalizare.
-                  </li>
-                  <li>
-                    Medicul de familie sau, după caz, pediatrul, endocrinologul, psihiatrul, neurologul
-                    vă poate prescrie rețete pentru medicamente compensate.
-                  </li>
-                  <li>
-                    Medicul de familie este obligat să vă supravegheze starea pe toată durata tratamentului
-                    ambulatoriu.
-                  </li>
-                </ol>
-              </div>
+                <br />
+                <div className="list">
+                  <p>
+                    <b>{services.family.stepsTitle}</b>
+                  </p>
+                  <ol>
+                    {services.family.steps.map((step) => (
+                      <li key={step}>{step}</li>
+                    ))}
+                  </ol>
+                </div>
               </div>
             </article>
 
             <article className="block">
-              <h3 className="block-title">Serviciul de laborator</h3>
+              <h3 className="block-title">{services.lab.title}</h3>
               <div className="block-content">
-              <p>
-              Serviciul de laborator este o subdiviziune structurală a IMSP „CMF mun. Bălți”, organizată
-              în anul 2003, odată cu deschiderea IMSP „Centrul Medicilor de Familie Municipal Bălți”.
-              </p>
-              <br />
-              <div className="list">
-                <p>
-                  Serviciul își desfășoară activitatea prin intermediul a 6 laboratoare, amplasate în
-                  cadrul celor 6 centre de sănătate – subdiviziuni ale IMSP „CMF mun. Bălți” – și a unui
-                  laborator situat în incinta OMF Elizaveta:
-                </p>
-                <ol>
-                  <li>Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V</li>
-                  <li>Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52</li>
-                  <li>Centrul de Sănătate nr. 3, mun. Bălți, str. George Coșbuc, 13</li>
-                  <li>Centrul de Sănătate nr. 4, mun. Bălți, bd. Larisa, 9</li>
-                  <li>Centrul de Sănătate nr. 5, mun. Bălți, str. Boris Glăvan, 21</li>
-                  <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30</li>
-                  <li>OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21</li>
-                </ol>
-              </div>
+                <p>{services.lab.paragraph1}</p>
+                <br />
+                <div className="list">
+                  <p>{services.lab.listTitle}</p>
+                  <ol>
+                    {services.lab.labs.map((lab) => (
+                      <li key={lab}>{lab}</li>
+                    ))}
+                  </ol>
+                </div>
               </div>
             </article>
 
             <article className="block">
-              <h3 className="block-title">Serviciul de imagistică</h3>
+              <h3 className="block-title">{services.imaging.title}</h3>
               <div className="block-content">
-              <div className="list">
-                <p>
-                  Serviciul își desfășoară activitatea prin intermediul cabinetelor amplasate în diferite
-                  centre de sănătate ale orașului:
-                </p>
-                <ul>
-                  <li>Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V;</li>
-                  <li>Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52;</li>
-                  <li>Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30.</li>
-                </ul>
+                <div className="list">
+                  <p>{services.imaging.locationsTitle}</p>
+                  <ul>
+                    {services.imaging.locations.map((location) => (
+                      <li key={location}>{location}</li>
+                    ))}
+                  </ul>
+                </div>
+                <br />
+                <p>{services.imaging.paragraph1}</p>
+                <br />
+                <p>{services.imaging.paragraph2}</p>
+                <br />
+                <div className="list">
+                  <p>
+                    <b>{services.imaging.radiologyTitle}</b>
+                  </p>
+                  <ul>
+                    {services.imaging.radiology.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="list">
+                  <p>
+                    <b>{services.imaging.ultrasoundTitle}</b>
+                  </p>
+                  <ul>
+                    {services.imaging.ultrasound.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="list">
+                  <p>
+                    <b>{services.imaging.endoscopyTitle}</b>
+                  </p>
+                  <ul>
+                    {services.imaging.endoscopy.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-              <br />
-              <p>
-                Serviciul de imagistică reprezintă o subdiviziune de diagnostic destinată identificării
-                patologiilor prin metode radiologice, inclusiv ale sistemului pulmonar, osteoarticular,
-                ecografie abdominală, ecografie de sarcină, FGDS (Fibro-Gastro-Duodenoscopie) și
-                colonoscopie.
-              </p>
-              <br />
-              <p>
-                Serviciul este dotat cu echipamente moderne, performante: 2 instalații de diagnostic
-                radiologic digital, 1 instalație pentru videogastroscopie și colonoscopie, 3 ecografe
-                noi, testate metrologic, care permit efectuarea anuală a următorului volum de
-                investigații: 4000–5000 ecografii, 12.000–14.000 investigații radiologice (radiografii
-                pulmonare preventive și ale sistemului osteoarticular), 1500 investigații endoscopice.
-              </p>
-              <br />
-              <div className="list">
-                <p>
-                  <b>Serviciul de imagistică efectuează:</b>
-                </p>
-                <p>
-                  <b>Investigații radiologice:</b>
-                </p>
-                <ul>
-                  <li>radiografie pulmonară diagnostică;</li>
-                  <li>radiografie pulmonară preventivă;</li>
-                  <li>radiografie a coloanei vertebrale (nu se eliberează peliculă, ci DVD);</li>
-                  <li>radiografie a craniului;</li>
-                  <li>radiografie a sistemului osteoarticular.</li>
-                </ul>
-              </div>
-              <div className="list">
-                <p>
-                  <b>Investigații ecografice ale organelor interne:</b>
-                </p>
-                <ul>
-                  <li>abdominale (ficat, splină, vezica biliară, pancreas);</li>
-                  <li>ale sistemului urinar (rinichi, glande suprarenale, vezica urinară);</li>
-                  <li>ale bazinului mic, transabdominal (vezica urinară, prostata);</li>
-                  <li>ale glandei tiroide;</li>
-                  <li>ale glandei mamare;</li>
-                  <li>ecografie obstetrică (EUS) pentru monitorizarea sarcinii.</li>
-                </ul>
-              </div>
-              <div className="list">
-                <p>
-                  <b>Endoscopie de diagnostic:</b>
-                </p>
-                <ul>
-                  <li>FGDS (Fibro-Gastro-Duodenoscopie);</li>
-                  <li>Colonoscopie.</li>
-                </ul>
-              </div>
-
-              </div>
-              
             </article>
 
             <article className="block">
-              <h3 className="block-title">Serviciul de reabilitare medicală și medicină fizică</h3>
+              <h3 className="block-title">{services.rehab.title}</h3>
               <div className="block-content">
-              <p>
-              Serviciul de reabilitare medicală și medicină fizică al IMSP „CMF mun. Bălți” a fost
-              organizat în anul 2012, prin comasarea tuturor cabinetelor de fizioterapie, kinetoterapie
-              și masaj din cadrul Centrelor de Sănătate, OMF Sadovoe și OMF Elizaveta.
-              </p>
-              <br />
-              <div className="list">
-                <p>
-                  <b>Program de lucru:</b>
-                </p>
-                <ul>
-                  <li>Cabinetele de fizioterapie: Luni–Vineri, 08:00–18:00 (pauză: 12:00–12:30)</li>
-                  <li>Cabinetele de masaj: Luni–Vineri, 08:00–15:30 (pauză: 12:00–12:30)</li>
-                  <li>Cabinetul de kinetoterapie: Luni–Vineri, 08:30–18:00 (pauză: 13:00–13:30)</li>
-                </ul>
-              </div>
-              <br />
-              <div className="list">
-                <p>
-                  <b>Serviciul corespunde normativelor sanitare și dispune de următoarele cabinete:</b>
-                </p>
-                <ul>
-                  <li>Fizioterapie</li>
-                  <li>Kinetoterapie</li>
-                  <li>Masaj</li>
-                  <li>Aerosoloterapie</li>
-                  <li>Termoterapie</li>
-                  <li>Cabinete de lucru pentru medici</li>
-                  <li>Cabinete de lucru pentru asistenți medicali</li>
-                </ul>
-              </div>
-              <br />
-              <div className="list">
-                <p>
-                  <b>Serviciul de reabilitare medicală și medicină fizică furnizează următoarele metode fizice:</b>
-                </p>
-                <ul>
-                  <li>Aerosoloterapie</li>
-                  <li>Aplicații cu parafină și ozocherită</li>
-                  <li>Curenți pulsativi</li>
-                  <li>Darsonvalizare</li>
-                  <li>Electroforeză</li>
-                  <li>Fototerapie (tubus)</li>
-                  <li>Fonoforeză</li>
-                  <li>Galvanizare</li>
-                  <li>Lazero-terapie</li>
-                  <li>Magnetoterapie</li>
-                  <li>Rusterapie</li>
-                  <li>Raze ultraviolete (generale)</li>
-                  <li>Somn electrogen</li>
-                  <li>Ultrasonoterapie</li>
-                </ul>
-              </div>
-              <br />
-              <div className="list">
-                <p>
-                  <b>Procedurile de reabilitare prestate de Serviciul de reabilitare medicală și medicină fizică sunt:</b>
-                </p>
-                <ul>
-                  <li>Masaj curativ</li>
-                  <li>Kinetoterapie curativă</li>
-                  <li>Kinetoterapie activă în grup</li>
-                </ul>
-              </div>
+                <p>{services.rehab.paragraph1}</p>
+                <br />
+                <div className="list">
+                  <p>
+                    <b>{services.rehab.scheduleTitle}</b>
+                  </p>
+                  <ul>
+                    {services.rehab.schedule.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <br />
+                <div className="list">
+                  <p>
+                    <b>{services.rehab.cabinetsTitle}</b>
+                  </p>
+                  <ul>
+                    {services.rehab.cabinets.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <br />
+                <div className="list">
+                  <p>
+                    <b>{services.rehab.methodsTitle}</b>
+                  </p>
+                  <ul>
+                    {services.rehab.methods.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <br />
+                <div className="list">
+                  <p>
+                    <b>{services.rehab.proceduresTitle}</b>
+                  </p>
+                  <ul>
+                    {services.rehab.procedures.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </article>
           </div>
@@ -360,109 +266,45 @@ const InfoBeneficiari = () => {
 
       <section aria-labelledby="asigurarea_obligatorie_de_asistenta_medicala">
         <h2 className="title-text" id="asigurarea_obligatorie_de_asistenta_medicala">
-          Asigurarea obligatorie de asistență medicală
+          {t('general.insurance.title')}
         </h2>
         <div className="section-text">
-          <p>
-            <b>Asigurările obligatorii de asistență medicală (AOAM)</b> reprezintă un sistem&nbsp;autonom
-            garantat de stat de protecție financiară a populației în domeniul ocrotirii sănătății prin
-            constituirea, pe principii de solidaritate, din contul primelor de asigurare, a unor fonduri
-            bănești destinate pentru acoperirea cheltuielilor de tratare a stărilor condiționate de
-            survenirea evenimentelor asigurate (maladie sau afecțiune). Sistemul asigurării obligatorii
-            de asistență medicală oferă cetățenilor posibilități egale în obținerea asistenței medicale
-            oportune și calitative.
-          </p>
-          <p>
-            În Republica Moldova, sistemul asigurării obligatorii de asistență medicală este gestionat
-            de către&nbsp;<b>Compania Națională de Asigurări în Medicină</b>&nbsp;(CNAM -&nbsp;
-            <a href="http://cnam.md/" target="_blank" rel="noreferrer" className="simple-link">
-              cnam.md
-            </a>
-            ), iar sarcina de bază a acestuia este de a acoperi cheltuielile sistemului de sănătate,
-            pentru tratamentul și profilaxia maladiilor persoanelor asigurate.&nbsp;
-          </p>
-          <p>
-            De remarcat este faptul că cele mai multe servicii medicale sunt consumate de către copii și
-            bătrâni, grupuri sociale care nu achită personal primele de asigurare. Plătitorii de prime
-            din salariu utilizează serviciile medicale relativ mai puțin. Când aceștia nu vor mai activa
-            în câmpul muncii, cheltuielile pentru tratament vor fi suportate de către viitorii angajați.
-            Potrivit datelor din rapoartele CNAM, omul în perioada copilăriei și la vârsta de pensionare
-            folosește un volum de servicii medicale, costul cărora este cel puțin la nivelul
-            contribuțiilor sale în perioada activ a vieții sociale.
-          </p>
-          <p>
-            Respectiv, cu cât vom fi mai mulți în SAOAM, cu atât mai multe servicii și medicamente
-            asigurate vom avea, instituții medicale mai performante și lucrători medicali mai bine
-            plătiți. Calitatea serviciilor depinde direct de contribuțiile noastre în sistemul de
-            asigurare obligatorie de asistență medicală.
-          </p>
+          {insuranceParagraphs.map((paragraph, index) => {
+            if (index === 1 && paragraph.includes(cnamLabel)) {
+              const parts = paragraph.split(cnamLabel)
+              return (
+                <p key={paragraph}>
+                  {parts[0]}
+                  <a href="http://cnam.md/" target="_blank" rel="noreferrer" className="simple-link">
+                    {cnamLabel}
+                  </a>
+                  {parts.slice(1).join(cnamLabel)}
+                </p>
+              )
+            }
+
+            return <p key={paragraph}>{paragraph}</p>
+          })}
         </div>
       </section>
 
       <section aria-labelledby="tarife">
-        <h2 className="title-text" id="tarife">Tarife</h2>
+        <h2 className="title-text" id="tarife">{t('general.tarife.title')}</h2>
         <div className="tarife">
-          <h3 className="tarife-title-text">Extras din catalogul tarifelor</h3>
+          <h3 className="tarife-title-text">{t('general.tarife.subtitle')}</h3>
           <div className="download-button-class">
-          <a
-            className="download-button"
-            href="https://server.cmf-balti.md/static/pdf/article-pdf-511-0.3289387758139458.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download className="download-icon" />
-            <p>Anul 2021</p>
-          </a>
-
-          <a
-            className="download-button"
-            href="https://server.cmf-balti.md/static/pdf/article-pdf-512-0.1886027953116397.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download className="download-icon" />
-            <p>Anul 2022</p>
-          </a>
-
-          <a
-            className="download-button"
-            href="https://server.cmf-balti.md/static/pdf/article-pdf-513-0.2620717613034873.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download className="download-icon" />
-            <p>Anul 2023</p>
-          </a>
-
-          <a
-            className="download-button"
-            href="https://server.cmf-balti.md/static/pdf/article-pdf-553-0.3840356830293784.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download className="download-icon" />
-            <p>Anul 2024</p>
-          </a>
-
-          <a
-            className="download-button"
-            href='https://server.cmf-balti.md/static/pdf/article-pdf-617-0.31922044473368605.pdf'
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download className="download-icon" />
-            <p>Anul 2025</p>
-          </a>
-
-          <a
-            className="download-button"
-            href='https://server.cmf-balti.md/static/pdf/article-pdf-698-0.6186151516443106.pdf'
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download className="download-icon" />
-            <p>Anul 2026</p>
-          </a>
+            {tarifeDownloads.map((item) => (
+              <a
+                key={item.year}
+                className="download-button"
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Download className="download-icon" />
+                <p>{t('general.tarife.year', { year: item.year })}</p>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -471,4 +313,3 @@ const InfoBeneficiari = () => {
 }
 
 export default InfoBeneficiari
-

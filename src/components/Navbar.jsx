@@ -1,35 +1,41 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-
-const navItems = [
-  {
-    to: '/',
-    label: 'Acasă',
-  },
-  {
-    to: '/despre-noi',
-    label: 'Despre noi',
-  },
-  {
-    to: '/generale',
-    label: 'Generale',
-  },
-  {
-    to: '/transparenta',
-    label: 'Transparență',
-  },
-  {
-    to: '/contacte',
-    label: 'Contacte',
-  },
-]
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
+import useLanguage from '../hooks/useLanguage'
 
 const Navbar = () => {
+  const { t } = useTranslation()
+  const { withLang } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
   const [isHidden, setIsHidden] = useState(false)
   const location = useLocation()
   const lastScrollY = useRef(0)
   const scrollDirection = useRef('up')
+
+  const navItems = [
+    {
+      to: withLang('/'),
+      label: t('nav.home'),
+      end: true,
+    },
+    {
+      to: withLang('/despre-noi'),
+      label: t('nav.about'),
+    },
+    {
+      to: withLang('/generale'),
+      label: t('nav.general'),
+    },
+    {
+      to: withLang('/transparenta'),
+      label: t('nav.transparenta'),
+    },
+    {
+      to: withLang('/contacte'),
+      label: t('nav.contact'),
+    },
+  ]
 
   useEffect(() => {
     document.body.classList.toggle('menu-lock', menuOpen)
@@ -101,56 +107,58 @@ const Navbar = () => {
 
   return (
     <header className={`navbar${isHidden ? ' navbar-hidden' : ''}`}>
-        <Link className="left-side" to="/">
-          <img src="/images/logo-cmf.png" alt="Logo-ul CMF Balti" />
-          <p>
-            Centrul Medicilor de
-            <br />
-            Familie mun. Balți
-          </p>
-        </Link>
+      <Link className="left-side" to={withLang('/')}>
+        <img src="/images/logo-cmf.png" alt="Logo-ul CMF Balti" />
+        <p>
+          Centrul Medicilor de
+          <br />
+          Familie mun. Bălți
+        </p>
+      </Link>
 
-        <nav className="right-side" aria-label="Navigare principala">
-          <ul>
-            {navItems.map((item) => (
-              <li key={item.to}>
-                <NavLink to={item.to} className={navLinkClassName} end={item.to === '/'}>
-                  {item.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <nav className="right-side" aria-label="Navigare principala">
+        <ul>
+          {navItems.map((item) => (
+            <li key={item.to}>
+              <NavLink to={item.to} className={navLinkClassName} end={item.end}>
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+        <LanguageSwitcher className="language-switcher-desktop" />
+      </nav>
 
-        <button
-          type="button"
-          className={`hamburger${menuOpen ? ' open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-expanded={menuOpen}
-          aria-controls="mobile-menu"
-          aria-label={menuOpen ? 'Închide meniul' : 'Deschide meniul'}
-        >
-          <span className="line-1"></span>
-          <span className="line-2"></span>
-          <span className="line-3"></span>
-        </button>
+      <button
+        type="button"
+        className={`hamburger${menuOpen ? ' open' : ''}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-expanded={menuOpen}
+        aria-controls="mobile-menu"
+        aria-label={menuOpen ? 'Închide meniul' : 'Deschide meniul'}
+      >
+        <span className="line-1"></span>
+        <span className="line-2"></span>
+        <span className="line-3"></span>
+      </button>
 
-        <nav id="mobile-menu" className={`mobile-menu${menuOpen ? ' menu-open' : ''}`} aria-label="Navigare mobilă">
-          <ul>
-            {navItems.map((item) => (
-              <li key={`${item.to}-mobile`}>
-                <NavLink
-                  to={item.to}
-                  className={navLinkClassName}
-                  end={item.to === '/'}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <nav id="mobile-menu" className={`mobile-menu${menuOpen ? ' menu-open' : ''}`} aria-label="Navigare mobilă">
+        <ul>
+          {navItems.map((item) => (
+            <li key={`${item.to}-mobile`}>
+              <NavLink
+                to={item.to}
+                className={navLinkClassName}
+                end={item.end}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+        <LanguageSwitcher className="language-switcher-mobile" />
+      </nav>
     </header>
   )
 }

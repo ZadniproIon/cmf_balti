@@ -1,0 +1,484 @@
+{
+  "language": {
+    "label": "Limbă",
+    "ro": "RO",
+    "ru": "RU",
+    "en": "EN"
+  },
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre noi",
+    "general": "Generale",
+    "transparenta": "Transparență",
+    "contact": "Contacte"
+  },
+  "meta": {
+    "home": {
+      "title": "CMF Bălți",
+      "description": "Centrul Medicilor de Familie mun. Bălți — programări online, informații utile și servicii pentru comunitate."
+    },
+    "about": {
+      "title": "Despre noi - CMF Bălți",
+      "description": "Află despre CMF Bălți, misiune, servicii și echipele de medicină de familie."
+    },
+    "general": {
+      "title": "Generale - CMF Bălți",
+      "description": "Informații pentru beneficiari: drepturi, servicii, programări și ghiduri utile CMF Bălți."
+    },
+    "transparenta": {
+      "title": "Transparența - CMF Bălți",
+      "description": "Transparența CMF Bălți: achiziții publice, rapoarte de activitate și contracte."
+    },
+    "contact": {
+      "title": "Contacte - CMF Bălți",
+      "description": "Contacte CMF Bălți: adrese, telefoane, email și harta centrelor de sănătate."
+    },
+    "notFound": {
+      "title": "Eroare 404 - CMF Bălți",
+      "description": "Pagina solicitată nu a fost găsită."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Programare online",
+      "text": "Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și planificați-vă vizita din confortul casei.",
+      "cta": "Apasă aici"
+    },
+    "info": {
+      "title": "Informații utile",
+      "cards": {
+        "hours": {
+          "title": "Orele de lucru",
+          "text": "Luni - Vineri: 8:00 - 19:00\nSâmbătă: 8:00 - 13:00"
+        },
+        "centers": {
+          "title": "Centrele de sănătate",
+          "text": "Total 10 în orașul Bălți, cât și satele Elizaveta și Sadovoie"
+        },
+        "contact": {
+          "title": "Contact",
+          "text": "La numărul de telefon: 02319977 sau la secțiunea <0>Contacte</0>"
+        }
+      }
+    },
+    "about": {
+      "title": "Despre CMF Bălți",
+      "text": "IMSP „Centrul Medicilor de Familie Municipal Bălți” are ca obiectiv principal furnizarea asistenței medicale primare pentru întreaga populație, indiferent de statutul de asigurare. Medicina de familie este esențială în prevenție, diagnostic și tratament. Medicii de familie, împreună cu echipele lor, contribuie la îmbunătățirea sănătății individuale și comunitare.",
+      "cta": "Află mai multe"
+    },
+    "beneficiary": {
+      "title": "Ești beneficiar?",
+      "text": "Dacă ești beneficiar al serviciilor medicale oferite de Centrul Medicilor de Familie din Bălți, medicul tău de familie va fi primul punct de contact pentru îngrijirea sănătății. Înregistrarea la un medic de familie este esențială pentru a beneficia de consultații medicale, tratamente și acces la alte tipuri de servicii specializate. Aceste servicii sunt disponibile pentru toți, indiferent de statutul de asigurat sau neasigurat.",
+      "cta": "Află mai multe"
+    },
+    "transparency": {
+      "title": "Transparență",
+      "text": "Pentru noi, transparența este esențială în activitatea noastră zilnică. Ne angajăm să oferim acces la informații detaliate privind achizițiile publice, rapoartele de activitate și contractele, pentru a asigura încrederea și responsabilitatea față de toți beneficiarii noștri. Această abordare deschisă ne ajută să gestionăm eficient resursele și să fim mereu la dispoziția comunității.",
+      "pills": {
+        "procurement": "Achiziții publice",
+        "reports": "Rapoarte de activitate",
+        "contracts": "Contracte CNAM"
+      }
+    },
+    "partners": {
+      "title": "Parteneri oficiali",
+      "ministry": "Ministerul Sănătății al Republicii Moldova",
+      "cnam": "Compania Națională de Asigurări în Medicină",
+      "city": "Primăria Municipiului Bălți",
+      "cnas": "Compania Națională de Asigurări Sociale"
+    }
+  },
+  "about": {
+    "header": "Instituția Medico-Sanitară Publică\n„Centrul Medicilor de Familie Municipal Bălți”",
+    "activity": {
+      "title": "Domeniul de activitate",
+      "text": "Domeniul de activitate al IMSP„Centrul Medicilor de Familie Municipal Bălți”, este acordarea serviciilor medicale primare.\n\nMedicina de familie este o specialitate medicală care asigură asistența medicală primară și reprezintă setul de servicii medicale ce include: activități de profilaxie, de consultanță în scop curativ și de suport. Activitatea medicului de familie și echipa sa, asigură prin acțiuni preventive, educaționale, terapeutice și de recuperare, promovarea stării de sănătate a individului, familiei și colectivității. Asistența medicală primară este garantată pentru toată populația Republicii Moldova, indiferent de statutul de asigurat sau neasigurat.\n\nPentru a beneficia de asistență medicală primară este obligatorie înregistrarea pe lista medicului de familie fiind respectat pricipiul deservirii teritoriale. Medicul de familie este specialistul de prim-contact și cel care, după caz, organizează accesul la celelalte tipuri de asistență și servicii medicale prevăzute de Programul unic."
+    },
+    "evolution": {
+      "title": "Evoluția",
+      "text": "Sistemul de sănătate din mun. Bălți până în anul 1997 a fost constituit din 13 instituții medicale, sectorul de ambulator fiind reprezentat prin 3 policlinici pentru maturi și 2 policlinici pentru copii, inclusiv, specialiști de profil îngust, dispensare specializate și 2 centre de consultații pentru femei.\n\nOdată cu adoptarea Concepției de dezvoltare a sistemului ocrotirii sănătății în Republica Moldova pe perioada anilor 1997-2005 (Hotărârea Guvernului Republicii Moldova Nr.668 din 17.07.97), în corespundere cu prevederile Hotărârii Guvernului Republicii Moldova NR.I134 din 09.12.97„Cu privire la dezvoltarea asistenței medicale primare”, în scopul accelerării procesului de reformă a sistemului sănătății și realizării măsurilor de trecere la o nouă formă de asistență medicală primară, de către organele administrației publice locale au fost luate unele decizii importante în acest context.\n\nÎn luna februarie 1998, în municipiu, a fost instituită Asociația Medicală Teritorială, denumită inițial „Asociația Policlinicilor mun. Bălți”. Noua instituție medicală, s-a format prin comasarea policlinicilor pentru maturi/copii și centrelor de consultații pentru femei, având drept scop acordarea asistenței medicale primare populației municipiului.\n\nDin 01.03.98, prin reorganizarea acestor structuri au fost create 5 policlinici mixte, ulterior, specialiștii fiind uniți într-o secție consultativ - diagnostică. Inițial, medicii au activat în echipe mari, compuse din 3 terapeuți, 2 pediatri și 1 obstetrician-ginecolog. Începând cu anul 2000, echipele s-au redus la 3 medici, unul dintre care, în mod obligatoriu, era fost - pediatru, manevră îndreptată spre asigurarea asistenței medicale calitative copiilor de vârstă fragedă în primul rând și sporirea gradului de responsabilitate a fiecărui medic.\n\nCa rezultat a reformei administrativ - teritoriale, prin ordinul Ministerului Sănătății Republicii Moldova Nr. I60 din 01.07.99 a fost aprobat noul sistem de sănătate a municipiului Bălți. În baza „Asociației policlinicilor” fiind format „Centrul Medicilor de Familie Municipal Bălți” cu retragerea specialiștilor de profil îngust în secția consultativă a Spitalului Județean.\n\nStructura Sistemului Ocrotirii Sănătății din municipiul Bălți n-a suferit modificări esențiale nici după noua reformă administrativ - teritorială, în luna decembrie a anului 2003 fiind instituită Instituția Medico - Sanitară Publică „Centrul Medicilor de Familie Municipal Bălți”, ce are în subdiviziune: 6 Centre de Sănătate și 2 OMF-uri - Oficiul Medicului de Familie Sadovoe și Oficiul Medicului de Familie Elizaveta, ce deservesc populația de pe cele 81 de sectoare."
+    },
+    "subdivisions": {
+      "title": "Subdiviziunile IMSP „CMF mun. Bălți”",
+      "cards": {
+        "cs1": {
+          "title": "Centrul de Sănătate Nr. 1",
+          "address": "str. Decebal, 101V",
+          "phone": "0231 7-43-34",
+          "alt": "Centrul de Sănătate Nr. 1"
+        },
+        "cs2": {
+          "title": "Centrul de Sănătate Nr. 2",
+          "address": "str. Ștefan cel Mare, 52",
+          "phone": "0231 2-12-32",
+          "alt": "Centrul de Sănătate Nr. 2"
+        },
+        "cs3": {
+          "title": "Centrul de Sănătate Nr. 3",
+          "address": "str. George Coșbuc, 13",
+          "phone": "0231 2-42-74",
+          "alt": "Centrul de Sănătate Nr. 3"
+        },
+        "cs4": {
+          "title": "Centrul de Sănătate Nr. 4",
+          "address": "str. Strîii, 9",
+          "phone": "0231 6-78-77",
+          "alt": "Centrul de Sănătate Nr. 4"
+        },
+        "cs5": {
+          "title": "Centrul de Sănătate Nr. 5",
+          "address": "str. Boris Glavan, 21",
+          "phone": "0231 3-81-79",
+          "alt": "Centrul de Sănătate Nr. 5"
+        },
+        "cs6": {
+          "title": "Centrul de Sănătate Nr. 6",
+          "address": "str. Kiev, 30",
+          "phone": "0231 4-45-77",
+          "alt": "Centrul de Sănătate Nr. 6"
+        },
+        "atis": {
+          "title": "Centrul de Sănătate Prietinos Tinerilor „ATIS”",
+          "address": "str. Kiev, 30",
+          "phone": "0231 4-64-62",
+          "alt": "Centrul de Sănătate Prietinos Tinerilor ATIS"
+        },
+        "ccsm": {
+          "title": "Centrul Comunitar de Sănătate Mintală (CCSM)",
+          "address": "str. Decebal, 101V",
+          "phone": "0231 7-10-11",
+          "alt": "Centrul Comunitar de Sănătate Mintală (CCSM)"
+        },
+        "elizaveta": {
+          "title": "Oficiul Medicului de Familie s. Elizaveta",
+          "address": "str. Ștefan cel Mare, 21",
+          "phone": "0231 6-82-82",
+          "alt": "Oficiul Medicului de Familie s. Elizaveta"
+        },
+        "sadovoe": {
+          "title": "Oficiul Medicului de Familie s. Sadovoe",
+          "address": "str. Parcovaia, 31",
+          "phone": "0231 5-52-19",
+          "alt": "Oficiul Medicului de Familie s. Sadovoe"
+        }
+      }
+    }
+  },
+  "general": {
+    "quickSelect": "Apasă butoanele pentru acces direct",
+    "quickLinks": {
+      "rights": "Drepturile pacientului",
+      "responsibilities": "Responsabilitățile pacientului",
+      "services": "Servicii",
+      "insurance": "Asigurarea obligatorie",
+      "tarife": "Tarife"
+    },
+    "rights": {
+      "title": "Drepturile pacientului",
+      "intro": "Pacientul are dreptul la:",
+      "items": [
+        "informații complete asupra stării de sănătate, metodelor de profilaxie, diagnostic, tratament și recuperare, precum și despre riscurile potențiale și eficiența terapeutică a acestora, prognoza și progresul tratamentului, precum și despre alternativele metodelor propuse, inclusiv opțiunea de a nu urma un tratament;",
+        "informații cu privire la prestatorul de servicii de sănătate, profilul acestuia, volumul, calitatea, costul și modalitatea de prestare a serviciilor respective;",
+        "dreptul de a refuza sau opri o intervenție medicală; implicațiile refuzului sau opririi unei astfel de intervenții trebuie explicate clar pacientului;",
+        "acceptarea sau refuzul de a participa la cercetări biomedicale (studii clinice), conform prevederilor prezentei legi și altor acte normative în vigoare;",
+        "protecția datelor cu caracter personal, inclusiv a informațiilor privind starea de sănătate, diagnosticul și tratamentul; aceste informații nu vor fi dezvăluite unor terțe persoane și vor fi păstrate în conformitate cu regulamentele de confidențialitate;",
+        "acces la asistență medicală gratuită, în volumul stabilit de legislație;",
+        "o atitudine respectuoasă și umană din partea prestatorului de servicii de sănătate, indiferent de vârstă, apartenență etnică sau statut socio-economic;",
+        "securitatea vieții personale, integritatea fizică, psihică și morală, cu respectarea discreției în timpul acordării serviciilor medicale;",
+        "reducerea suferinței și atenuarea durerii prin metode legale disponibile, în funcție de posibilitățile reale ale prestatorului de servicii de sănătate;",
+        "îngrijire terminală demnă de o ființă umană."
+      ]
+    },
+    "responsibilities": {
+      "title": "Responsabilitățile pacientului",
+      "intro": "Pacientul are următoarele responsabilități:",
+      "items": [
+        "să fie înregistrat pe lista unui medic de familie;",
+        "să aibă grijă de propria sănătate și să adopte un mod de viață sănătos, excluzând acțiunile premeditate care dăunează sănătății sale și a altor persoane;",
+        "să respecte măsurile de precauție în contactele cu alte persoane, inclusiv cu lucrătorii medicali, în cazul în care are cunoștință că suferă de o boală care prezintă pericol social;",
+        "să întreprindă, în lipsa contraindicațiilor medicale, măsuri profilactice obligatorii, inclusiv imunizări, a căror neîndeplinire amenință propria sănătate și creează un pericol social;",
+        "să comunice lucrătorului medical informații complete despre bolile suportate și cele curente, despre afecțiunile care prezintă pericol social, inclusiv în cazul donării benevole de sânge, substanțe biologice lichide, organe și țesuturi;",
+        "să respecte regulile de comportament stabilite pentru pacienți în instituția medico-sanitară, precum și recomandările medicului pe durata tratamentului ambulator sau staționar;",
+        "să evite utilizarea produselor farmaceutice și a substanțelor medicamentoase fără prescrierea și acceptul medicului curant, inclusiv droguri, alte substanțe psihotrope și alcool, pe durata tratamentului în instituția medico-sanitară;",
+        "să respecte drepturile și demnitatea celorlalți pacienți, precum și ale personalului medico-sanitar."
+      ]
+    },
+    "services": {
+      "title": "Servicii",
+      "family": {
+        "title": "Medicina de familie",
+        "paragraph1": "Medicina de familie este o specialitate medicală care asigură asistența medicală primară și reprezintă un set de servicii medicale ce include activități de profilaxie, consultanță în scop curativ și suport. Activitatea medicului de familie și a echipei sale asigură, prin acțiuni preventive, educaționale, terapeutice și de recuperare, promovarea stării de sănătate a individului, familiei și colectivității.",
+        "paragraph2": "Asistența medicală primară este garantată pentru întreaga populație a Republicii Moldova, indiferent de statutul de asigurat sau neasigurat. Pentru a beneficia de asistență medicală primară, este obligatorie înregistrarea pe lista medicului de familie, respectându-se principiul deservirii teritoriale. Medicul de familie este specialistul de prim contact și cel care, după caz, organizează accesul la celelalte tipuri de asistență și servicii medicale prevăzute de Programul unic.",
+        "programLink": "Programul unic",
+        "stepsTitle": "Pașii de acces la serviciile de asistență medicală primară:",
+        "steps": [
+          "Aveți dreptul și obligația de a vă alege și înregistra la instituția medico-sanitară primară.",
+          "Pentru a beneficia de consultația medicului de familie, este necesară programarea prin telefon, internet sau direct la ghișeele de înregistrare ale instituției.",
+          "Medicul de familie vă eliberează biletul de trimitere/extras pentru consultația medicului specialist sau pentru spitalizare.",
+          "Medicul de familie sau, după caz, pediatrul, endocrinologul, psihiatrul, neurologul vă poate prescrie rețete pentru medicamente compensate.",
+          "Medicul de familie este obligat să vă supravegheze starea pe toată durata tratamentului ambulatoriu."
+        ]
+      },
+      "lab": {
+        "title": "Serviciul de laborator",
+        "paragraph1": "Serviciul de laborator este o subdiviziune structurală a IMSP „CMF mun. Bălți”, organizată în anul 2003, odată cu deschiderea IMSP „Centrul Medicilor de Familie Municipal Bălți”.",
+        "listTitle": "Serviciul își desfășoară activitatea prin intermediul a 6 laboratoare, amplasate în cadrul celor 6 centre de sănătate – subdiviziuni ale IMSP „CMF mun. Bălți” – și a unui laborator situat în incinta OMF Elizaveta:",
+        "labs": [
+          "Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V",
+          "Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52",
+          "Centrul de Sănătate nr. 3, mun. Bălți, str. George Coșbuc, 13",
+          "Centrul de Sănătate nr. 4, mun. Bălți, bd. Larisa, 9",
+          "Centrul de Sănătate nr. 5, mun. Bălți, str. Boris Glăvan, 21",
+          "Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30",
+          "OMF Elizaveta, mun. Bălți, s. Elizaveta, str. Ștefan cel Mare, 21"
+        ]
+      },
+      "imaging": {
+        "title": "Serviciul de imagistică",
+        "locationsTitle": "Serviciul își desfășoară activitatea prin intermediul cabinetelor amplasate în diferite centre de sănătate ale orașului:",
+        "locations": [
+          "Centrul de Sănătate nr. 1, mun. Bălți, str. Decebal, 101V;",
+          "Centrul de Sănătate nr. 2, mun. Bălți, str. Ștefan cel Mare, 52;",
+          "Centrul de Sănătate nr. 6, mun. Bălți, str. Kiev, 30."
+        ],
+        "paragraph1": "Serviciul de imagistică reprezintă o subdiviziune de diagnostic destinată identificării patologiilor prin metode radiologice, inclusiv ale sistemului pulmonar, osteoarticular, ecografie abdominală, ecografie de sarcină, FGDS (Fibro-Gastro-Duodenoscopie) și colonoscopie.",
+        "paragraph2": "Serviciul este dotat cu echipamente moderne, performante: 2 instalații de diagnostic radiologic digital, 1 instalație pentru videogastroscopie și colonoscopie, 3 ecografe noi, testate metrologic, care permit efectuarea anuală a următorului volum de investigații: 4000–5000 ecografii, 12.000–14.000 investigații radiologice (radiografii pulmonare preventive și ale sistemului osteoarticular), 1500 investigații endoscopice.",
+        "radiologyTitle": "Investigații radiologice:",
+        "radiology": [
+          "radiografie pulmonară diagnostică;",
+          "radiografie pulmonară preventivă;",
+          "radiografie a coloanei vertebrale (nu se eliberează peliculă, ci DVD);",
+          "radiografie a craniului;",
+          "radiografie a sistemului osteoarticular."
+        ],
+        "ultrasoundTitle": "Investigații ecografice ale organelor interne:",
+        "ultrasound": [
+          "abdominale (ficat, splină, vezica biliară, pancreas);",
+          "ale sistemului urinar (rinichi, glande suprarenale, vezica urinară);",
+          "ale bazinului mic, transabdominal (vezica urinară, prostata);",
+          "ale glandei tiroide;",
+          "ale glandei mamare;",
+          "ecografie obstetrică (EUS) pentru monitorizarea sarcinii."
+        ],
+        "endoscopyTitle": "Endoscopie de diagnostic:",
+        "endoscopy": [
+          "FGDS (Fibro-Gastro-Duodenoscopie);",
+          "Colonoscopie."
+        ]
+      },
+      "rehab": {
+        "title": "Serviciul de reabilitare medicală și medicină fizică",
+        "paragraph1": "Serviciul de reabilitare medicală și medicină fizică al IMSP „CMF mun. Bălți” a fost organizat în anul 2012, prin comasarea tuturor cabinetelor de fizioterapie, kinetoterapie și masaj din cadrul Centrelor de Sănătate, OMF Sadovoe și OMF Elizaveta.",
+        "scheduleTitle": "Program de lucru:",
+        "schedule": [
+          "Cabinetele de fizioterapie: Luni–Vineri, 08:00–18:00 (pauză: 12:00–12:30)",
+          "Cabinetele de masaj: Luni–Vineri, 08:00–15:30 (pauză: 12:00–12:30)",
+          "Cabinetul de kinetoterapie: Luni–Vineri, 08:30–18:00 (pauză: 13:00–13:30)"
+        ],
+        "cabinetsTitle": "Serviciul corespunde normativelor sanitare și dispune de următoarele cabinete:",
+        "cabinets": [
+          "Fizioterapie",
+          "Kinetoterapie",
+          "Masaj",
+          "Aerosoloterapie",
+          "Termoterapie",
+          "Cabinete de lucru pentru medici",
+          "Cabinete de lucru pentru asistenți medicali"
+        ],
+        "methodsTitle": "Serviciul de reabilitare medicală și medicină fizică furnizează următoarele metode fizice:",
+        "methods": [
+          "Aerosoloterapie",
+          "Aplicații cu parafină și ozocherită",
+          "Curenți pulsativi",
+          "Darsonvalizare",
+          "Electroforeză",
+          "Fototerapie (tubus)",
+          "Fonoforeză",
+          "Galvanizare",
+          "Lazero-terapie",
+          "Magnetoterapie",
+          "Rusterapie",
+          "Raze ultraviolete (generale)",
+          "Somn electrogen",
+          "Ultrasonoterapie"
+        ],
+        "proceduresTitle": "Procedurile de reabilitare prestate de Serviciul de reabilitare medicală și medicină fizică sunt:",
+        "procedures": [
+          "Masaj curativ",
+          "Kinetoterapie curativă",
+          "Kinetoterapie activă în grup"
+        ]
+      }
+    },
+    "insurance": {
+      "title": "Asigurarea obligatorie de asistență medicală",
+      "paragraphs": [
+        "Asigurările obligatorii de asistență medicală (AOAM) reprezintă un sistem autonom garantat de stat de protecție financiară a populației în domeniul ocrotirii sănătății prin constituirea, pe principii de solidaritate, din contul primelor de asigurare, a unor fonduri bănești destinate pentru acoperirea cheltuielilor de tratare a stărilor condiționate de survenirea evenimentelor asigurate (maladie sau afecțiune). Sistemul asigurării obligatorii de asistență medicală oferă cetățenilor posibilități egale în obținerea asistenței medicale oportune și calitative.",
+        "În Republica Moldova, sistemul asigurării obligatorii de asistență medicală este gestionat de către Compania Națională de Asigurări în Medicină (CNAM - cnam.md), iar sarcina de bază a acestuia este de a acoperi cheltuielile sistemului de sănătate, pentru tratamentul și profilaxia maladiilor persoanelor asigurate.",
+        "De remarcat este faptul că cele mai multe servicii medicale sunt consumate de către copii și bătrâni, grupuri sociale care nu achită personal primele de asigurare. Plătitorii de prime din salariu utilizează serviciile medicale relativ mai puțin. Când aceștia nu vor mai activa în câmpul muncii, cheltuielile pentru tratament vor fi suportate de către viitorii angajați. Potrivit datelor din rapoartele CNAM, omul în perioada copilăriei și la vârsta de pensionare folosește un volum de servicii medicale, costul cărora este cel puțin la nivelul contribuțiilor sale în perioada activ a vieții sociale.",
+        "Respectiv, cu cât vom fi mai mulți în SAOAM, cu atât mai multe servicii și medicamente asigurate vom avea, instituții medicale mai performante și lucrători medicali mai bine plătiți. Calitatea serviciilor depinde direct de contribuțiile noastre în sistemul de asigurare obligatorie de asistență medicală."
+      ],
+      "cnamLabel": "cnam.md"
+    },
+    "tarife": {
+      "title": "Tarife",
+      "subtitle": "Extras din catalogul tarifelor",
+      "year": "Anul {{year}}"
+    }
+  },
+  "transparenta": {
+    "title": "Transparența",
+    "filters": {
+      "category": "Categoria",
+      "year": "Anul",
+      "allCategories": "Toate categoriile",
+      "allYears": "Toți anii"
+    },
+    "empty": "Nu există rezultate pentru filtrele selectate.",
+    "cta": "Accesează PDF",
+    "categories": {
+      "procurement": "Achiziții publice",
+      "reports": "Rapoarte de activitate",
+      "contracts": "Contracte CNAM"
+    }
+  },
+  "contact": {
+    "title": "Contacte",
+    "listTitle": "Date de contact",
+    "mapTitle": "Harta centrelor de sănătate",
+    "mapAria": "Harta centrelor de sănătate",
+    "googleMaps": "Google Maps",
+    "entries": {
+      "admin": {
+        "title": "Administrația",
+        "lines": [
+          "Adresa: Bălți, Strada Decebal, 101V",
+          "Email: cmfbalti@ms.md",
+          "Anticamera: 0231 7-52-28",
+          "Fax: 0231 7-25-88",
+          "Serviciul Resurse Unmane: 0231 7-54-80",
+          "Contabilitatea: 0231 7-52-29",
+          "Serviciul Juridic: 0231 7-52-29",
+          "Serviciul Economico-Financiar: 0231 7-16-60",
+          "Contabil Șef: 0231 7-25-44",
+          "Serviciul Tehnologii Informaționale: 0231 7-25-88"
+        ]
+      },
+      "cs1": {
+        "title": "Centrul de Sănătate nr. 1",
+        "lines": [
+          "Adresa: Bălți, str. Decebal, 101V",
+          "Email: cmfbalti@ms.md",
+          "Registratura et1: 0231 7-43-34",
+          "Registratura et2: 0231 7-37-65",
+          "Registratura et3: 0231 7-07-18",
+          "Șef Centru de Sănătate: 0231 7-25-43"
+        ]
+      },
+      "cs2": {
+        "title": "Centrul de Sănătate nr. 2",
+        "lines": [
+          "Adresa: Bălți, str. Ștefan cel Mare, 52",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 2-12-32, 068759222",
+          "Șef Centru de Sănătate: 0231 2-03-61"
+        ]
+      },
+      "cs3": {
+        "title": "Centrul de Sănătate nr. 3",
+        "lines": [
+          "Adresa: Bălți, str. George Goșbuc, 13",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 2-42-74",
+          "Șef Centru de Sănătate: 0231 2-51-69"
+        ]
+      },
+      "cs4": {
+        "title": "Centrul de Sănătate nr. 4",
+        "lines": [
+          "Adresa: Bălți, str. Strîii, 9",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 6-78-77",
+          "Șef Centru de Sănătate: 0231 6-74-20"
+        ]
+      },
+      "cs5": {
+        "title": "Centrul de Sănătate nr. 5",
+        "lines": [
+          "Adresa: Bălți, str. Boris Glavan, 21",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 3-81-79",
+          "Șef Centru de Sănătate: 0231 3-83-55"
+        ]
+      },
+      "cs6": {
+        "title": "Centrul de Sănătate nr. 6",
+        "lines": [
+          "Adresa: Bălți, str. Kiev, 30",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 4-45-77",
+          "Șef Centru de Sănătate: 0231 4-34-66"
+        ]
+      },
+      "atis": {
+        "title": "Centrul de Sănătate Prietenos Tinerilor „ATIS”",
+        "lines": [
+          "Adresa: Bălți, str. Kiev, 30",
+          "Email: cmfbalti@ms.md",
+          "Telefon: 0231 4-46-62"
+        ]
+      },
+      "ccsm": {
+        "title": "Centrul Comunitar de Sănătate Mintală (CCSM)",
+        "lines": [
+          "Adresa: Bălți, Strada Decebal, 101V",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 7-10-11"
+        ]
+      },
+      "elizaveta": {
+        "title": "Oficiul Medicului de Familie s. Elizaveta",
+        "lines": [
+          "Adresa: s. Elizaveta, str. Ștefan cel Mare, 21",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 6-82-82"
+        ]
+      },
+      "sadovoe": {
+        "title": "Oficiul Medicului de Familie s. Sadovoe",
+        "lines": [
+          "Adresa: s. Sadovoe, str. Parcovaia, 31",
+          "Email: cmfbalti@ms.md",
+          "Registratura: 0231 5-52-19"
+        ]
+      }
+    },
+    "markers": {
+      "cs1": "Centrul de Sănătate nr. 1",
+      "ccsm": "Centrul Comunitar de Sănătate Mintală (CCSM)",
+      "admin": "Administrația",
+      "cs2": "Centrul de Sănătate nr. 2",
+      "cs3": "Centrul de Sănătate nr. 3",
+      "cs4": "Centrul de Sănătate nr. 4",
+      "cs5": "Centrul de Sănătate nr. 5",
+      "cs6": "Centrul de Sănătate nr. 6",
+      "atis": "Centrul de Sănătate Prietenos Tinerilor „ATIS”",
+      "elizaveta": "Oficiul Medicului de Familie s. Elizaveta",
+      "sadovoe": "Oficiul Medicului de Familie s. Sadovoe"
+    }
+  },
+  "notFound": {
+    "title": "Eroare 404",
+    "text": "Pagina nu există sau a fost mutată. Poți reveni la <0>pagina principală</0> sau accesa una dintre secțiunile de mai sus.",
+    "back": "Înapoi acasă"
+  },
+  "footer": {
+    "contact": "Contact",
+    "program": "Program",
+    "navigation": "Navigare",
+    "address": "Adresa",
+    "phone": "Telefon",
+    "email": "Email",
+    "credit": "Project made with love {{heart}} by {{name}}"
+  }
+}

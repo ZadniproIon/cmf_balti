@@ -1,6 +1,8 @@
-import { ArrowLeft } from 'lucide-react'
+﻿import { ArrowLeft } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Trans, useTranslation } from 'react-i18next'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import useLanguage from '../hooks/useLanguage'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
 import notFoundStyles from '../styles/not-found.css?raw'
@@ -8,21 +10,25 @@ import notFoundStyles from '../styles/not-found.css?raw'
 const pageStyles = [notFoundStyles, componentsStyles]
 
 const NotFound = () => {
-  useDocumentTitle('Eroare 404 - CMF Bălți', 'Pagina solicitată nu a fost găsită.')
+  const { t } = useTranslation()
+  const { withLang } = useLanguage()
+
+  useDocumentTitle(t('meta.notFound.title'), t('meta.notFound.description'))
   usePageStyles(pageStyles, 'not-found')
 
   return (
     <section className="not-found" aria-labelledby="not-found-title">
       <div className="not-found-content">
-        <h1 id="not-found-title" className="not-found-title">Eroare 404</h1>
+        <h1 id="not-found-title" className="not-found-title">{t('notFound.title')}</h1>
         <p className="not-found-text">
-          Pagina nu există sau a fost mutată.
-          <br />
-          Poți reveni la <Link className="not-found-inline-link" to="/">pagina principală</Link> sau accesa unul dintre link-urile de mai sus.
+          <Trans
+            i18nKey="notFound.text"
+            components={[<Link key="not-found-home" className="not-found-inline-link" to={withLang('/')} />]}
+          />
         </p>
-        <Link className="not-found-link" to="/">
+        <Link className="not-found-link" to={withLang('/')}>
           <ArrowLeft className="icon" />
-          Înapoi acasă
+          {t('notFound.back')}
         </Link>
       </div>
     </section>

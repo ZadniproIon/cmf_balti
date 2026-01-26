@@ -1,6 +1,8 @@
 ﻿import { Link } from 'react-router-dom'
+import { Trans, useTranslation } from 'react-i18next'
 import { Clock8, HeartPulse, PhoneCall, Globe } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
+import useLanguage from '../hooks/useLanguage'
 import usePageStyles from '../hooks/usePageStyles'
 import componentsStyles from '../styles/components.css?raw'
 import homeStyles from '../styles/index.css?raw'
@@ -8,10 +10,11 @@ import pillStyles from '../styles/pill-container.css?raw'
 
 const pageStyles = [homeStyles, pillStyles, componentsStyles]
 const Home = () => {
-  useDocumentTitle(
-    'CMF Bălți',
-    'Centrul Medicilor de Familie mun. Bălți — programări online, informații utile și servicii pentru comunitate.'
-  )
+  const { t } = useTranslation()
+  const { withLang } = useLanguage()
+  const hoursLines = t('home.info.cards.hours.text').split('\n')
+
+  useDocumentTitle(t('meta.home.title'), t('meta.home.description'))
   usePageStyles(pageStyles, 'home')
 
   return (
@@ -20,13 +23,13 @@ const Home = () => {
         <div className="main-section-1">
           <div className="left-side">
             <h1 id="hero-title" className="hero-title">
-              Programare online
+              {t('home.hero.title')}
             </h1>
             <p className="hero-description">
-              Rezervați o consultație la medicul de familie în doar câțiva pași. Evitați cozile și planificați-vă vizita din confortul casei.
+              {t('home.hero.text')}
             </p>
             <a className="hero-cta" href="https://sia.amp.md/" target="_blank" rel="noreferrer">
-              Apasă aici
+              {t('home.hero.cta')}
             </a>
           </div>
           <div className="right-side">
@@ -36,32 +39,41 @@ const Home = () => {
               sizes="(max-width: 1024px) 90vw, 400px"
               width="480"
               height="476"
-              alt="Programare online"
+              alt={t('home.hero.title')}
             />
           </div>
         </div>
       </section>
-      
-      
+
       <section className="info-utile" aria-labelledby="info-utile-title">
-        <h2 id="info-utile-title" className="info-utile-title">Informații utile</h2>
+        <h2 id="info-utile-title" className="info-utile-title">{t('home.info.title')}</h2>
         <ul className="info-utile-containers" role="list">
           <li className="info-utile-card">
             <Clock8 className="icon" />
-            <h3 className="info-utile-card-title">Orele de lucru</h3>
+            <h3 className="info-utile-card-title">{t('home.info.cards.hours.title')}</h3>
             <p>
-              Luni - Vineri: 8:00 - 19:00<br />Sâmbătă: 8:00 - 13:00
+              {hoursLines.map((line, index) => (
+                <span key={line}>
+                  {line}
+                  {index < hoursLines.length - 1 ? <br /> : null}
+                </span>
+              ))}
             </p>
           </li>
           <li className="info-utile-card">
             <HeartPulse className="icon" />
-            <h3 className="info-utile-card-title">Centrele de sănătate</h3>
-            <p>Total 10 în orașul Bălți, cât și satele Elizaveta și Sadovoie</p>
+            <h3 className="info-utile-card-title">{t('home.info.cards.centers.title')}</h3>
+            <p>{t('home.info.cards.centers.text')}</p>
           </li>
           <li className="info-utile-card">
             <PhoneCall className="icon" />
-            <h3 className="info-utile-card-title">Contact</h3>
-            <p>La numărul de telefon: 02319977 sau la secțiunea <Link to="/contacte">Contacte</Link></p>
+            <h3 className="info-utile-card-title">{t('home.info.cards.contact.title')}</h3>
+            <p>
+              <Trans
+                i18nKey="home.info.cards.contact.text"
+                components={[<Link key="contact-link" to={withLang('/contacte')} />]}
+              />
+            </p>
           </li>
         </ul>
       </section>
@@ -75,21 +87,13 @@ const Home = () => {
               sizes="400px"
               width="400"
               height="400"
-              alt="Despre CMF Balti"
+              alt={t('home.about.title')}
             />
           </div>
           <div className="content-side">
-            <h2 id="despre-cmf-title" className="content-title">Despre CMF Bălți</h2>
-            <p>
-              IMSP „Centrul Medicilor de Familie Municipal Bălți” are ca obiectiv principal furnizarea
-              asistenței medicale primare pentru întreaga populație, indiferent de statutul de
-              asigurare.
-              <br/>
-              Medicina de familie este esențială în prevenție, diagnostic și tratament. Medicii de
-              familie, împreună cu echipele lor, contribuie la îmbunătățirea sănătății individuale și
-              comunitare.
-            </p>
-            <Link to="/despre-noi">Află mai multe</Link>
+            <h2 id="despre-cmf-title" className="content-title">{t('home.about.title')}</h2>
+            <p>{t('home.about.text')}</p>
+            <Link to={withLang('/despre-noi')}>{t('home.about.cta')}</Link>
           </div>
         </div>
       </section>
@@ -97,16 +101,9 @@ const Home = () => {
       <section className="content-wrapper" id="esti-beneficiar" aria-labelledby="esti-beneficiar-title">
         <div className="content">
           <div className="content-side">
-            <h2 id="esti-beneficiar-title" className="content-title">Ești beneficiar?</h2>
-            <p>
-              Dacă ești beneficiar al serviciilor medicale oferite de Centrul Medicilor de Familie din
-              Bălți, medicul tău de familie va fi primul punct de contact pentru îngrijirea sănătății.
-              <br />
-              Înregistrarea la un medic de familie este esențială pentru a beneficia de consultații
-              medicale, tratamente și acces la alte tipuri de servicii specializate. Aceste servicii
-              sunt disponibile pentru toți, indiferent de statutul de asigurat sau neasigurat.
-            </p>
-            <Link to="/generale">Află mai multe</Link>
+            <h2 id="esti-beneficiar-title" className="content-title">{t('home.beneficiary.title')}</h2>
+            <p>{t('home.beneficiary.text')}</p>
+            <Link to={withLang('/generale')}>{t('home.beneficiary.cta')}</Link>
           </div>
           <div className="image-side">
             <img
@@ -115,7 +112,7 @@ const Home = () => {
               sizes="400px"
               width="400"
               height="400"
-              alt="Esti beneficiar"
+              alt={t('home.beneficiary.title')}
             />
           </div>
         </div>
@@ -123,27 +120,19 @@ const Home = () => {
 
       <section className="transparenta-section-wrapper" aria-labelledby="transparenta-title">
         <div className="transparenta-section">
-          <h2 id="transparenta-title" className="transparenta-title">Transpa&shy;rență</h2>
-          <p>
-            Pentru noi, transparența este esențială în activitatea noastră zilnică. Ne angajăm să
-            oferim acces la informații detaliate privind achizițiile publice, rapoartele de activitate
-            și contractele, pentru a asigura încrederea și responsabilitatea față de toți beneficiarii
-            noștri.
-            
-            Această abordare deschisă ne ajută să gestionăm eficient resursele și să fim mereu la
-            dispoziția comunității.
-          </p>
+          <h2 id="transparenta-title" className="transparenta-title">{t('home.transparency.title')}</h2>
+          <p>{t('home.transparency.text')}</p>
 
           <nav className="pills" aria-label="Secțiuni de transparență">
-            <Link to="/transparenta#achizitii_publice">Achiziții publice</Link>
-            <Link to="/transparenta#rapoarte_de_activitate">Rapoarte de activitate</Link>
-            <Link to="/transparenta#contracte_cnam">Contracte CNAM</Link>
+            <Link to={withLang('/transparenta#achizitii_publice')}>{t('home.transparency.pills.procurement')}</Link>
+            <Link to={withLang('/transparenta#rapoarte_de_activitate')}>{t('home.transparency.pills.reports')}</Link>
+            <Link to={withLang('/transparenta#contracte_cnam')}>{t('home.transparency.pills.contracts')}</Link>
           </nav>
         </div>
       </section>
 
       <section className="parteneri-oficiali-wrapper" aria-labelledby="parteneri-oficiali-title">
-        <h2 id="parteneri-oficiali-title">Parteneri oficiali</h2>
+        <h2 id="parteneri-oficiali-title">{t('home.partners.title')}</h2>
         <ul className="parteneri-oficiali" role="list">
           <li className="partner-card">
             <div className="left-side">
@@ -153,11 +142,11 @@ const Home = () => {
                 sizes="(max-width: 675px) 100px, 150px"
                 width="150"
                 height="150"
-                alt="Ministerul Sanatatii al Republicii Moldova"
+                alt={t('home.partners.ministry')}
               />
             </div>
             <div className="right-side">
-              <h3 className="partner-name">Ministerul Sănătății al Republicii Moldova</h3>
+              <h3 className="partner-name">{t('home.partners.ministry')}</h3>
               <a href="https://ms.gov.md/" target="_blank" rel="noreferrer">
                 <Globe />ms.gov.md
               </a>
@@ -172,11 +161,11 @@ const Home = () => {
                 sizes="(max-width: 675px) 100px, 150px"
                 width="150"
                 height="150"
-                alt="Compania Nationala de Asigurari in Medicina"
+                alt={t('home.partners.cnam')}
               />
             </div>
             <div className="right-side">
-              <h3 className="partner-name">Compania Națională de Asigurări în Medicină</h3>
+              <h3 className="partner-name">{t('home.partners.cnam')}</h3>
               <a href="http://cnam.md/" target="_blank" rel="noreferrer">
                 <Globe />cnam.md
               </a>
@@ -191,11 +180,11 @@ const Home = () => {
                 sizes="(max-width: 675px) 100px, 150px"
                 width="150"
                 height="150"
-                alt="Primaria Municipiului Balti"
+                alt={t('home.partners.city')}
               />
             </div>
             <div className="right-side">
-              <h3 className="partner-name">Primăria Municipiului Bălți</h3>
+              <h3 className="partner-name">{t('home.partners.city')}</h3>
               <a href="https://balti.md/" target="_blank" rel="noreferrer">
                 <Globe />balti.md
               </a>
@@ -210,11 +199,11 @@ const Home = () => {
                 sizes="(max-width: 675px) 100px, 150px"
                 width="150"
                 height="150"
-                alt="Compania Nationala de Asigurari Sociale"
+                alt={t('home.partners.cnas')}
               />
             </div>
             <div className="right-side">
-              <h3 className="partner-name">Compania Națională de Asigurări Sociale</h3>
+              <h3 className="partner-name">{t('home.partners.cnas')}</h3>
               <a href="https://cnas.gov.md/" target="_blank" rel="noreferrer">
                 <Globe />cnas.gov.md
               </a>
@@ -227,4 +216,3 @@ const Home = () => {
 }
 
 export default Home
-

@@ -131,6 +131,10 @@ body {
     align-items: center;
 }
 
+.navbar .right-side {
+    gap: 16px;
+}
+
 .navbar .left-side {
     display: flex;
     align-items: center;
@@ -197,6 +201,44 @@ body {
 .navbar li a:active {
     background-color: var(--red-light);
     color: var(--text-white);
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-blue);
+    font-size: 14px;
+}
+
+.language-label {
+    font-weight: 600;
+}
+
+.language-switcher select {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-blue);
+    background-color: var(--background-white);
+}
+
+.language-switcher select:focus-visible {
+    outline: 2px solid var(--red-normal);
+    outline-offset: 2px;
+}
+
+.language-switcher-mobile {
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.language-switcher-mobile label,
+.language-switcher-mobile select {
+    font-size: 1rem;
 }
 
 @media (max-width: 1100px) {
