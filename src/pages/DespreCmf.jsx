@@ -60,10 +60,7 @@ const renderWithBreaks = (text) => {
     <span key={`${part}-${index}`}>
       {part}
       {index < parts.length - 1 ? (
-        <>
-          <br />
-          <br />
-        </>
+        <br />
       ) : null}
     </span>
   ))
