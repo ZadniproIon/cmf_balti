@@ -1,10 +1,11 @@
 ﻿import { Link } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import useLanguage from '../hooks/useLanguage'
 
 const Footer = () => {
   const { t } = useTranslation()
   const { withLang } = useLanguage()
+  const programLines = [t('footer.hours.weekdays'), t('footer.hours.saturday')]
 
   return (
     <footer className="site-footer">
@@ -12,10 +13,10 @@ const Footer = () => {
         <div className="footer-top">
           <section className="footer-brand" aria-labelledby="footer-brand-title">
             <div className="footer-brand-logo">
-              <img src="/images/logo-cmf.png" alt="Logo-ul CMF Bălți" />
+              <img src="/images/logo-cmf.png" alt={t('footer.brand.logoAlt')} />
             </div>
-            <h2 id="footer-brand-title" className="footer-title">Centrul Medicilor de Familie mun. Bălți</h2>
-            <p className="footer-tagline">Asistență medicală primară pentru comunitatea municipiului Bălți</p>
+            <h2 id="footer-brand-title" className="footer-title">{t('footer.brand.title')}</h2>
+            <p className="footer-tagline">{t('footer.brand.tagline')}</p>
           </section>
 
           <div className="footer-section">
@@ -23,7 +24,7 @@ const Footer = () => {
               <h3 id="footer-contact-heading" className="footer-heading">{t('footer.contact')}</h3>
               <address className="footer-address">
                 <ul className="footer-list footer-contact">
-                  <li>{t('footer.address')}: Bălți, Strada Decebal, 101V</li>
+                  <li>{t('footer.address')}: {t('footer.addressValue')}</li>
                   <li>
                     {t('footer.phone')}: <a href="tel:02319977">02319977</a>
                   </li>
@@ -36,13 +37,14 @@ const Footer = () => {
             <section className="footer-group" aria-labelledby="footer-program-heading">
               <h3 id="footer-program-heading" className="footer-heading">{t('footer.program')}</h3>
               <ul className="footer-list">
-                <li>Luni - Vineri: 8:00 - 19:00</li>
-                <li>Sâmbătă: 8:00 - 13:00</li>
+                {programLines.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
               </ul>
             </section>
           </div>
 
-          <nav className="footer-section" id="navigare" aria-label="Navigare footer">
+          <nav className="footer-section" id="navigare" aria-label={t('footer.navigationLabel')}>
             <h3 className="footer-heading">{t('footer.navigation')}</h3>
             <ul className="footer-links">
               <li>
@@ -66,10 +68,13 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            Project made with love ❤ by{' '}
-            <a href="https://github.com/ZadniproIon" target="_blank" rel="noreferrer">
-              Zadnipro Ion
-            </a>
+            <Trans
+              i18nKey="footer.credit"
+              values={{ heart: '❤️', name: 'Zadnipro Ion' }}
+              components={[
+                <a key="footer-credit-link" href="https://github.com/ZadniproIon" target="_blank" rel="noreferrer" />,
+              ]}
+            />
           </p>
         </div>
       </div>

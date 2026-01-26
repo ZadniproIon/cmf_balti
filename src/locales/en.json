@@ -473,12 +473,23 @@
     "back": "Back home"
   },
   "footer": {
+    "brand": {
+      "title": "Municipal Center of Family Doctors, Bălți",
+      "tagline": "Primary medical care for the community of the Municipality of Bălți",
+      "logoAlt": "CMF Bălți logo"
+    },
     "contact": "Contact",
     "program": "Schedule",
     "navigation": "Navigation",
+    "navigationLabel": "Footer navigation",
     "address": "Address",
+    "addressValue": "Bălți, Strada Decebal, 101V",
     "phone": "Phone",
     "email": "Email",
-    "credit": "Project made with love {{heart}} by {{name}}"
+    "hours": {
+      "weekdays": "Monday - Friday: 8:00 - 19:00",
+      "saturday": "Saturday: 8:00 - 13:00"
+    },
+    "credit": "Project made with {{heart}} by <0>{{name}}</0>"
   }
 }

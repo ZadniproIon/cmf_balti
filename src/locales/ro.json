@@ -473,12 +473,23 @@
     "back": "Înapoi acasă"
   },
   "footer": {
+    "brand": {
+      "title": "Centrul Medicilor de Familie mun. Bălți",
+      "tagline": "Asistență medicală primară pentru comunitatea municipiului Bălți",
+      "logoAlt": "Logo-ul CMF Bălți"
+    },
     "contact": "Contact",
     "program": "Program",
     "navigation": "Navigare",
+    "navigationLabel": "Navigare în subsol",
     "address": "Adresa",
+    "addressValue": "Bălți, Strada Decebal, 101V",
     "phone": "Telefon",
     "email": "Email",
-    "credit": "Project made with love {{heart}} by {{name}}"
+    "hours": {
+      "weekdays": "Luni - Vineri: 8:00 - 19:00",
+      "saturday": "Sâmbătă: 8:00 - 13:00"
+    },
+    "credit": "Proiect realizat cu {{heart}} de <0>{{name}}</0>"
   }
 }
