@@ -249,19 +249,19 @@ body {
     align-items: center;
     gap: 0.5em;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     color: var(--text-blue);
     background: transparent;
     border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 0.5em;
+    border-radius: 8px;
+    padding: 0.5em 0.75em;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .language-switcher-desktop .language-trigger {
-    min-width: 88px;
+    
     justify-content: center;
 }
 
@@ -272,16 +272,12 @@ body {
 
 .language-switcher-desktop .language-trigger:hover,
 .language-switcher-desktop .language-option:hover {
-    background-color: var(--red-dark);
-    border-color: var(--red-dark);
-    color: var(--text-white);
+    background-color: hsl(0, 0%, 90%);
 }
 
 .language-switcher-desktop .language-trigger:active,
 .language-switcher-desktop .language-option:active {
-    background-color: var(--red-light);
-    border-color: var(--red-light);
-    color: var(--text-white);
+    background-color: hsl(0, 0%, 90%);
 }
 
 .language-switcher-desktop .language-menu {
@@ -290,13 +286,13 @@ body {
     padding: 0.25em;
     display: none;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.25em;
     position: absolute;
     right: 0;
     top: 100%;
     background-color: var(--background-white);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: var(--shadow-drop);
     z-index: 10;
 }
@@ -308,15 +304,15 @@ body {
 .language-switcher-desktop .language-option {
     width: 100%;
     justify-content: flex-start;
-    border-radius: 12px;
-    border-width: 1px;
+    border-radius: 8px;
+    border-width: 0px;
     font-weight: 600;
     padding: 0.5em 0.75em;
 }
 
 .language-switcher-desktop .language-flag {
-    width: 1.25em;
-    height: 1.25em;
+    height: 1em;
+    width: 1em;
     flex-shrink: 0;
     border-radius: 4px;
     display: inline-block;
