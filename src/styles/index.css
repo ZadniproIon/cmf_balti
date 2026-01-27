@@ -79,7 +79,8 @@
         flex-direction: column;
     }
 
-    .main-section-1 p {
+    .main-section-1 p,
+    .main-section-1 .hero-title {
         text-align: center;
     }
 
