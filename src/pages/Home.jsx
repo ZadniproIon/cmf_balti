@@ -1,4 +1,5 @@
-﻿import { Link } from 'react-router-dom'
+﻿import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Trans, useTranslation } from 'react-i18next'
 import { Clock8, HeartPulse, PhoneCall, Globe } from 'lucide-react'
 import useDocumentTitle from '../hooks/useDocumentTitle'
@@ -13,6 +14,7 @@ const Home = () => {
   const { t } = useTranslation()
   const { withLang } = useLanguage()
   const hoursLines = t('home.info.cards.hours.text').split('\n')
+  const [heroLoaded, setHeroLoaded] = useState(false)
 
   useDocumentTitle(t('meta.home.title'), t('meta.home.description'))
   usePageStyles(pageStyles, 'home')
@@ -32,7 +34,10 @@ const Home = () => {
               {t('home.hero.cta')}
             </a>
           </div>
-          <div className="right-side">
+          <div
+            className="right-side hero-image"
+            data-loaded={heroLoaded ? 'true' : 'false'}
+          >
             <img
               src="/images/main-page-jpeg/programare_online_screen_1.jpg"
               srcSet="/images/main-page-jpeg/programare_online_screen_1-240.jpg 240w, /images/main-page-jpeg/programare_online_screen_1.jpg 480w"
@@ -40,6 +45,11 @@ const Home = () => {
               width="480"
               height="476"
               alt={t('home.hero.title')}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              onLoad={() => setHeroLoaded(true)}
+              onError={() => setHeroLoaded(true)}
             />
           </div>
         </div>
@@ -222,3 +232,4 @@ const Home = () => {
 }
 
 export default Home
+

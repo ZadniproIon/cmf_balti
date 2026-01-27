@@ -65,13 +65,52 @@
     background-color: var(--red-light);
 }
 
-.main-section-1 img {
-    border-radius: 24px;
-    border: 1px solid var(--border);
+.main-section-1 .hero-image {
+    position: relative;
     width: 100%;
     max-width: 400px;
+    border-radius: 24px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    background-color: var(--background-white);
+}
+
+.main-section-1 .hero-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/main-page-jpeg/programare_online_screen_1-240.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(18px);
+    transform: scale(1.05);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.main-section-1 .hero-image img {
+    display: block;
+    width: 100%;
     height: auto;
     object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.main-section-1 .hero-image[data-loaded="true"]::before {
+    opacity: 0;
+}
+
+.main-section-1 .hero-image[data-loaded="true"] img {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main-section-1 .hero-image::before,
+    .main-section-1 .hero-image img {
+        transition: none;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -90,7 +129,7 @@
         gap: 1.5em;      
     }
 
-    .main-section-1 img {
+    .main-section-1 .hero-image {
         max-width: 600px;
     }
 
