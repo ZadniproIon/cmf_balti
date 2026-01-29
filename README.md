@@ -23,23 +23,12 @@ This started as a simple HTML/CSS/JS project for a university internship. I ende
 - Vanilla CSS
 
 ## Screenshots
-Add screenshots to `public/screenshots/` (or any folder you prefer) and link them here. Suggested filenames:
-- `home.png`
-- `about.png`
-- `general.png`
-- `transparency.png`
-- `contact.png`
-- `404.png`
-
-Example:
-```
 ![Home](public/screenshots/home.png)
 ![About](public/screenshots/about.png)
 ![General](public/screenshots/general.png)
 ![Transparency](public/screenshots/transparency.png)
 ![Contact](public/screenshots/contact.png)
 ![404](public/screenshots/404.png)
-```
 
 ## Local Development
 ```bash
