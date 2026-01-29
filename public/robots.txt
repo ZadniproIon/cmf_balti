@@ -1,2 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
+
+Sitemap: https://cmfbalti.netlify.app/sitemap.xml
