@@ -490,6 +490,6 @@
       "weekdays": "Monday - Friday: 8:00 - 19:00",
       "saturday": "Saturday: 8:00 - 13:00"
     },
-    "credit": "Project made with love {{heart}} by <0>{{name}}</0>"
+    "credit": "Project made with {{heart}} by <0>{{name}}</0>"
   }
 }

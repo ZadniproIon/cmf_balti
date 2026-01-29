@@ -490,6 +490,6 @@
       "weekdays": "Luni - Vineri: 8:00 - 19:00",
       "saturday": "Sâmbătă: 8:00 - 13:00"
     },
-    "credit": "Proiect realizat cu dragoste {{heart}} de <0>{{name}}</0>"
+    "credit": "Proiect realizat cu {{heart}} de <0>{{name}}</0>"
   }
 }
