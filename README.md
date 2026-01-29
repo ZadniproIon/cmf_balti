@@ -1,16 +1,67 @@
-# React + Vite
+﻿# cmf-balti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Centrul Medicilor de Familie (CMF) Bălți — a multilingual public health concept website for the CMF Bălți.
 
-Currently, two official plugins are available:
+This started as a simple HTML/CSS/JS project for a university internship. I ended up falling in love with it and expanded it into a full React app with routing, i18n, and a richer UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Site
+- https://cmfbalti.netlify.app/
 
-## React Compiler
+## Features
+- Multi-language UI (Romanian default, plus Russian and English)
+- Client-side routing with clean, shareable URLs
+- Responsive layout with mobile navigation and language switcher
+- Maps integration for contact/location (Leaflet)
+- SEO essentials (OpenGraph/Twitter tags, robots.txt, sitemap.xml)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Tech Stack
+- React + Vite
+- React Router
+- i18next + react-i18next
+- Leaflet + react-leaflet
+- Lucide icons
+- Vanilla CSS
 
-## Expanding the ESLint configuration
+## Screenshots
+Add screenshots to `public/screenshots/` (or any folder you prefer) and link them here. Suggested filenames:
+- `home.png`
+- `about.png`
+- `general.png`
+- `transparency.png`
+- `contact.png`
+- `404.png`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Example:
+```
+![Home](public/screenshots/home.png)
+![About](public/screenshots/about.png)
+![General](public/screenshots/general.png)
+![Transparency](public/screenshots/transparency.png)
+![Contact](public/screenshots/contact.png)
+![404](public/screenshots/404.png)
+```
+
+## Local Development
+```bash
+npm install
+npm run dev
+```
+
+## Build
+```bash
+npm run build
+npm run preview
+```
+
+## Deployment
+Hosted on Netlify. Any push to the main branch will trigger a new build.
+
+## Project Structure
+```
+public/        # static assets
+src/           # React app
+  components/  # shared UI
+  pages/       # route pages
+  styles/      # page and shared styles
+  locales/     # i18n translations
+```
