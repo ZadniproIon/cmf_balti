@@ -325,7 +325,7 @@ const documents = [
   }
 ]
 
-const Transparenta = () => {
+const Transparency = () => {
   const { t } = useTranslation()
 
   useDocumentTitle(t('meta.transparenta.title'), t('meta.transparenta.description'))
@@ -500,4 +500,4 @@ const Transparenta = () => {
   )
 }
 
-export default Transparenta
+export default Transparency

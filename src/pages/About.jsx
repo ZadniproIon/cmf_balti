@@ -66,7 +66,7 @@ const renderWithBreaks = (text) => {
   ))
 }
 
-const DespreCmf = () => {
+const About = () => {
   const { t } = useTranslation()
 
   useDocumentTitle(t('meta.about.title'), t('meta.about.description'))
@@ -135,4 +135,4 @@ const DespreCmf = () => {
   )
 }
 
-export default DespreCmf
+export default About

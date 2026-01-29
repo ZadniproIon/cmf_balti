@@ -99,7 +99,7 @@ const MapFocus = ({ activeKey, position }) => {
   return null
 }
 
-const Contacte = () => {
+const Contact = () => {
   const { t } = useTranslation()
 
   useDocumentTitle(t('meta.contact.title'), t('meta.contact.description'))
@@ -174,4 +174,4 @@ const Contacte = () => {
   )
 }
 
-export default Contacte
+export default Contact

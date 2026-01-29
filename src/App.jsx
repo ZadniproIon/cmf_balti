@@ -1,12 +1,12 @@
 ﻿import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import LanguageLayout from './components/LanguageLayout'
-import Contacte from './pages/Contacte'
-import DespreCmf from './pages/DespreCmf'
+import Contact from './pages/Contact'
+import About from './pages/About'
 import Home from './pages/Home'
-import InfoBeneficiari from './pages/InfoBeneficiari'
+import General from './pages/General'
 import NotFound from './pages/NotFound'
-import Transparenta from './pages/Transparenta'
+import Transparency from './pages/Transparency'
 import { DEFAULT_LANG } from './i18n'
 
 const App = () => (
@@ -24,10 +24,10 @@ const App = () => (
     <Route path="/:lang" element={<LanguageLayout />}>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="despre-noi" element={<DespreCmf />} />
-        <Route path="generale" element={<InfoBeneficiari />} />
-        <Route path="transparenta" element={<Transparenta />} />
-        <Route path="contacte" element={<Contacte />} />
+        <Route path="despre-noi" element={<About />} />
+        <Route path="generale" element={<General />} />
+        <Route path="transparenta" element={<Transparency />} />
+        <Route path="contacte" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Route>

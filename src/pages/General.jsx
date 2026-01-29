@@ -10,7 +10,7 @@ import titleStyles from '../styles/title-and-section-text.css?raw'
 
 const pageStyles = [quickSelectStyles, titleStyles, pillStyles, infoStyles, componentsStyles]
 
-const InfoBeneficiari = () => {
+const General = () => {
   const { t } = useTranslation()
 
   useDocumentTitle(t('meta.general.title'), t('meta.general.description'))
@@ -312,4 +312,4 @@ const InfoBeneficiari = () => {
   )
 }
 
-export default InfoBeneficiari
+export default General
