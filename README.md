@@ -1,8 +1,8 @@
-﻿# cmf-balti
+# cmf-balti
 
-Centrul Medicilor de Familie (CMF) Bălți — a multilingual public health concept website for the CMF Bălți.
+Concept website for [Centrul Medicilor de Familie mun. Bălți](https://cmf-balti.md/).
 
-This started as a simple HTML/CSS/JS project for a university internship. I ended up falling in love with it and expanded it into a full React app with routing, i18n, and a richer UI.
+This started as a simple HTML/CSS/JS project for a university internship. I ended up falling in love with it and expanded it into a full React app with routing, i18n, and a better looking UI.
 
 ## Live Site
 - https://cmfbalti.netlify.app/
