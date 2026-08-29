@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getTranslations } from 'next-intl/server';
 import TransparencyClient from '../../../components/TransparencyClient';
 
@@ -341,5 +342,9 @@ const documents = [
 ];
 
 export default function TransparencyPage() {
-  return <TransparencyClient documents={documents} />;
+  return (
+    <Suspense fallback={<div className="transparenta-section-content"><p>...</p></div>}>
+      <TransparencyClient documents={documents} />
+    </Suspense>
+  );
 }

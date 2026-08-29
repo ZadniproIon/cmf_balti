@@ -13,6 +13,12 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+export const viewport = {
+  themeColor: '#283b6a',
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
