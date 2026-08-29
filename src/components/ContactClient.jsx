@@ -6,7 +6,7 @@ import { MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Dropdown from './Dropdown';
 
-const MapPlaceholder = () => (
+const MapPlaceholder = ({ label }) => (
   <div
     className="contact-map"
     style={{
@@ -21,14 +21,14 @@ const MapPlaceholder = () => (
     }}
   >
     <MapPin className="link-icon" style={{ width: '32px', height: '32px', color: '#d32f2f' }} aria-hidden="true" />
-    <span style={{ fontWeight: 600, fontSize: '0.95rem' }}>Harta interactivă Bălți</span>
+    <span style={{ fontWeight: 600, fontSize: '0.95rem' }}>{label || 'Se încarcă harta...'}</span>
   </div>
 );
 
 // Dynamically import ContactMap with ssr: false so Leaflet runs purely on client
 const ContactMap = dynamic(() => import('./ContactMap'), {
   ssr: false,
-  loading: MapPlaceholder,
+  loading: () => <MapPlaceholder label="Se încarcă harta..." />,
 });
 
 const entryOrder = [
@@ -182,7 +182,7 @@ const ContactClient = () => {
             getMarkerText={(key) => t(`markers.${key}`)}
           />
         ) : (
-          <MapPlaceholder />
+          <MapPlaceholder label={t('loadingMap')} />
         )}
       </section>
     </section>

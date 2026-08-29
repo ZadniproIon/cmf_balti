@@ -347,6 +347,7 @@
     "listTitle": "Contact details",
     "mapTitle": "Health centers map",
     "mapAria": "Health centers map",
+    "loadingMap": "Loading map...",
     "googleMaps": "Google Maps",
     "entries": {
       "admin": {

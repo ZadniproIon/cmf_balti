@@ -347,6 +347,7 @@
     "listTitle": "Date de contact",
     "mapTitle": "Harta centrelor de sănătate",
     "mapAria": "Harta centrelor de sănătate",
+    "loadingMap": "Se încarcă harta...",
     "googleMaps": "Google Maps",
     "entries": {
       "admin": {

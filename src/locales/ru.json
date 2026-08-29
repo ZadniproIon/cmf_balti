@@ -347,6 +347,7 @@
     "listTitle": "Контактные данные",
     "mapTitle": "Карта центров здоровья",
     "mapAria": "Карта центров здоровья",
+    "loadingMap": "Загрузка карты...",
     "googleMaps": "Google Maps",
     "entries": {
       "admin": {
