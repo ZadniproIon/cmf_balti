@@ -2,24 +2,25 @@
 
 Concept website for [Centrul Medicilor de Familie mun. Bălți](https://cmf-balti.md/).
 
-This started as a simple HTML/CSS/JS project for a university internship. I ended up falling in love with it and expanded it into a full React app with routing, i18n, and a better looking UI.
+This started as a simple HTML/CSS/JS project for a university internship. I ended up falling in love with it and expanded it into a full Next.js application with multilingual static site generation, SEO, and a clean UI.
 
 ## Live Site
 - https://cmfbalti.netlify.app/
 
 ## Features
-- Multi-language UI (Romanian default, plus Russian and English)
-- Client-side routing with clean, shareable URLs
-- Responsive layout with mobile navigation and language switcher
-- Maps integration for contact/location (Leaflet)
-- SEO essentials (OpenGraph/Twitter tags, robots.txt, sitemap.xml)
+- Multi-language UI (Romanian default, Russian, and English)
+- Static site generation (SSG) with localized routing
+- Interactive map for medical center locations (Leaflet)
+- Document filtering with shareable URL parameters
+- Full SEO support (metadata, OpenGraph, JSON-LD schema, sitemap.xml)
+- Responsive design with mobile navigation
 
 ## Tech Stack
-- React + Vite
-- React Router
-- i18next + react-i18next
+- Next.js 16 (App Router)
+- React 19
+- next-intl
 - Leaflet + react-leaflet
-- Lucide icons
+- Lucide React
 - Vanilla CSS
 
 ## Screenshots
@@ -39,18 +40,23 @@ npm run dev
 ## Build
 ```bash
 npm run build
-npm run preview
+npm run start
 ```
 
 ## Deployment
-Hosted on Netlify. Any push to the main branch will trigger a new build.
+Hosted on Netlify. Any push to the main branch triggers a new build.
 
 ## Project Structure
 ```
-public/        # static assets
-src/           # React app
-  components/  # shared UI
-  pages/       # route pages
-  styles/      # page and shared styles
-  locales/     # i18n translations
+cmf_balti/
+├── public/              # Static assets (images, flags, logos)
+├── src/
+│   ├── app/             # Next.js App Router (pages, layouts, sitemap, robots, manifest)
+│   ├── components/      # UI components (Navbar, Footer, Leaflet map, Filters)
+│   ├── i18n/            # Routing and request configuration for next-intl
+│   ├── locales/         # Translation files (ro.json, ru.json, en.json)
+│   ├── styles/          # Page and shared styles
+│   └── proxy.js         # Internationalization middleware proxy
+├── next.config.mjs
+└── package.json
 ```
