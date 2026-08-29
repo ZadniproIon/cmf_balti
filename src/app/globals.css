@@ -1,0 +1,31 @@
+@import '../styles/components.css';
+@import '../styles/title-and-section-text.css';
+@import '../styles/quick-select.css';
+@import '../styles/pill-container.css';
+@import '../styles/index.css';
+@import '../styles/despre-cmf.css';
+@import '../styles/info-pentru-beneficiari.css';
+@import '../styles/transparenta.css';
+@import '../styles/contacte.css';
+@import '../styles/not-found.css';
+
+/* Accessibility: Skip Link */
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 1em;
+  background: var(--red-normal);
+  color: var(--text-white);
+  padding: 0.75em 1.5em;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 0;
+  outline: 2px solid var(--text-yellow);
+  outline-offset: 2px;
+}

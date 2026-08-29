@@ -57,7 +57,7 @@
         },
         "contact": {
           "title": "Contact",
-          "text": "La numărul de telefon: 02319977 sau la secțiunea <0>Contacte</0>"
+          "text": "La numărul de telefon: (0231) 7-52-28 sau la secțiunea <link>Contacte</link>"
         }
       }
     },
@@ -323,7 +323,7 @@
     "tarife": {
       "title": "Tarife",
       "subtitle": "Extras din catalogul tarifelor",
-      "year": "Anul {{year}}"
+      "year": "Anul {year}"
     }
   },
   "transparenta": {
@@ -469,14 +469,14 @@
   },
   "notFound": {
     "title": "Eroare 404",
-    "text": "Pagina nu există sau a fost mutată. Poți reveni la <0>pagina principală</0> sau accesa una dintre secțiunile de mai sus.",
-    "back": "Înapoi acasă"
+    "text": "Pagina nu există sau a fost mutată. Poți reveni la <link>pagina principală</link> sau accesa una dintre secțiunile de mai sus.",
+    "back": "Înapoi la pagina principală"
   },
   "footer": {
     "brand": {
       "title": "Centrul Medicilor de Familie mun. Bălți",
-      "tagline": "Asistență medicală primară pentru comunitatea municipiului Bălți",
-      "logoAlt": "Logo-ul CMF Bălți"
+      "tagline": "Asistență medicală primară de calitate pentru întreaga comunitate.",
+      "logoAlt": "Logo CMF Bălți"
     },
     "contact": "Contact",
     "program": "Program",
@@ -490,6 +490,6 @@
       "weekdays": "Luni - Vineri: 8:00 - 19:00",
       "saturday": "Sâmbătă: 8:00 - 13:00"
     },
-    "credit": "Proiect realizat cu {{heart}} de <0>{{name}}</0>"
+    "credit": "Proiect realizat cu {heart} de <author>Zadnipro Ion</author>"
   }
 }
