@@ -1,29 +1,34 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { MapPin } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Dropdown from './Dropdown';
 
+const MapPlaceholder = () => (
+  <div
+    className="contact-map"
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: '#eef3f8',
+      color: '#283b6a',
+      gap: '0.75rem',
+      borderRadius: '16px',
+    }}
+  >
+    <MapPin className="link-icon" style={{ width: '32px', height: '32px', color: '#d32f2f' }} aria-hidden="true" />
+    <span style={{ fontWeight: 600, fontSize: '0.95rem' }}>Harta interactivă Bălți</span>
+  </div>
+);
+
 // Dynamically import ContactMap with ssr: false so Leaflet runs purely on client
 const ContactMap = dynamic(() => import('./ContactMap'), {
   ssr: false,
-  loading: () => (
-    <div
-      className="contact-map"
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#f0f4f8',
-        color: '#283b6a',
-        fontWeight: 'bold',
-      }}
-    >
-      Se încarcă harta...
-    </div>
-  ),
+  loading: MapPlaceholder,
 });
 
 const entryOrder = [
@@ -103,10 +108,22 @@ const centerCmf1 = [47.774417, 27.895833];
 const ContactClient = () => {
   const t = useTranslations('contact');
   const [openKey, setOpenKey] = useState(null);
+  const [shouldLoadMap, setShouldLoadMap] = useState(false);
   const activePosition = markerPositions[openKey];
   const entries = t.raw('entries');
 
+  useEffect(() => {
+    if ('requestIdleCallback' in window) {
+      const handle = window.requestIdleCallback(() => setShouldLoadMap(true), { timeout: 1200 });
+      return () => window.cancelIdleCallback(handle);
+    } else {
+      const timer = setTimeout(() => setShouldLoadMap(true), 200);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   const toggleKey = (key) => {
+    setShouldLoadMap(true);
     setOpenKey((prev) => (prev === key ? null : key));
   };
 
@@ -156,13 +173,17 @@ const ContactClient = () => {
         <h2 id="contacte-map-title" className="sr-only">
           {t('mapTitle')}
         </h2>
-        <ContactMap
-          center={centerCmf1}
-          activePosition={activePosition}
-          markers={markers}
-          mapAria={t('mapAria')}
-          getMarkerText={(key) => t(`markers.${key}`)}
-        />
+        {shouldLoadMap ? (
+          <ContactMap
+            center={centerCmf1}
+            activePosition={activePosition}
+            markers={markers}
+            mapAria={t('mapAria')}
+            getMarkerText={(key) => t(`markers.${key}`)}
+          />
+        ) : (
+          <MapPlaceholder />
+        )}
       </section>
     </section>
   );

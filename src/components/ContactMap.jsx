@@ -5,14 +5,20 @@ import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const customIcon = L.icon({
-  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
+const svgPin = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" width="28" height="38" style="filter: drop-shadow(0 2px 5px rgba(0,0,0,0.35));">
+  <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 24 12 24s12-15 12-24c0-6.627-5.373-12-12-12z" fill="#d32f2f"/>
+  <circle cx="12" cy="12" r="5" fill="#ffffff"/>
+  <circle cx="12" cy="12" r="2.5" fill="#283b6a"/>
+</svg>
+`;
+
+const customPinIcon = L.divIcon({
+  html: svgPin,
+  className: 'custom-leaflet-pin',
+  iconSize: [28, 38],
+  iconAnchor: [14, 38],
+  popupAnchor: [0, -36],
 });
 
 const MapFocus = ({ position }) => {
@@ -43,7 +49,7 @@ const ContactMap = ({
       className="contact-map"
       center={center}
       zoom={12}
-      scrollWheelZoom={true}
+      scrollWheelZoom={false}
       aria-label={mapAria}
     >
       <TileLayer
@@ -52,7 +58,7 @@ const ContactMap = ({
       />
       <MapFocus position={activePosition} />
       {markers.map((marker) => (
-        <Marker key={marker.id} position={marker.position} icon={customIcon}>
+        <Marker key={marker.id} position={marker.position} icon={customPinIcon}>
           <Popup>
             {marker.keys.map((key) => (
               <p key={`${marker.id}-${key}`} style={{ margin: '4px 0' }}>

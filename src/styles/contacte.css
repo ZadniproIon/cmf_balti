@@ -168,6 +168,11 @@
     height: 100%;
 }
 
+.custom-leaflet-pin {
+    background: transparent;
+    border: none;
+}
+
 
 /* Ok, it works*/
 .active {
