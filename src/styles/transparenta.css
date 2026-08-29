@@ -1,4 +1,6 @@
-.section-text {
+.transparenta-section-content {
+    max-width: 1165px;
+    margin: 4em auto;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -40,7 +42,7 @@
     padding: 0;
 }
 
-.section-text .transparenta-results {
+.transparenta-section-content .transparenta-results {
     padding-left: 0;
 }
 

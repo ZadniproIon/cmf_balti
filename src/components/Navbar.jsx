@@ -1,114 +1,122 @@
-﻿import { useEffect, useRef, useState } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import LanguageSwitcher from './LanguageSwitcher'
-import useLanguage from '../hooks/useLanguage'
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { Link, usePathname } from '../i18n/routing';
+import LanguageSwitcher from './LanguageSwitcher';
+import Image from 'next/image';
 
 const Navbar = () => {
-  const { t } = useTranslation()
-  const { withLang } = useLanguage()
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [isHidden, setIsHidden] = useState(false)
-  const location = useLocation()
-  const lastScrollY = useRef(0)
-  const scrollDirection = useRef('up')
+  const t = useTranslations('nav');
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const pathname = usePathname();
+  const lastScrollY = useRef(0);
+  const scrollDirection = useRef('up');
 
   const navItems = [
     {
-      to: withLang('/'),
-      label: t('nav.home'),
-      end: true,
+      href: '/',
+      label: t('home'),
     },
     {
-      to: withLang('/despre-noi'),
-      label: t('nav.about'),
+      href: '/despre-noi',
+      label: t('about'),
     },
     {
-      to: withLang('/generale'),
-      label: t('nav.general'),
+      href: '/generale',
+      label: t('general'),
     },
     {
-      to: withLang('/transparenta'),
-      label: t('nav.transparenta'),
+      href: '/transparenta',
+      label: t('transparenta'),
     },
     {
-      to: withLang('/contacte'),
-      label: t('nav.contact'),
+      href: '/contacte',
+      label: t('contact'),
     },
-  ]
+  ];
 
   useEffect(() => {
-    document.body.classList.toggle('menu-lock', menuOpen)
+    document.body.classList.toggle('menu-lock', menuOpen);
 
     return () => {
-      document.body.classList.remove('menu-lock')
-    }
-  }, [menuOpen])
+      document.body.classList.remove('menu-lock');
+    };
+  }, [menuOpen]);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1100 && menuOpen) {
-        setMenuOpen(false)
+        setMenuOpen(false);
       }
-    }
+    };
 
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [menuOpen])
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [menuOpen]);
 
   useEffect(() => {
-    setMenuOpen(false)
-  }, [location.pathname, location.hash])
+    setMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
-    lastScrollY.current = window.scrollY
+    lastScrollY.current = window.scrollY;
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      const currentScrollY = window.scrollY;
 
       if (currentScrollY <= 0) {
-        scrollDirection.current = 'up'
-        setIsHidden(false)
-        lastScrollY.current = 0
-        return
+        scrollDirection.current = 'up';
+        setIsHidden(false);
+        lastScrollY.current = 0;
+        return;
       }
 
-      const delta = currentScrollY - lastScrollY.current
+      const delta = currentScrollY - lastScrollY.current;
       if (Math.abs(delta) < 5) {
-        return
+        return;
       }
 
-      const nextDirection = delta > 0 ? 'down' : 'up'
+      const nextDirection = delta > 0 ? 'down' : 'up';
       if (nextDirection !== scrollDirection.current) {
-        scrollDirection.current = nextDirection
-        setIsHidden(nextDirection === 'down')
+        scrollDirection.current = nextDirection;
+        setIsHidden(nextDirection === 'down');
       }
 
-      lastScrollY.current = currentScrollY
-    }
+      lastScrollY.current = currentScrollY;
+    };
 
-    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (menuOpen) {
-      setIsHidden(false)
+      setIsHidden(false);
     }
-  }, [menuOpen])
+  }, [menuOpen]);
 
-  const navLinkClassName = ({ isActive }) => (isActive ? 'active' : undefined)
+  const isLinkActive = (href) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <header className={`navbar${isHidden ? ' navbar-hidden' : ''}`}>
-      <Link className="left-side" to={withLang('/')}>
-        <img src="/images/logo-cmf.png" alt="Logo-ul CMF Balti" />
+      <Link className="left-side" href="/">
+        <img
+          src="/images/logo-cmf.png"
+          alt="Logo-ul CMF Bălți"
+        />
         <p>
           Centrul Medicilor de
           <br />
@@ -116,15 +124,21 @@ const Navbar = () => {
         </p>
       </Link>
 
-      <nav className="right-side" aria-label="Navigare principala">
+      <nav className="right-side" aria-label="Navigare principală">
         <ul>
-          {navItems.map((item) => (
-            <li key={item.to}>
-              <NavLink to={item.to} className={navLinkClassName} end={item.end}>
-                {item.label}
-              </NavLink>
-            </li>
-          ))}
+          {navItems.map((item) => {
+            const active = isLinkActive(item.href);
+            return (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={active ? 'active' : undefined}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <LanguageSwitcher className="language-switcher-desktop" />
       </nav>
@@ -142,25 +156,31 @@ const Navbar = () => {
         <span className="line-3"></span>
       </button>
 
-      <nav id="mobile-menu" className={`mobile-menu${menuOpen ? ' menu-open' : ''}`} aria-label="Navigare mobilă">
+      <nav
+        id="mobile-menu"
+        className={`mobile-menu${menuOpen ? ' menu-open' : ''}`}
+        aria-label="Navigare mobilă"
+      >
         <ul>
-          {navItems.map((item) => (
-            <li key={`${item.to}-mobile`}>
-              <NavLink
-                to={item.to}
-                className={navLinkClassName}
-                end={item.end}
-                onClick={() => setMenuOpen(false)}
-              >
-                {item.label}
-              </NavLink>
-            </li>
-          ))}
+          {navItems.map((item) => {
+            const active = isLinkActive(item.href);
+            return (
+              <li key={`${item.href}-mobile`}>
+                <Link
+                  href={item.href}
+                  className={active ? 'active' : undefined}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <LanguageSwitcher className="language-switcher-mobile" />
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

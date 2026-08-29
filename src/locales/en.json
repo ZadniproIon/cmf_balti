@@ -57,7 +57,7 @@
         },
         "contact": {
           "title": "Contact",
-          "text": "By phone: 02319977 or in the <0>Contact</0> section"
+          "text": "By phone: (0231) 7-52-28 or in the <link>Contact</link> section"
         }
       }
     },
@@ -323,7 +323,7 @@
     "tarife": {
       "title": "Tariffs",
       "subtitle": "Extract from the tariff catalog",
-      "year": "Year {{year}}"
+      "year": "Year {year}"
     }
   },
   "transparenta": {
@@ -347,6 +347,7 @@
     "listTitle": "Contact details",
     "mapTitle": "Health centers map",
     "mapAria": "Health centers map",
+    "loadingMap": "Loading map...",
     "googleMaps": "Google Maps",
     "entries": {
       "admin": {
@@ -469,7 +470,7 @@
   },
   "notFound": {
     "title": "Error 404",
-    "text": "The page does not exist or has been moved. You can return to the <0>home page</0> or access one of the sections above.",
+    "text": "The page does not exist or has been moved. You can return to the <link>home page</link> or access one of the sections above.",
     "back": "Back home"
   },
   "footer": {
@@ -490,6 +491,6 @@
       "weekdays": "Monday - Friday: 8:00 - 19:00",
       "saturday": "Saturday: 8:00 - 13:00"
     },
-    "credit": "Project made with {{heart}} by <0>{{name}}</0>"
+    "credit": "Project made with {heart} by <author>Zadnipro Ion</author>"
   }
 }

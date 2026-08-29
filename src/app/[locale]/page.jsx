@@ -1,23 +1,29 @@
-﻿import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { Trans, useTranslation } from 'react-i18next'
-import { Clock8, HeartPulse, PhoneCall, Globe } from 'lucide-react'
-import useDocumentTitle from '../hooks/useDocumentTitle'
-import useLanguage from '../hooks/useLanguage'
-import usePageStyles from '../hooks/usePageStyles'
-import componentsStyles from '../styles/components.css?raw'
-import homeStyles from '../styles/index.css?raw'
-import pillStyles from '../styles/pill-container.css?raw'
+import { getTranslations } from 'next-intl/server';
+import { Clock8, HeartPulse, PhoneCall, Globe } from 'lucide-react';
+import { Link } from '../../i18n/routing';
 
-const pageStyles = [homeStyles, pillStyles, componentsStyles]
-const Home = () => {
-  const { t } = useTranslation()
-  const { withLang } = useLanguage()
-  const hoursLines = t('home.info.cards.hours.text').split('\n')
-  const [heroLoaded, setHeroLoaded] = useState(false)
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta.home' });
 
-  useDocumentTitle(t('meta.home.title'), t('meta.home.description'))
-  usePageStyles(pageStyles, 'home')
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://cmfbalti.netlify.app/${locale}`,
+      languages: {
+        ro: 'https://cmfbalti.netlify.app/ro',
+        ru: 'https://cmfbalti.netlify.app/ru',
+        en: 'https://cmfbalti.netlify.app/en',
+      },
+    },
+  };
+}
+
+export default async function HomePage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const hoursLines = t('home.info.cards.hours.text').split('\n');
 
   return (
     <>
@@ -27,17 +33,17 @@ const Home = () => {
             <h1 id="hero-title" className="hero-title">
               {t('home.hero.title')}
             </h1>
-            <p className="hero-description">
-              {t('home.hero.text')}
-            </p>
-            <a className="hero-cta" href="https://sia.amp.md/" target="_blank" rel="noreferrer">
+            <p className="hero-description">{t('home.hero.text')}</p>
+            <a
+              className="hero-cta"
+              href="https://sia.amp.md/"
+              target="_blank"
+              rel="noreferrer"
+            >
               {t('home.hero.cta')}
             </a>
           </div>
-          <div
-            className="right-side hero-image"
-            data-loaded={heroLoaded ? 'true' : 'false'}
-          >
+          <div className="right-side hero-image" data-loaded="true">
             <img
               src="/images/main-page-jpeg/programare_online_screen_1.jpg"
               srcSet="/images/main-page-jpeg/programare_online_screen_1-240.jpg 240w, /images/main-page-jpeg/programare_online_screen_1.jpg 480w"
@@ -48,19 +54,21 @@ const Home = () => {
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              onLoad={() => setHeroLoaded(true)}
-              onError={() => setHeroLoaded(true)}
             />
           </div>
         </div>
       </section>
 
       <section className="info-utile" aria-labelledby="info-utile-title">
-        <h2 id="info-utile-title" className="info-utile-title">{t('home.info.title')}</h2>
+        <h2 id="info-utile-title" className="info-utile-title">
+          {t('home.info.title')}
+        </h2>
         <ul className="info-utile-containers" role="list">
           <li className="info-utile-card">
             <Clock8 className="icon" />
-            <h3 className="info-utile-card-title">{t('home.info.cards.hours.title')}</h3>
+            <h3 className="info-utile-card-title">
+              {t('home.info.cards.hours.title')}
+            </h3>
             <p>
               <span>
                 {hoursLines.map((line, index) => (
@@ -74,27 +82,38 @@ const Home = () => {
           </li>
           <li className="info-utile-card">
             <HeartPulse className="icon" />
-            <h3 className="info-utile-card-title">{t('home.info.cards.centers.title')}</h3>
+            <h3 className="info-utile-card-title">
+              {t('home.info.cards.centers.title')}
+            </h3>
             <p>
               <span>{t('home.info.cards.centers.text')}</span>
             </p>
           </li>
           <li className="info-utile-card">
             <PhoneCall className="icon" />
-            <h3 className="info-utile-card-title">{t('home.info.cards.contact.title')}</h3>
+            <h3 className="info-utile-card-title">
+              {t('home.info.cards.contact.title')}
+            </h3>
             <p>
               <span>
-                <Trans
-                  i18nKey="home.info.cards.contact.text"
-                  components={[<Link key="contact-link" to={withLang('/contacte')} />]}
-                />
+                {t.rich('home.info.cards.contact.text', {
+                  link: (chunks) => (
+                    <Link href="/contacte">
+                      {chunks}
+                    </Link>
+                  ),
+                })}
               </span>
             </p>
           </li>
         </ul>
       </section>
 
-      <section className="content-wrapper" id="despre-cmf" aria-labelledby="despre-cmf-title">
+      <section
+        className="content-wrapper"
+        id="despre-cmf"
+        aria-labelledby="despre-cmf-title"
+      >
         <div className="content">
           <div className="image-side">
             <img
@@ -107,19 +126,27 @@ const Home = () => {
             />
           </div>
           <div className="content-side">
-            <h2 id="despre-cmf-title" className="content-title">{t('home.about.title')}</h2>
+            <h2 id="despre-cmf-title" className="content-title">
+              {t('home.about.title')}
+            </h2>
             <p>{t('home.about.text')}</p>
-            <Link to={withLang('/despre-noi')}>{t('home.about.cta')}</Link>
+            <Link href="/despre-noi">{t('home.about.cta')}</Link>
           </div>
         </div>
       </section>
 
-      <section className="content-wrapper" id="esti-beneficiar" aria-labelledby="esti-beneficiar-title">
+      <section
+        className="content-wrapper"
+        id="esti-beneficiar"
+        aria-labelledby="esti-beneficiar-title"
+      >
         <div className="content">
           <div className="content-side">
-            <h2 id="esti-beneficiar-title" className="content-title">{t('home.beneficiary.title')}</h2>
+            <h2 id="esti-beneficiar-title" className="content-title">
+              {t('home.beneficiary.title')}
+            </h2>
             <p>{t('home.beneficiary.text')}</p>
-            <Link to={withLang('/generale')}>{t('home.beneficiary.cta')}</Link>
+            <Link href="/generale">{t('home.beneficiary.cta')}</Link>
           </div>
           <div className="image-side">
             <img
@@ -134,20 +161,34 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="transparenta-section-wrapper" aria-labelledby="transparenta-title">
+      <section
+        className="transparenta-section-wrapper"
+        aria-labelledby="transparenta-title"
+      >
         <div className="transparenta-section">
-          <h2 id="transparenta-title" className="transparenta-title">{t('home.transparency.title')}</h2>
+          <h2 id="transparenta-title" className="transparenta-title">
+            {t('home.transparency.title')}
+          </h2>
           <p>{t('home.transparency.text')}</p>
 
           <nav className="pills" aria-label="Secțiuni de transparență">
-            <Link to={withLang('/transparenta#achizitii_publice')}>{t('home.transparency.pills.procurement')}</Link>
-            <Link to={withLang('/transparenta#rapoarte_de_activitate')}>{t('home.transparency.pills.reports')}</Link>
-            <Link to={withLang('/transparenta#contracte_cnam')}>{t('home.transparency.pills.contracts')}</Link>
+            <Link href="/transparenta#achizitii_publice">
+              {t('home.transparency.pills.procurement')}
+            </Link>
+            <Link href="/transparenta#rapoarte_de_activitate">
+              {t('home.transparency.pills.reports')}
+            </Link>
+            <Link href="/transparenta#contracte_cnam">
+              {t('home.transparency.pills.contracts')}
+            </Link>
           </nav>
         </div>
       </section>
 
-      <section className="parteneri-oficiali-wrapper" aria-labelledby="parteneri-oficiali-title">
+      <section
+        className="parteneri-oficiali-wrapper"
+        aria-labelledby="parteneri-oficiali-title"
+      >
         <h2 id="parteneri-oficiali-title">{t('home.partners.title')}</h2>
         <ul className="parteneri-oficiali" role="list">
           <li className="partner-card">
@@ -228,8 +269,5 @@ const Home = () => {
         </ul>
       </section>
     </>
-  )
+  );
 }
-
-export default Home
-

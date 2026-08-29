@@ -1,13 +1,5 @@
-﻿import { MapPin, Phone } from 'lucide-react'
-import { useTranslation } from 'react-i18next'
-import useDocumentTitle from '../hooks/useDocumentTitle'
-import usePageStyles from '../hooks/usePageStyles'
-import componentsStyles from '../styles/components.css?raw'
-import despreStyles from '../styles/despre-cmf.css?raw'
-import pillStyles from '../styles/pill-container.css?raw'
-import titleStyles from '../styles/title-and-section-text.css?raw'
-
-const pageStyles = [despreStyles, titleStyles, componentsStyles, pillStyles]
+import { getTranslations } from 'next-intl/server';
+import { MapPin, Phone } from 'lucide-react';
 
 const subdivisionAssets = {
   cs1: {
@@ -50,56 +42,95 @@ const subdivisionAssets = {
     src: '/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg',
     srcSet: '/images/despre-cmf-jpeg/cmf-sadovoe-350.jpg 350w, /images/despre-cmf-jpeg/cmf-sadovoe-600.jpg 600w',
   },
+};
+
+const cardOrder = [
+  'cs1',
+  'cs2',
+  'cs3',
+  'cs4',
+  'cs5',
+  'cs6',
+  'atis',
+  'ccsm',
+  'elizaveta',
+  'sadovoe',
+];
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'meta.about' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    alternates: {
+      canonical: `https://cmfbalti.netlify.app/${locale}/despre-noi`,
+      languages: {
+        ro: 'https://cmfbalti.netlify.app/ro/despre-noi',
+        ru: 'https://cmfbalti.netlify.app/ru/despre-noi',
+        en: 'https://cmfbalti.netlify.app/en/despre-noi',
+      },
+    },
+  };
 }
 
-const cardOrder = ['cs1', 'cs2', 'cs3', 'cs4', 'cs5', 'cs6', 'atis', 'ccsm', 'elizaveta', 'sadovoe']
+export default async function AboutPage({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const subdivisions = t.raw('about.subdivisions.cards');
 
-const renderWithBreaks = (text) => {
-  const parts = text.split('\n')
-  return parts.map((part, index) => (
-    <span key={`${part}-${index}`}>
-      {part}
-      {index < parts.length - 1 ? (
-        <br />
-      ) : null}
-    </span>
-  ))
-}
-
-const About = () => {
-  const { t } = useTranslation()
-
-  useDocumentTitle(t('meta.about.title'), t('meta.about.description'))
-  usePageStyles(pageStyles, 'despre-cmf')
-
-  const subdivisions = t('about.subdivisions.cards', { returnObjects: true })
+  const headerLines = t('about.header').split('\n');
+  const activityParagraphs = t('about.activity.text')
+    .split(/\n\n+/)
+    .filter((p) => p.trim());
+  const evolutionParagraphs = t('about.evolution.text')
+    .split(/\n\n+/)
+    .filter((p) => p.trim());
 
   return (
     <>
       <header className="title-of-page">
-        <h1>{renderWithBreaks(t('about.header'))}</h1>
+        <h1>
+          {headerLines.map((line, index) => (
+            <span key={line}>
+              {line}
+              {index < headerLines.length - 1 ? <br /> : null}
+            </span>
+          ))}
+        </h1>
       </header>
 
       <section aria-labelledby="domeniul-activitate-title">
-        <h2 id="domeniul-activitate-title" className="title-text">{t('about.activity.title')}</h2>
+        <h2 id="domeniul-activitate-title" className="title-text">
+          {t('about.activity.title')}
+        </h2>
         <div className="section-text">
-          <p>{renderWithBreaks(t('about.activity.text'))}</p>
+          {activityParagraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </section>
 
       <section aria-labelledby="evolutia-title">
-        <h2 id="evolutia-title" className="title-text">{t('about.evolution.title')}</h2>
+        <h2 id="evolutia-title" className="title-text">
+          {t('about.evolution.title')}
+        </h2>
         <div className="section-text">
-          <p>{renderWithBreaks(t('about.evolution.text'))}</p>
+          {evolutionParagraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </section>
 
       <section aria-labelledby="subdiviziuni-title">
-        <h2 id="subdiviziuni-title" className="title-text">{t('about.subdivisions.title')}</h2>
+        <h2 id="subdiviziuni-title" className="title-text">
+          {t('about.subdivisions.title')}
+        </h2>
         <div className="card-container" role="list">
           {cardOrder.map((key) => {
-            const details = subdivisions[key]
-            const asset = subdivisionAssets[key]
+            const details = subdivisions[key];
+            const asset = subdivisionAssets[key];
 
             return (
               <article className="card" role="listitem" key={key}>
@@ -127,12 +158,10 @@ const About = () => {
                   </div>
                 </div>
               </article>
-            )
+            );
           })}
         </div>
       </section>
     </>
-  )
+  );
 }
-
-export default About
