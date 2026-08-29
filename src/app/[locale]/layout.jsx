@@ -1,3 +1,4 @@
+import { Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -5,6 +6,12 @@ import { routing } from '../../i18n/routing';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import '../globals.css';
+
+const inter = Inter({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -112,14 +119,14 @@ export default async function RootLayout({ children, params }) {
   };
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={inter.variable}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>
+      <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <a href="#main-content" className="skip-link">
             {locale === 'ru'
