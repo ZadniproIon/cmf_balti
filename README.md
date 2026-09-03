@@ -1,3 +1,5 @@
+![CMF Bălți Banner](public/og_image_1.jpg)
+
 # cmf-balti
 
 Concept website for [Centrul Medicilor de Familie mun. Bălți](https://cmf-balti.md/).
